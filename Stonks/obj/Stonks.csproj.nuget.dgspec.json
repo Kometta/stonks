@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\mjaka\\source\\repos\\Stonks\\Stonks\\Stonks.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\mjaka\\source\\repos\\Stonks\\Stonks\\Stonks.csproj",
         "packagesPath": "C:\\Users\\mjaka\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mjaka\\source\\repos\\Stonks\\Stonks\\obj\\",
+=======
+    "C:\\Users\\mjaka\\Source\\Repos\\stonks0\\Stonks\\Stonks.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mjaka\\Source\\Repos\\stonks0\\Stonks\\Stonks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mjaka\\Source\\Repos\\stonks0\\Stonks\\Stonks.csproj",
+        "projectName": "Stonks",
+        "projectPath": "C:\\Users\\mjaka\\Source\\Repos\\stonks0\\Stonks\\Stonks.csproj",
+        "packagesPath": "C:\\Users\\mjaka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mjaka\\Source\\Repos\\stonks0\\Stonks\\obj\\",
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mjaka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,10 +55,13 @@
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[5.14.1, )"
+<<<<<<< HEAD
             },
             "ModernUI": {
               "target": "Package",
               "version": "[2.0.0, )"
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             }
           },
           "imports": [

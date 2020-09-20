@@ -19,14 +19,22 @@ namespace Stonks
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+<<<<<<< HEAD
         public static Boolean mode;
         
+=======
+
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
         public Stonks()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.Text = "Stonks";
         }
 
@@ -92,6 +100,14 @@ namespace Stonks
             TitleChildForm.Text = childForm.Text;
         }
 
+<<<<<<< HEAD
+=======
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
@@ -122,7 +138,10 @@ namespace Stonks
         private void SettingsBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+<<<<<<< HEAD
             OpenChildForm(new FormSettings());
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
         }
 
         private void Reset() {
@@ -130,7 +149,11 @@ namespace Stonks
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
+<<<<<<< HEAD
             TitleChildForm.Text = "Welcome";
+=======
+            TitleChildForm.Text = "Home";
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
         }
 
         //Drag Form
@@ -146,11 +169,23 @@ namespace Stonks
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+<<<<<<< HEAD
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
         }
 
+=======
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
     }
 }

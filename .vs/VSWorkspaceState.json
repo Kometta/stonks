@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     "",
     "\\Stonks"
   ],
   "SelectedNode": "\\Stonks.sln",
+=======
+    ""
+  ],
+  "SelectedNode": "\\README.md",
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
   "PreviewInSolutionExplorer": false
 }

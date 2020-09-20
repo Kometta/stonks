@@ -43,6 +43,7 @@
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.iconProgressExplanation = new FontAwesome.Sharp.IconPictureBox();
@@ -62,11 +63,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label9 = new System.Windows.Forms.Label();
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+<<<<<<< HEAD
             this.panelDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconProgressExplanation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconFinancialExplanation)).BeginInit();
@@ -74,6 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.SuspendLayout();
             // 
             // panelMenu
@@ -232,6 +238,10 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 140);
             this.panelLogo.TabIndex = 0;
+<<<<<<< HEAD
+=======
+            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             // pictureBox1
             // 
@@ -242,6 +252,10 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+<<<<<<< HEAD
+=======
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             // panelTitleBar
             // 
@@ -261,9 +275,15 @@
             this.TitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.TitleChildForm.Location = new System.Drawing.Point(71, 23);
             this.TitleChildForm.Name = "TitleChildForm";
+<<<<<<< HEAD
             this.TitleChildForm.Size = new System.Drawing.Size(71, 20);
             this.TitleChildForm.TabIndex = 1;
             this.TitleChildForm.Text = "Welcome";
+=======
+            this.TitleChildForm.Size = new System.Drawing.Size(50, 20);
+            this.TitleChildForm.TabIndex = 1;
+            this.TitleChildForm.Text = "Home";
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             // iconCurrentChildForm
             // 
@@ -290,6 +310,7 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+<<<<<<< HEAD
             this.panelDesktop.Controls.Add(this.label11);
             this.panelDesktop.Controls.Add(this.label10);
             this.panelDesktop.Controls.Add(this.iconProgressExplanation);
@@ -302,6 +323,8 @@
             this.panelDesktop.Controls.Add(this.labelStonksExplanation);
             this.panelDesktop.Controls.Add(this.labelWelcome);
             this.panelDesktop.Controls.Add(this.iconPictureBox1);
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 77);
             this.panelDesktop.MinimumSize = new System.Drawing.Size(800, 500);
@@ -309,6 +332,7 @@
             this.panelDesktop.Size = new System.Drawing.Size(912, 563);
             this.panelDesktop.TabIndex = 3;
             // 
+<<<<<<< HEAD
             // label11
             // 
             this.label11.AutoSize = true;
@@ -527,6 +551,9 @@
             this.label9.TabIndex = 0;
             // 
             // Stonks
+=======
+            // Form1
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -535,10 +562,16 @@
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+<<<<<<< HEAD
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1300, 800);
             this.MinimumSize = new System.Drawing.Size(970, 600);
             this.Name = "Stonks";
+=======
+            this.MaximumSize = new System.Drawing.Size(1300, 800);
+            this.MinimumSize = new System.Drawing.Size(970, 600);
+            this.Name = "Form1";
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
@@ -547,6 +580,7 @@
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+<<<<<<< HEAD
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconProgressExplanation)).EndInit();
@@ -555,6 +589,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.ResumeLayout(false);
 
         }
@@ -575,6 +611,7 @@
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.PictureBox pictureBox1;
+<<<<<<< HEAD
         private System.Windows.Forms.Label labelWelcome;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label labelStonksExplanation;
@@ -594,6 +631,8 @@
         private System.Windows.Forms.Label label8;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.Label label9;
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
     }
 }
 

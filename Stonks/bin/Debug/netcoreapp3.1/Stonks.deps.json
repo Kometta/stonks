@@ -8,8 +8,12 @@
     ".NETCoreApp,Version=v3.1": {
       "Stonks/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "FontAwesome.Sharp": "5.14.1",
           "ModernUI": "2.0.0"
+=======
+          "FontAwesome.Sharp": "5.14.1"
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
         },
         "runtime": {
           "Stonks.dll": {}
@@ -22,6 +26,7 @@
             "fileVersion": "5.14.1.0"
           }
         }
+<<<<<<< HEAD
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.Win32.SystemEvents/4.7.0": {
@@ -45,6 +50,8 @@
           "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.Win32.SystemEvents": "4.7.0"
         }
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
       }
     }
   },
@@ -60,6 +67,7 @@
       "sha512": "sha512-Yql5fgBV7Azq0STW+y8+TswyZvpDJfekA8fu+td929riURPX3xfJvSWLmL9ZEVk+lMbu+HbcwVzwdn7edZ0now==",
       "path": "fontawesome.sharp/5.14.1",
       "hashPath": "fontawesome.sharp.5.14.1.nupkg.sha512"
+<<<<<<< HEAD
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
@@ -88,6 +96,8 @@
       "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
       "path": "system.drawing.common/4.7.0",
       "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
     }
   }
 }

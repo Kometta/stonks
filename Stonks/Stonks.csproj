@@ -4,13 +4,19 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+<<<<<<< HEAD
     <Win32Resource></Win32Resource>
     <ApplicationIcon>Stonks-favicon.ico</ApplicationIcon>
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="5.14.1" />
+<<<<<<< HEAD
     <PackageReference Include="ModernUI" Version="2.0.0" />
+=======
+>>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
   </ItemGroup>
 
   <ItemGroup>
