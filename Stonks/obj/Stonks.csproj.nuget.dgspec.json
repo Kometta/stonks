@@ -41,6 +41,10 @@
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[5.14.1, )"
+            },
+            "ModernUI": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [

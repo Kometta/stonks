@@ -19,6 +19,7 @@ namespace Stonks
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+        public static Boolean mode;
 
         public Stonks()
         {
@@ -26,7 +27,6 @@ namespace Stonks
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
-
             this.Text = "Stonks";
         }
 
@@ -43,8 +43,10 @@ namespace Stonks
         }
 
         //Methods
-        private void ActivateButton(object senderBtn, Color color) {
-            if (senderBtn != null) {
+        private void ActivateButton(object senderBtn, Color color)
+        {
+            if (senderBtn != null)
+            {
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
@@ -65,8 +67,10 @@ namespace Stonks
             }
         }
 
-        private void DisableButton() {
-            if (currentBtn != null) {
+        private void DisableButton()
+        {
+            if (currentBtn != null)
+            {
                 currentBtn.BackColor = Color.FromArgb(31, 30, 68);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -76,8 +80,10 @@ namespace Stonks
             }
         }
 
-        private void OpenChildForm(Form childForm) {
-            if (currentChildForm != null) {
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
                 //Open only one form at a time
                 currentChildForm.Close();
             }
@@ -127,13 +133,16 @@ namespace Stonks
         private void SettingsBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FormSettings());
         }
 
-        private void Reset() {
+        private void Reset()
+        {
             DisableButton();
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
+            TitleChildForm.Text = "Welcome";
             TitleChildForm.Text = "Home";
         }
 
@@ -150,12 +159,13 @@ namespace Stonks
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

@@ -53,5 +53,9 @@ namespace Stonks.Forms
             labelMode.ForeColor = Color.Gainsboro;
         }
 
+        private void FormSettings_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
