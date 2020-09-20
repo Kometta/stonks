@@ -9,10 +9,7 @@ C:\Users\mjaka\source\repos\Stonks\Stonks\bin\Debug\netcoreapp3.1\Stonks.runtime
 C:\Users\mjaka\source\repos\Stonks\Stonks\bin\Debug\netcoreapp3.1\Stonks.dll
 C:\Users\mjaka\source\repos\Stonks\Stonks\bin\Debug\netcoreapp3.1\Stonks.pdb
 C:\Users\mjaka\source\repos\Stonks\Stonks\bin\Debug\netcoreapp3.1\FontAwesome.Sharp.dll
-<<<<<<< HEAD
-=======
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.csproj.CoreCompileInputs.cache
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.csproj.CopyComplete
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.dll
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.pdb
@@ -21,9 +18,3 @@ C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.F
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Properties.Resources.resources
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.FormUserData.resources
 C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Stonks.resources
-<<<<<<< HEAD
-C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.FormSettings.resources
-C:\Users\mjaka\source\repos\Stonks\Stonks\bin\Debug\netcoreapp3.1\MetroFramework.dll
-C:\Users\mjaka\source\repos\Stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.csproj.CoreCompileInputs.cache
-=======
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e

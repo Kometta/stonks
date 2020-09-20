@@ -43,43 +43,11 @@
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.iconProgressExplanation = new FontAwesome.Sharp.IconPictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.iconFinancialExplanation = new FontAwesome.Sharp.IconPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.iconSavingsExplanation = new FontAwesome.Sharp.IconPictureBox();
-            this.labelStonksExplanation = new System.Windows.Forms.Label();
-            this.labelWelcome = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-=======
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-<<<<<<< HEAD
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProgressExplanation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFinancialExplanation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconSavingsExplanation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-=======
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.SuspendLayout();
             // 
             // panelMenu
@@ -238,10 +206,7 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 140);
             this.panelLogo.TabIndex = 0;
-<<<<<<< HEAD
-=======
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             // pictureBox1
             // 
@@ -252,10 +217,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-<<<<<<< HEAD
-=======
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             // panelTitleBar
             // 
@@ -275,15 +237,9 @@
             this.TitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.TitleChildForm.Location = new System.Drawing.Point(71, 23);
             this.TitleChildForm.Name = "TitleChildForm";
-<<<<<<< HEAD
-            this.TitleChildForm.Size = new System.Drawing.Size(71, 20);
-            this.TitleChildForm.TabIndex = 1;
-            this.TitleChildForm.Text = "Welcome";
-=======
             this.TitleChildForm.Size = new System.Drawing.Size(50, 20);
             this.TitleChildForm.TabIndex = 1;
             this.TitleChildForm.Text = "Home";
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             // iconCurrentChildForm
             // 
@@ -310,21 +266,6 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-<<<<<<< HEAD
-            this.panelDesktop.Controls.Add(this.label11);
-            this.panelDesktop.Controls.Add(this.label10);
-            this.panelDesktop.Controls.Add(this.iconProgressExplanation);
-            this.panelDesktop.Controls.Add(this.label4);
-            this.panelDesktop.Controls.Add(this.label3);
-            this.panelDesktop.Controls.Add(this.iconFinancialExplanation);
-            this.panelDesktop.Controls.Add(this.label2);
-            this.panelDesktop.Controls.Add(this.label1);
-            this.panelDesktop.Controls.Add(this.iconSavingsExplanation);
-            this.panelDesktop.Controls.Add(this.labelStonksExplanation);
-            this.panelDesktop.Controls.Add(this.labelWelcome);
-            this.panelDesktop.Controls.Add(this.iconPictureBox1);
-=======
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 77);
             this.panelDesktop.MinimumSize = new System.Drawing.Size(800, 500);
@@ -332,228 +273,7 @@
             this.panelDesktop.Size = new System.Drawing.Size(912, 563);
             this.panelDesktop.TabIndex = 3;
             // 
-<<<<<<< HEAD
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(570, 409);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 20);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Track Your Progress";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(586, 384);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 25);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Progress";
-            // 
-            // iconProgressExplanation
-            // 
-            this.iconProgressExplanation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconProgressExplanation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconProgressExplanation.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
-            this.iconProgressExplanation.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconProgressExplanation.IconSize = 56;
-            this.iconProgressExplanation.Location = new System.Drawing.Point(595, 338);
-            this.iconProgressExplanation.Name = "iconProgressExplanation";
-            this.iconProgressExplanation.Size = new System.Drawing.Size(76, 56);
-            this.iconProgressExplanation.TabIndex = 3;
-            this.iconProgressExplanation.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(345, 409);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Update Your Finances";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(331, 384);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Your Financial Data";
-            // 
-            // iconFinancialExplanation
-            // 
-            this.iconFinancialExplanation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconFinancialExplanation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconFinancialExplanation.IconChar = FontAwesome.Sharp.IconChar.Wallet;
-            this.iconFinancialExplanation.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconFinancialExplanation.IconSize = 56;
-            this.iconFinancialExplanation.Location = new System.Drawing.Point(377, 338);
-            this.iconFinancialExplanation.Name = "iconFinancialExplanation";
-            this.iconFinancialExplanation.Size = new System.Drawing.Size(70, 56);
-            this.iconFinancialExplanation.TabIndex = 3;
-            this.iconFinancialExplanation.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(88, 409);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Create Your Own Savings Plan";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(120, 384);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Savings Plan";
-            // 
-            // iconSavingsExplanation
-            // 
-            this.iconSavingsExplanation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconSavingsExplanation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconSavingsExplanation.IconChar = FontAwesome.Sharp.IconChar.MoneyBillAlt;
-            this.iconSavingsExplanation.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconSavingsExplanation.IconSize = 56;
-            this.iconSavingsExplanation.Location = new System.Drawing.Point(145, 338);
-            this.iconSavingsExplanation.Name = "iconSavingsExplanation";
-            this.iconSavingsExplanation.Size = new System.Drawing.Size(70, 56);
-            this.iconSavingsExplanation.TabIndex = 3;
-            this.iconSavingsExplanation.TabStop = false;
-            // 
-            // labelStonksExplanation
-            // 
-            this.labelStonksExplanation.AutoSize = true;
-            this.labelStonksExplanation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelStonksExplanation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelStonksExplanation.Location = new System.Drawing.Point(239, 155);
-            this.labelStonksExplanation.Name = "labelStonksExplanation";
-            this.labelStonksExplanation.Size = new System.Drawing.Size(362, 28);
-            this.labelStonksExplanation.TabIndex = 2;
-            this.labelStonksExplanation.Text = "Stonks is a World Class Smart Saver App";
-            // 
-            // labelWelcome
-            // 
-            this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI Light", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelWelcome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelWelcome.Location = new System.Drawing.Point(317, 74);
-            this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(271, 76);
-            this.labelWelcome.TabIndex = 1;
-            this.labelWelcome.Text = "Welcome!";
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ThumbsUp;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox1.IconSize = 74;
-            this.iconPictureBox1.Location = new System.Drawing.Point(239, 74);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(85, 74);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(88, 409);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(195, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Create Your Own Savings Plan";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(120, 384);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 25);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Savings Plan";
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.MoneyBillAlt;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox2.IconSize = 56;
-            this.iconPictureBox2.Location = new System.Drawing.Point(145, 338);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(70, 56);
-            this.iconPictureBox2.TabIndex = 3;
-            this.iconPictureBox2.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(345, 409);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 20);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Update Your Finances";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(331, 384);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 25);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Your Financial Data";
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Wallet;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox3.IconSize = 56;
-            this.iconPictureBox3.Location = new System.Drawing.Point(377, 338);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(70, 56);
-            this.iconPictureBox3.TabIndex = 3;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 23);
-            this.label9.TabIndex = 0;
-            // 
-            // Stonks
-=======
             // Form1
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -562,16 +282,9 @@
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-<<<<<<< HEAD
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1300, 800);
-            this.MinimumSize = new System.Drawing.Size(970, 600);
-            this.Name = "Stonks";
-=======
             this.MaximumSize = new System.Drawing.Size(1300, 800);
             this.MinimumSize = new System.Drawing.Size(970, 600);
             this.Name = "Form1";
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
@@ -580,17 +293,6 @@
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-<<<<<<< HEAD
-            this.panelDesktop.ResumeLayout(false);
-            this.panelDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconProgressExplanation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFinancialExplanation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconSavingsExplanation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-=======
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
             this.ResumeLayout(false);
 
         }
@@ -611,28 +313,6 @@
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.PictureBox pictureBox1;
-<<<<<<< HEAD
-        private System.Windows.Forms.Label labelWelcome;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Label labelStonksExplanation;
-        private FontAwesome.Sharp.IconPictureBox iconSavingsExplanation;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private FontAwesome.Sharp.IconPictureBox iconFinancialExplanation;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private FontAwesome.Sharp.IconPictureBox iconProgressExplanation;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private System.Windows.Forms.Label label9;
-=======
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
     }
 }
 

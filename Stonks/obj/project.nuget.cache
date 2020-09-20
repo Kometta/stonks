@@ -1,22 +1,10 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "tEQsJa/jdGVerP5Z3X0x0kDtMrtXllXcPl+43ZaQESs2k3ILJ+AALi2Wgb3lSG3qBDMDbyhy0ynwPh1jBjEBEw==",
+  "dgSpecHash": "S2jESGo5rtgzgFRNRCddTY/xvR9ZainOBSPcYLPNiaWJzVfTlMiERx/HsQCYjrkT1aGYHGWdOGnXOh/Hx7ek1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mjaka\\source\\repos\\Stonks\\Stonks\\Stonks.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\mjaka\\.nuget\\packages\\fontawesome.sharp\\5.14.1\\fontawesome.sharp.5.14.1.nupkg.sha512",
-    "C:\\Users\\mjaka\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\mjaka\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\mjaka\\.nuget\\packages\\modernui\\2.0.0\\modernui.2.0.0.nupkg.sha512",
-    "C:\\Users\\mjaka\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
-=======
-  "dgSpecHash": "IuYAffiSQdCG4egM1SyjMlf9phhsUQiVCc02o04pN1cEy6OtNznwDw7i9GihgyQIAmltTdeEW83WQ0b4JAWqsQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\mjaka\\Source\\Repos\\stonks0\\Stonks\\Stonks.csproj",
+  "projectFilePath": "C:\\Users\\mjaka\\OneDrive\\Documents\\GitHub\\stonks\\Stonks\\Stonks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mjaka\\.nuget\\packages\\fontawesome.sharp\\5.14.1\\fontawesome.sharp.5.14.1.nupkg.sha512"
->>>>>>> 01cd8f746320ad9c4ffa0be09d0895ba49841a9e
   ],
   "logs": []
 }
