@@ -143,7 +143,6 @@ namespace Stonks
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             TitleChildForm.Text = "Welcome";
-            TitleChildForm.Text = "Home";
         }
 
         //Drag Form
@@ -166,6 +165,11 @@ namespace Stonks
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TitleChildForm_Click(object sender, EventArgs e)
         {
 
         }

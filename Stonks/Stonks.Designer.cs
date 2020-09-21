@@ -261,11 +261,12 @@
             // 
             this.TitleChildForm.AutoSize = true;
             this.TitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.TitleChildForm.Location = new System.Drawing.Point(71, 23);
+            this.TitleChildForm.Location = new System.Drawing.Point(71, 35);
             this.TitleChildForm.Name = "TitleChildForm";
-            this.TitleChildForm.Size = new System.Drawing.Size(50, 20);
+            this.TitleChildForm.Size = new System.Drawing.Size(71, 20);
             this.TitleChildForm.TabIndex = 1;
-            this.TitleChildForm.Text = "Home";
+            this.TitleChildForm.Text = "Welcome";
+            this.TitleChildForm.Click += new System.EventHandler(this.TitleChildForm_Click);
             // 
             // iconCurrentChildForm
             // 
@@ -274,7 +275,7 @@
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
             this.iconCurrentChildForm.IconSize = 48;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 12);
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 20);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(48, 49);
             this.iconCurrentChildForm.TabIndex = 0;
@@ -442,7 +443,7 @@
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.iconPictureBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ThumbsUp;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.iconPictureBox1.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPictureBox1.IconSize = 74;
             this.iconPictureBox1.Location = new System.Drawing.Point(239, 74);

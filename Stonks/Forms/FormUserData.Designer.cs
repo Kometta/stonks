@@ -47,7 +47,7 @@
             this.iconUser.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconUser.IconColor = System.Drawing.Color.White;
             this.iconUser.IconSize = 84;
-            this.iconUser.Location = new System.Drawing.Point(334, 12);
+            this.iconUser.Location = new System.Drawing.Point(339, 32);
             this.iconUser.Name = "iconUser";
             this.iconUser.Size = new System.Drawing.Size(98, 84);
             this.iconUser.TabIndex = 0;
