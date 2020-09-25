@@ -11,16 +11,14 @@ using Stonks.Forms;
 
 namespace Stonks.Forms
 {
-    public partial class FormSettings : Form
+    public partial class Settings : Form
     {
-        public FormSettings()
+        public Settings()
         {
             
             InitializeComponent();
             this.Text = "Settings";
          }
-
-        
 
         private void FormSettings_Load(object sender, EventArgs e)
         {

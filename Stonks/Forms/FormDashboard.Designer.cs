@@ -28,55 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelDashboardEarnings = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.labelDashboardSpendings = new System.Windows.Forms.Label();
+            this.labelEarningsName = new System.Windows.Forms.Label();
+            this.labelSavingsName = new System.Windows.Forms.Label();
+            this.labelEarnings = new System.Windows.Forms.Label();
+            this.labelSavings = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // labelEarningsName
             // 
-            this.textBox1.Location = new System.Drawing.Point(61, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 27);
-            this.textBox1.TabIndex = 0;
+            this.labelEarningsName.AutoSize = true;
+            this.labelEarningsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEarningsName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelEarningsName.Location = new System.Drawing.Point(79, 70);
+            this.labelEarningsName.Name = "labelEarningsName";
+            this.labelEarningsName.Size = new System.Drawing.Size(107, 31);
+            this.labelEarningsName.TabIndex = 0;
+            this.labelEarningsName.Text = "Earnings:";
             // 
-            // labelDashboardEarnings
+            // labelSavingsName
             // 
-            this.labelDashboardEarnings.AutoSize = true;
-            this.labelDashboardEarnings.Location = new System.Drawing.Point(61, 82);
-            this.labelDashboardEarnings.Name = "labelDashboardEarnings";
-            this.labelDashboardEarnings.Size = new System.Drawing.Size(123, 20);
-            this.labelDashboardEarnings.TabIndex = 1;
-            this.labelDashboardEarnings.Text = "Monthly Earnings";
-            this.labelDashboardEarnings.Click += new System.EventHandler(this.label1_Click);
+            this.labelSavingsName.AutoSize = true;
+            this.labelSavingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSavingsName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelSavingsName.Location = new System.Drawing.Point(583, 70);
+            this.labelSavingsName.Name = "labelSavingsName";
+            this.labelSavingsName.Size = new System.Drawing.Size(97, 31);
+            this.labelSavingsName.TabIndex = 0;
+            this.labelSavingsName.Text = "Savings:";
             // 
-            // textBox2
+            // labelEarnings
             // 
-            this.textBox2.Location = new System.Drawing.Point(61, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 27);
-            this.textBox2.TabIndex = 2;
+            this.labelEarnings.AutoSize = true;
+            this.labelEarnings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEarnings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelEarnings.Location = new System.Drawing.Point(101, 101);
+            this.labelEarnings.Name = "labelEarnings";
+            this.labelEarnings.Size = new System.Drawing.Size(49, 28);
+            this.labelEarnings.TabIndex = 1;
+            this.labelEarnings.Text = "0.00";
             // 
-            // labelDashboardSpendings
+            // labelSavings
             // 
-            this.labelDashboardSpendings.AutoSize = true;
-            this.labelDashboardSpendings.Location = new System.Drawing.Point(61, 151);
-            this.labelDashboardSpendings.Name = "labelDashboardSpendings";
-            this.labelDashboardSpendings.Size = new System.Drawing.Size(78, 20);
-            this.labelDashboardSpendings.TabIndex = 3;
-            this.labelDashboardSpendings.Text = "Spendings";
+            this.labelSavings.AutoSize = true;
+            this.labelSavings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSavings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelSavings.Location = new System.Drawing.Point(600, 101);
+            this.labelSavings.Name = "labelSavings";
+            this.labelSavings.Size = new System.Drawing.Size(49, 28);
+            this.labelSavings.TabIndex = 1;
+            this.labelSavings.Text = "0.00";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelDashboardSpendings);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.labelDashboardEarnings);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelSavings);
+            this.Controls.Add(this.labelEarnings);
+            this.Controls.Add(this.labelSavingsName);
+            this.Controls.Add(this.labelEarningsName);
             this.Name = "Home";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormDashboard_Load);
@@ -87,9 +98,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label labelDashboardEarnings;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label labelDashboardSpendings;
+        private System.Windows.Forms.Label labelEarningsName;
+        private System.Windows.Forms.Label labelSavingsName;
+        private System.Windows.Forms.Label labelEarnings;
+        private System.Windows.Forms.Label labelSavings;
     }
 }

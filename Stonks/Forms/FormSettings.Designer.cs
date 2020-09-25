@@ -1,6 +1,6 @@
 ﻿namespace Stonks.Forms
 {
-    partial class FormSettings
+    partial class Settings
     {
         /// <summary>
         /// Required designer variable.
@@ -64,7 +64,7 @@
             this.labelMode.Text = "Toggle Light Mode";
             this.labelMode.Click += new System.EventHandler(this.labelMode_Click);
             // 
-            // FormSettings
+            // Settings
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -73,7 +73,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelMode);
             this.Controls.Add(this.modeToggleBtn);
-            this.Name = "FormSettings";
+            this.Name = "Settings";
             this.Tag = "";
             this.Text = "FormSettings";
             this.Load += new System.EventHandler(this.FormSettings_Load);
