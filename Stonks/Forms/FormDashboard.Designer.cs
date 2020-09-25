@@ -1,6 +1,6 @@
 ﻿namespace Stonks.Forms
 {
-    partial class FormDashboard
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -67,7 +67,7 @@
             this.labelDashboardSpendings.TabIndex = 3;
             this.labelDashboardSpendings.Text = "Spendings";
             // 
-            // FormDashboard
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -77,7 +77,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.labelDashboardEarnings);
             this.Controls.Add(this.textBox1);
-            this.Name = "FormDashboard";
+            this.Name = "Home";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormDashboard_Load);
             this.ResumeLayout(false);

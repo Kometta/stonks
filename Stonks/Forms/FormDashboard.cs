@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace Stonks.Forms
 {
-    public partial class FormDashboard : Form
+    public partial class Home : Form
     {
-        public FormDashboard()
+        public Home()
         {
             InitializeComponent();
-            this.Text = "Dashboard";
+            this.Text = "Home";
         }
 
         private void label1_Click(object sender, EventArgs e)

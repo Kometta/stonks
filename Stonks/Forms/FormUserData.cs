@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace Stonks.Forms
 {
-    public partial class FormUserData : Form
+    public partial class Account : Form
     {
-        public FormUserData()
+        public Account()
         {
             InitializeComponent();
-            this.Text = "User Data";
+            this.Text = "Account";
         }
 
         private void FormUserData_Load(object sender, EventArgs e)

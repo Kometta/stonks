@@ -1,6 +1,6 @@
 ﻿namespace Stonks.Forms
 {
-    partial class FormUserData
+    partial class Account
     {
         /// <summary>
         /// Required designer variable.
@@ -143,7 +143,7 @@
             this.saveInfoBtn.Text = "Save Info";
             this.saveInfoBtn.UseVisualStyleBackColor = false;
             // 
-            // FormUserData
+            // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,7 +159,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.iconUser);
-            this.Name = "FormUserData";
+            this.Name = "Account";
             this.Text = "FormUserData";
             this.Load += new System.EventHandler(this.FormUserData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).EndInit();

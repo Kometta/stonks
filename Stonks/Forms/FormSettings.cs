@@ -17,6 +17,7 @@ namespace Stonks.Forms
         {
             
             InitializeComponent();
+            this.Text = "Settings";
          }
 
         

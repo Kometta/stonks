@@ -106,7 +106,7 @@ namespace Stonks
         private void DashboardBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormDashboard());
+            OpenChildForm(new Home());
         }
 
         private void PlanBtn_Click(object sender, EventArgs e)
@@ -127,13 +127,13 @@ namespace Stonks
         private void UserDataBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new FormUserData());
+            OpenChildForm(new Account());
         }
 
         private void SettingsBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FormSettings());
+            OpenChildForm(new Settings());
         }
 
         private void Reset()
@@ -144,6 +144,8 @@ namespace Stonks
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             TitleChildForm.Text = "Welcome";
         }
+
+
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

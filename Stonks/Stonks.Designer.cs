@@ -131,7 +131,7 @@
             this.UserDataBtn.Rotation = 0D;
             this.UserDataBtn.Size = new System.Drawing.Size(220, 60);
             this.UserDataBtn.TabIndex = 1;
-            this.UserDataBtn.Text = "My Data";
+            this.UserDataBtn.Text = "Account";
             this.UserDataBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.UserDataBtn.UseVisualStyleBackColor = true;
             this.UserDataBtn.Click += new System.EventHandler(this.UserDataBtn_Click);
@@ -175,7 +175,7 @@
             this.iconButton3.Rotation = 0D;
             this.iconButton3.Size = new System.Drawing.Size(220, 60);
             this.iconButton3.TabIndex = 1;
-            this.iconButton3.Text = "Your Financial Data";
+            this.iconButton3.Text = "My Finances";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
@@ -197,7 +197,7 @@
             this.PlanBtn.Rotation = 0D;
             this.PlanBtn.Size = new System.Drawing.Size(220, 60);
             this.PlanBtn.TabIndex = 1;
-            this.PlanBtn.Text = "Savings Plan";
+            this.PlanBtn.Text = "Smart Saver";
             this.PlanBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.PlanBtn.UseVisualStyleBackColor = true;
             this.PlanBtn.Click += new System.EventHandler(this.PlanBtn_Click);
@@ -219,7 +219,7 @@
             this.DashboardBtn.Rotation = 0D;
             this.DashboardBtn.Size = new System.Drawing.Size(220, 60);
             this.DashboardBtn.TabIndex = 1;
-            this.DashboardBtn.Text = "Dashboard";
+            this.DashboardBtn.Text = "Home";
             this.DashboardBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.DashboardBtn.UseVisualStyleBackColor = true;
             this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
