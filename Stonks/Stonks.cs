@@ -112,6 +112,7 @@ namespace Stonks
         private void PlanBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new FormSmartSaver());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)

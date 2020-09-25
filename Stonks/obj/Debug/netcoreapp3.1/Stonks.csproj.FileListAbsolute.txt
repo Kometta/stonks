@@ -41,3 +41,4 @@ C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\S
 C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.Home.resources
 C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.Settings.resources
 C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.MyFinances.resources
+C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.FormSmartSaver.resources
