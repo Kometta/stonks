@@ -48,6 +48,7 @@
             this.labelOther = new System.Windows.Forms.Label();
             this.textBoxOther = new System.Windows.Forms.TextBox();
             this.labelSpendings = new System.Windows.Forms.Label();
+            this.buttonSaveFinances = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureCash)).BeginInit();
             this.SuspendLayout();
             // 
@@ -239,12 +240,30 @@
             this.labelSpendings.TabIndex = 3;
             this.labelSpendings.Text = "Spendings:";
             // 
+            // buttonSaveFinances
+            // 
+            this.buttonSaveFinances.BackColor = System.Drawing.Color.DarkOrange;
+            this.buttonSaveFinances.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSaveFinances.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonSaveFinances.FlatAppearance.BorderSize = 0;
+            this.buttonSaveFinances.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonSaveFinances.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonSaveFinances.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSaveFinances.ForeColor = System.Drawing.Color.White;
+            this.buttonSaveFinances.Location = new System.Drawing.Point(314, 402);
+            this.buttonSaveFinances.Name = "buttonSaveFinances";
+            this.buttonSaveFinances.Size = new System.Drawing.Size(130, 52);
+            this.buttonSaveFinances.TabIndex = 5;
+            this.buttonSaveFinances.Text = "Save Info";
+            this.buttonSaveFinances.UseVisualStyleBackColor = false;
+            // 
             // MyFinances
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.buttonSaveFinances);
             this.Controls.Add(this.labelSpendings);
             this.Controls.Add(this.textBoxOther);
             this.Controls.Add(this.labelOther);
@@ -296,5 +315,6 @@
         private System.Windows.Forms.Label labelOther;
         private System.Windows.Forms.TextBox textBoxOther;
         private System.Windows.Forms.Label labelSpendings;
+        private System.Windows.Forms.Button buttonSaveFinances;
     }
 }
