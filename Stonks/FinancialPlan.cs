@@ -6,11 +6,18 @@ using System.Text;
 
 namespace Stonks
 {
+    [Serializable]
     class FinancialPlan
     {
         public double Income { get; set; }
         private List<FinancialGoal> FinancialGoals { get; set; }
         private List<Expense> Expenses { get; set; }
+
+        public FinancialPlan ()
+        {
+            FinancialGoals = new List<FinancialGoal>();
+            Expenses = new List<Expense>();
+        }
 
         public void AddFinancialGoal(FinancialGoal goal)
         {

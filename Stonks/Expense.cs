@@ -10,6 +10,7 @@ namespace Stonks
         Groceries = 0,
     }
 
+    [Serializable]
     class Expense
     {
         public ExpenseType Type { get; set; }
