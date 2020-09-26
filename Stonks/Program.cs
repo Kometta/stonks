@@ -8,16 +8,20 @@ namespace Stonks
 {
     static class Program
     {
+        public static FinancialPlan financialPlan;
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
+            financialPlan = BinarySerialization.ReadFromBinaryFile<FinancialPlan>("D:\\financialPlan.bin");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Stonks());
+            BinarySerialization.WriteToBinaryFile("D:\\financialPlan.bin", financialPlan);
         }
     }
 }
