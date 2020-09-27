@@ -33,7 +33,7 @@ namespace Stonks
         //returns false if expense of same type already exists
         public bool AddExpense(Expense expense)
         {
-            if (Expenses.Select(x => x.Type.Equals(expense.Type)).Count() != 0)
+            if (Expenses.Select(x => x.Type == expense.Type).Count() != 0)
                 return false;
             
             Expenses.Add(expense);
@@ -43,7 +43,7 @@ namespace Stonks
         //returns false if expense of same type does not exist
         public bool ModifyExpense(Expense expense)
         {
-            if (Expenses.Select(x => x.Type.Equals(expense.Type)).Count() == 0)
+            if (Expenses.Select(x => x.Type == expense.Type).Count() == 0)
                 return false;
 
             Expenses.RemoveAll(x => x.Type == expense.Type);
@@ -55,6 +55,12 @@ namespace Stonks
         public bool RemoveExpense(Expense expense)
         {
             return Expenses.Remove(expense);
+        }
+
+        //returns null if item not found
+        public Expense GetExpense(ExpenseType type)
+        {
+            return Expenses.Where(x => x.Type == type).FirstOrDefault();
         }
     }
 }
