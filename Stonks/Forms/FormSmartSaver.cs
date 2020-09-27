@@ -39,6 +39,7 @@ namespace Stonks.Forms
             //Setting the values to represent the track bars
             if (housingExpense != null) {
                 trackBarHousing.Value = Convert.ToInt32((housingExpense.Value * 100) / income);
+                labelHousingExpense.Text = (housingExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -48,6 +49,7 @@ namespace Stonks.Forms
             if (groceries != null)
             {
                 trackBarGroceries.Value = Convert.ToInt32((groceries.Value * 100) / income);
+                labelGroceriesExpense.Text = (groceries.Value).ToString("€#.#");
             }
             else
             {
@@ -56,6 +58,7 @@ namespace Stonks.Forms
             if (entertainmentExpense != null)
             {
                 trackBarEntertainment.Value = Convert.ToInt32((entertainmentExpense.Value * 100) / income);
+                labelEntertainmentExpense.Text = (entertainmentExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -64,6 +67,7 @@ namespace Stonks.Forms
             if (transportExpense != null)
             {
                 trackBarTransport.Value = Convert.ToInt32((transportExpense.Value * 100) / income);
+                labelTransportExpense.Text = (transportExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -72,6 +76,7 @@ namespace Stonks.Forms
             if (healthExpense != null)
             {
                 trackBarHealth.Value = Convert.ToInt32((healthExpense.Value * 100) / income);
+                labelHealthExpense.Text = (healthExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -80,6 +85,7 @@ namespace Stonks.Forms
             if (shoppingExpense != null)
             {
                 trackBarShopping.Value = Convert.ToInt32((shoppingExpense.Value * 100) / income);
+                labelShoppingExpense.Text = (shoppingExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -88,6 +94,7 @@ namespace Stonks.Forms
             if (utilitiesExpense != null)
             {
                 trackBarUtilities.Value = Convert.ToInt32((utilitiesExpense.Value * 100) / income);
+                labelUtilitiesExpense.Text = (utilitiesExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -96,10 +103,12 @@ namespace Stonks.Forms
             if (otherExpense != null)
             {
                 trackBarOther.Value = Convert.ToInt32((otherExpense.Value * 100) / income);
+                labelOtherExpense.Text = (otherExpense.Value).ToString("€#.#");
             }
             else
             {
                 trackBarOther.Value = 0;
+                labelOtherExpense.Text = "€0.00";
             }
             //trackBarSavings.Value = Convert.ToInt32((Program.financialPlan.Savings * 100)/income); FIX LATER
         }
