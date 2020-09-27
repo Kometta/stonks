@@ -138,8 +138,8 @@ namespace Stonks.Forms
             }
 
             //Calculate Savings
-
-            Program.financialPlan.Savings = Program.financialPlan.Income - (housingExpense.Value + groceries.Value + transportExpense.Value + entertainmentExpense.Value + healthExpense.Value + utilitiesExpense.Value + otherExpense.Value + shoppingExpense.Value);
+            //FIX LATER
+            //Program.financialPlan.Savings = Program.financialPlan.Income - (housingExpense.Value + groceries.Value + transportExpense.Value + entertainmentExpense.Value + healthExpense.Value + utilitiesExpense.Value + otherExpense.Value + shoppingExpense.Value);
         }
 
         public void saveExpenseValues()

@@ -37,15 +37,71 @@ namespace Stonks.Forms
             var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
 
             //Setting the values to represent the track bars
-            trackBarHousing.Value = Convert.ToInt32((housingExpense.Value * 100) / income);
-            trackBarGroceries.Value = Convert.ToInt32((groceries.Value * 100) / income);
-            trackBarEntertainment.Value = Convert.ToInt32((entertainmentExpense.Value * 100) / income);
-            trackBarTransport.Value = Convert.ToInt32((transportExpense.Value * 100) / income);
-            trackBarHealth.Value = Convert.ToInt32((healthExpense.Value * 100) / income);
-            trackBarShopping.Value = Convert.ToInt32((shoppingExpense.Value * 100) / income);
-            trackBarUtilities.Value = Convert.ToInt32((utilitiesExpense.Value * 100) / income);
-            trackBarOther.Value = Convert.ToInt32((otherExpense.Value * 100) / income);
-            trackBarSavings.Value = Convert.ToInt32((Program.financialPlan.Savings * 100)/income);
+            if (housingExpense != null) {
+                trackBarHousing.Value = Convert.ToInt32((housingExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarHousing.Value = 0;
+            }
+
+            if (groceries != null)
+            {
+                trackBarGroceries.Value = Convert.ToInt32((groceries.Value * 100) / income);
+            }
+            else
+            {
+                trackBarGroceries.Value = 0;
+            }
+            if (entertainmentExpense != null)
+            {
+                trackBarEntertainment.Value = Convert.ToInt32((entertainmentExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarEntertainment.Value = 0;
+            }
+            if (transportExpense != null)
+            {
+                trackBarTransport.Value = Convert.ToInt32((transportExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarTransport.Value = 0;
+            }
+            if (healthExpense != null)
+            {
+                trackBarHealth.Value = Convert.ToInt32((healthExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarHealth.Value = 0;
+            }
+            if (shoppingExpense != null)
+            {
+                trackBarShopping.Value = Convert.ToInt32((shoppingExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarShopping.Value = 0;
+            }
+            if (utilitiesExpense != null)
+            {
+                trackBarUtilities.Value = Convert.ToInt32((utilitiesExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarUtilities.Value = 0;
+            }
+            if (otherExpense != null)
+            {
+                trackBarOther.Value = Convert.ToInt32((otherExpense.Value * 100) / income);
+            }
+            else
+            {
+                trackBarOther.Value = 0;
+            }
+            //trackBarSavings.Value = Convert.ToInt32((Program.financialPlan.Savings * 100)/income); FIX LATER
         }
     }
 }
