@@ -16,12 +16,12 @@ namespace Stonks
         [STAThread]
         static void Main()
         {
-            financialPlan = BinarySerialization.ReadFromBinaryFile<FinancialPlan>("D:\\financialPlan.bin");
+            financialPlan = BinarySerialization.ReadFromBinaryFile<FinancialPlan>("C:\\financialPlan.bin");
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Stonks());
-            BinarySerialization.WriteToBinaryFile("D:\\financialPlan.bin", financialPlan);
+            BinarySerialization.WriteToBinaryFile("C:\\financialPlan.bin", financialPlan);
         }
     }
 }

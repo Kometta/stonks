@@ -13,8 +13,10 @@ using Stonks.Forms;
 
 namespace Stonks
 {
+    
     public partial class Stonks : Form
     {
+
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -28,7 +30,8 @@ namespace Stonks
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             this.Text = "Stonks";
-        }
+            
+         }
 
         //Structs
 

@@ -36,7 +36,7 @@ namespace Stonks
         {
             string filePath;
             if (objectToWrite is FinancialPlan)
-                filePath = "D:\\financialPlan.bin";
+                filePath = "C:\\financialPlan.bin";
             else
                 return;
 

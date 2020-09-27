@@ -62,6 +62,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,7 +90,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 640);
+            this.panelMenu.Size = new System.Drawing.Size(220, 653);
             this.panelMenu.TabIndex = 0;
             // 
             // SettingsBtn
@@ -248,6 +249,7 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.linkLabel1);
             this.panelTitleBar.Controls.Add(this.TitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -309,7 +311,7 @@
             this.panelDesktop.Location = new System.Drawing.Point(220, 77);
             this.panelDesktop.MinimumSize = new System.Drawing.Size(800, 500);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(912, 563);
+            this.panelDesktop.Size = new System.Drawing.Size(912, 576);
             this.panelDesktop.TabIndex = 3;
             // 
             // label11
@@ -529,18 +531,30 @@
             this.label9.Size = new System.Drawing.Size(100, 23);
             this.label9.TabIndex = 0;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.LinkColor = System.Drawing.Color.Gainsboro;
+            this.linkLabel1.Location = new System.Drawing.Point(781, 32);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(119, 23);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Login/Sign Up";
+            // 
             // Stonks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 640);
+            this.ClientSize = new System.Drawing.Size(1132, 653);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1300, 800);
-            this.MinimumSize = new System.Drawing.Size(970, 600);
+            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "Stonks";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -597,6 +611,7 @@
         private System.Windows.Forms.Label label8;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
