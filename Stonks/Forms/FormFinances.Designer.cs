@@ -82,6 +82,7 @@
             this.textBoxEarnings.Name = "textBoxEarnings";
             this.textBoxEarnings.Size = new System.Drawing.Size(125, 27);
             this.textBoxEarnings.TabIndex = 2;
+            this.textBoxEarnings.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFood
             // 
@@ -100,6 +101,7 @@
             this.textBoxFood.Name = "textBoxFood";
             this.textBoxFood.Size = new System.Drawing.Size(125, 27);
             this.textBoxFood.TabIndex = 2;
+            this.textBoxFood.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label
             // 
@@ -119,6 +121,7 @@
             this.textBoxTransport.Name = "textBoxTransport";
             this.textBoxTransport.Size = new System.Drawing.Size(125, 27);
             this.textBoxTransport.TabIndex = 2;
+            this.textBoxTransport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelHousing
             // 
@@ -137,6 +140,7 @@
             this.textBoxHousing.Name = "textBoxHousing";
             this.textBoxHousing.Size = new System.Drawing.Size(125, 27);
             this.textBoxHousing.TabIndex = 2;
+            this.textBoxHousing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelEntertainment
             // 
@@ -155,6 +159,7 @@
             this.textBoxEntertainment.Name = "textBoxEntertainment";
             this.textBoxEntertainment.Size = new System.Drawing.Size(125, 27);
             this.textBoxEntertainment.TabIndex = 2;
+            this.textBoxEntertainment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelHealth
             // 
@@ -173,6 +178,7 @@
             this.textBoxHealth.Name = "textBoxHealth";
             this.textBoxHealth.Size = new System.Drawing.Size(125, 27);
             this.textBoxHealth.TabIndex = 2;
+            this.textBoxHealth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelShopping
             // 
@@ -191,6 +197,7 @@
             this.textBoxShopping.Name = "textBoxShopping";
             this.textBoxShopping.Size = new System.Drawing.Size(125, 27);
             this.textBoxShopping.TabIndex = 2;
+            this.textBoxShopping.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelUtilities
             // 
@@ -210,6 +217,7 @@
             this.textBoxUtilities.Name = "textBoxUtilities";
             this.textBoxUtilities.Size = new System.Drawing.Size(125, 27);
             this.textBoxUtilities.TabIndex = 2;
+            this.textBoxUtilities.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelOther
             // 
@@ -228,6 +236,7 @@
             this.textBoxOther.Name = "textBoxOther";
             this.textBoxOther.Size = new System.Drawing.Size(125, 27);
             this.textBoxOther.TabIndex = 2;
+            this.textBoxOther.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelSpendings
             // 
@@ -256,6 +265,7 @@
             this.buttonSaveFinances.TabIndex = 5;
             this.buttonSaveFinances.Text = "Save Info";
             this.buttonSaveFinances.UseVisualStyleBackColor = false;
+            this.buttonSaveFinances.Click += new System.EventHandler(this.buttonSaveFinances_Click);
             // 
             // MyFinances
             // 

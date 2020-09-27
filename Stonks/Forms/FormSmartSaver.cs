@@ -10,6 +10,7 @@ namespace Stonks.Forms
 {
     public partial class FormSmartSaver : Form
     {
+        
         public FormSmartSaver()
         {
             InitializeComponent();
