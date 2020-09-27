@@ -11,6 +11,7 @@ namespace Stonks
     class FinancialPlan
     {
         public double Income { get; set; }
+        public double Savings { get; set; }
         private List<FinancialGoal> FinancialGoals { get; set; }
         private List<Expense> Expenses { get; set; }
 

@@ -15,6 +15,7 @@ namespace Stonks.Forms
             InitializeComponent();
             this.Text = "Home";
             labelEarnings.Text = (Program.financialPlan.Income).ToString("€#.#");
+            labelSavings.Text = (Program.financialPlan.Savings).ToString("€#.#");
         }
 
         private void label1_Click(object sender, EventArgs e)

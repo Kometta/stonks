@@ -47,7 +47,7 @@
             this.trackBarOther = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBarSavings = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddGoal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarHousing)).BeginInit();
@@ -67,7 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconOther)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarOther)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarSavings)).BeginInit();
             this.SuspendLayout();
             // 
             // labelSpendingsSlider
@@ -281,14 +281,14 @@
             this.iconPictureBox1.TabIndex = 4;
             this.iconPictureBox1.TabStop = false;
             // 
-            // trackBar1
+            // trackBarSavings
             // 
-            this.trackBar1.Location = new System.Drawing.Point(603, 86);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(155, 56);
-            this.trackBar1.TabIndex = 2;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarSavings.Location = new System.Drawing.Point(603, 86);
+            this.trackBarSavings.Maximum = 100;
+            this.trackBarSavings.Name = "trackBarSavings";
+            this.trackBarSavings.Size = new System.Drawing.Size(155, 56);
+            this.trackBarSavings.TabIndex = 2;
+            this.trackBarSavings.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label2
             // 
@@ -321,7 +321,7 @@
             this.ClientSize = new System.Drawing.Size(939, 604);
             this.Controls.Add(this.btnAddGoal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.trackBarSavings);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trackBarOther);
@@ -361,7 +361,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconOther)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarOther)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarSavings)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,7 +388,7 @@
         private System.Windows.Forms.TrackBar trackBarOther;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBarSavings;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddGoal;
     }
