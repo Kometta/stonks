@@ -13,3 +13,4 @@ Created Windows Forms Desktop application. The demo consists of:
   2. Storing the users earnings and expenses
   3. Reading from file and saving to file
   4. Added Smart Saver, My Finances UI
+  5. Expenses entered in My Finances are shown as track bars in Smart Saver
