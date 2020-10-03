@@ -16,7 +16,6 @@ namespace Stonks.Forms
         public MyFinances()
         {   
             InitializeComponent();
-           
             this.Text = "My Finances";
             loadExpenses();
             

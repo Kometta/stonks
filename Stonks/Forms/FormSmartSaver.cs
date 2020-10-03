@@ -14,7 +14,7 @@ namespace Stonks.Forms
         public FormSmartSaver()
         {
             InitializeComponent();
-           
+            Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
             this.Text = "Smart Saver";
             setTrackBarValues();
         }
@@ -35,6 +35,7 @@ namespace Stonks.Forms
             var shoppingExpense = Program.financialPlan.GetExpense(ExpenseType.Shopping);
             var utilitiesExpense = Program.financialPlan.GetExpense(ExpenseType.Utilities);
             var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
+            var savings = Program.financialPlan.Savings;
 
             //Setting the values to represent the track bars
             if (housingExpense != null) {
@@ -180,12 +181,18 @@ namespace Stonks.Forms
             try
             {
                 trackBarSavings.Value = Convert.ToInt32((Program.financialPlan.Savings * 100) / income);
+                labelSavings.Text = (savings).ToString("€#.#");
             }
             catch
             {
                 trackBarSavings.Value = 100;
             }
             
+        }
+
+        private void trackBarHousing_ValueChange(object sender, EventArgs e)
+        {
+
         }
     }
 }

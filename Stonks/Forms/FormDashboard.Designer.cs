@@ -32,6 +32,8 @@
             this.labelSavingsName = new System.Windows.Forms.Label();
             this.labelEarnings = new System.Windows.Forms.Label();
             this.labelSavings = new System.Windows.Forms.Label();
+            this.labelSpendingsName = new System.Windows.Forms.Label();
+            this.labelSpendings = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelEarningsName
@@ -50,7 +52,7 @@
             this.labelSavingsName.AutoSize = true;
             this.labelSavingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelSavingsName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSavingsName.Location = new System.Drawing.Point(583, 70);
+            this.labelSavingsName.Location = new System.Drawing.Point(622, 70);
             this.labelSavingsName.Name = "labelSavingsName";
             this.labelSavingsName.Size = new System.Drawing.Size(97, 31);
             this.labelSavingsName.TabIndex = 0;
@@ -72,11 +74,33 @@
             this.labelSavings.AutoSize = true;
             this.labelSavings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelSavings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSavings.Location = new System.Drawing.Point(600, 101);
+            this.labelSavings.Location = new System.Drawing.Point(642, 101);
             this.labelSavings.Name = "labelSavings";
             this.labelSavings.Size = new System.Drawing.Size(49, 28);
             this.labelSavings.TabIndex = 1;
             this.labelSavings.Text = "0.00";
+            // 
+            // labelSpendingsName
+            // 
+            this.labelSpendingsName.AutoSize = true;
+            this.labelSpendingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSpendingsName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelSpendingsName.Location = new System.Drawing.Point(338, 70);
+            this.labelSpendingsName.Name = "labelSpendingsName";
+            this.labelSpendingsName.Size = new System.Drawing.Size(127, 31);
+            this.labelSpendingsName.TabIndex = 0;
+            this.labelSpendingsName.Text = "Spendings:";
+            // 
+            // labelSpendings
+            // 
+            this.labelSpendings.AutoSize = true;
+            this.labelSpendings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSpendings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelSpendings.Location = new System.Drawing.Point(369, 101);
+            this.labelSpendings.Name = "labelSpendings";
+            this.labelSpendings.Size = new System.Drawing.Size(49, 28);
+            this.labelSpendings.TabIndex = 1;
+            this.labelSpendings.Text = "0.00";
             // 
             // Home
             // 
@@ -84,6 +108,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelSpendings);
+            this.Controls.Add(this.labelSpendingsName);
             this.Controls.Add(this.labelSavings);
             this.Controls.Add(this.labelEarnings);
             this.Controls.Add(this.labelSavingsName);
@@ -102,5 +128,7 @@
         private System.Windows.Forms.Label labelSavingsName;
         private System.Windows.Forms.Label labelEarnings;
         private System.Windows.Forms.Label labelSavings;
+        private System.Windows.Forms.Label labelSpendingsName;
+        private System.Windows.Forms.Label labelSpendings;
     }
 }

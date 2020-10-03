@@ -64,5 +64,15 @@ namespace Stonks
         {
             return Expenses.Where(x => x.Type == type).FirstOrDefault();
         }
+
+        public double GetSpendings()
+        {
+            double spendings = 0;
+
+            foreach (Expense expense in Expenses) {
+                spendings += expense.Value;
+            }
+            return spendings;
+        }
     }
 }
