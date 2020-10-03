@@ -19,6 +19,10 @@ namespace Stonks.Forms
             labelEarnings.Text = (Program.financialPlan.Income).ToString("€#.#");
             labelSpendings.Text = Spendings.ToString("€#.#");
             labelSavings.Text = (Program.financialPlan.Savings).ToString("€#.#");
+            gaugeSavings.Value = Program.financialPlan.Savings;
+            gaugeSavings.To = Program.financialPlan.Income;
+            gaugeSpendings.Value = Spendings;
+            gaugeSpendings.To = Program.financialPlan.Income;
         }
 
         private void label1_Click(object sender, EventArgs e)
