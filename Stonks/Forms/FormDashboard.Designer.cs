@@ -1,4 +1,6 @@
-﻿namespace Stonks.Forms
+﻿using System.Drawing;
+
+namespace Stonks.Forms
 {
     partial class Home
     {
@@ -34,6 +36,10 @@
             this.labelSavings = new System.Windows.Forms.Label();
             this.labelSpendingsName = new System.Windows.Forms.Label();
             this.labelSpendings = new System.Windows.Forms.Label();
+            this.gaugeSavings = new LiveCharts.WinForms.SolidGauge();
+            this.gaugeSpendings = new LiveCharts.WinForms.SolidGauge();
+            this.labelRatioESAVE = new System.Windows.Forms.Label();
+            this.labelRatioESPEND = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelEarningsName
@@ -102,12 +108,52 @@
             this.labelSpendings.TabIndex = 1;
             this.labelSpendings.Text = "0.00";
             // 
+            // gaugeSavings
+            // 
+            this.gaugeSavings.Location = new System.Drawing.Point(43, 178);
+            this.gaugeSavings.Name = "gaugeSavings";
+            this.gaugeSavings.Size = new System.Drawing.Size(306, 338);
+            this.gaugeSavings.TabIndex = 2;
+            // 
+            // gaugeSpendings
+            // 
+            this.gaugeSpendings.Location = new System.Drawing.Point(475, 216);
+            this.gaugeSpendings.Name = "gaugeSpendings";
+            this.gaugeSpendings.Size = new System.Drawing.Size(307, 283);
+            this.gaugeSpendings.TabIndex = 2;
+            // 
+            // labelRatioESAVE
+            // 
+            this.labelRatioESAVE.AutoSize = true;
+            this.labelRatioESAVE.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelRatioESAVE.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelRatioESAVE.Location = new System.Drawing.Point(43, 193);
+            this.labelRatioESAVE.Name = "labelRatioESAVE";
+            this.labelRatioESAVE.Size = new System.Drawing.Size(277, 31);
+            this.labelRatioESAVE.TabIndex = 0;
+            this.labelRatioESAVE.Text = "Earnings to Savings Ratio:";
+            // 
+            // labelRatioESPEND
+            // 
+            this.labelRatioESPEND.AutoSize = true;
+            this.labelRatioESPEND.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelRatioESPEND.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelRatioESPEND.Location = new System.Drawing.Point(475, 193);
+            this.labelRatioESPEND.Name = "labelRatioESPEND";
+            this.labelRatioESPEND.Size = new System.Drawing.Size(307, 31);
+            this.labelRatioESPEND.TabIndex = 0;
+            this.labelRatioESPEND.Text = "Earnings to Spendings Ratio:";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 548);
+            this.Controls.Add(this.labelRatioESPEND);
+            this.Controls.Add(this.labelRatioESAVE);
+            this.Controls.Add(this.gaugeSpendings);
+            this.Controls.Add(this.gaugeSavings);
             this.Controls.Add(this.labelSpendings);
             this.Controls.Add(this.labelSpendingsName);
             this.Controls.Add(this.labelSavings);
@@ -130,5 +176,9 @@
         private System.Windows.Forms.Label labelSavings;
         private System.Windows.Forms.Label labelSpendingsName;
         private System.Windows.Forms.Label labelSpendings;
+        private LiveCharts.WinForms.SolidGauge gaugeSavings;
+        private LiveCharts.WinForms.SolidGauge gaugeSpendings;
+        private System.Windows.Forms.Label labelRatioESAVE;
+        private System.Windows.Forms.Label labelRatioESPEND;
     }
 }
