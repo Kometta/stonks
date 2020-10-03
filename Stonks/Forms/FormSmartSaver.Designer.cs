@@ -98,6 +98,7 @@
             this.trackBarHousing.Size = new System.Drawing.Size(155, 56);
             this.trackBarHousing.TabIndex = 2;
             this.trackBarHousing.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarHousing.ValueChanged += new System.EventHandler(this.FormSmartSaver_Load);
             // 
             // trackBarGroceries
             // 

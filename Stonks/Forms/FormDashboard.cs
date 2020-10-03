@@ -14,8 +14,11 @@ namespace Stonks.Forms
         {
             InitializeComponent();
             this.Text = "Home";
+            var Spendings = Program.financialPlan.GetSpendings();
+            Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
             labelEarnings.Text = (Program.financialPlan.Income).ToString("€#.#");
-            //labelSavings.Text = (Program.financialPlan.Savings).ToString("€#.#");
+            labelSpendings.Text = Spendings.ToString("€#.#");
+            labelSavings.Text = (Program.financialPlan.Savings).ToString("€#.#");
         }
 
         private void label1_Click(object sender, EventArgs e)
