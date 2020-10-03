@@ -108,7 +108,6 @@ namespace Stonks.Forms
             else
             {
                 trackBarOther.Value = 0;
-                labelOtherExpense.Text = "€0.00";
             }
             //trackBarSavings.Value = Convert.ToInt32((Program.financialPlan.Savings * 100)/income); FIX LATER
         }
