@@ -151,79 +151,79 @@ namespace Stonks.Forms
             //Housing
             if (textBoxHousing.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Housing, Reduction = 0, Value = Convert.ToDouble(textBoxHousing.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = 0, Value = Convert.ToDouble(textBoxHousing.Text) });
             }
             else if (textBoxHousing.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Housing, Reduction = 0, Value = Convert.ToDouble(textBoxHousing.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = 0, Value = Convert.ToDouble(textBoxHousing.Text) });
             }
 
             //Groceries
             if (textBoxFood.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Groceries, Reduction = 0, Value = Convert.ToDouble(textBoxFood.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = 0, Value = Convert.ToDouble(textBoxFood.Text) });
             }
             else if (textBoxFood.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Groceries, Reduction = 0, Value = Convert.ToDouble(textBoxFood.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = 0, Value = Convert.ToDouble(textBoxFood.Text) });
             }
 
             //Transport
             if (textBoxTransport.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Transport, Reduction = 0, Value = Convert.ToDouble(textBoxTransport.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = 0, Value = Convert.ToDouble(textBoxTransport.Text) });
             }
             else if (textBoxTransport.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Transport, Reduction = 0, Value = Convert.ToDouble(textBoxTransport.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = 0, Value = Convert.ToDouble(textBoxTransport.Text) });
             }
 
             //Entertainment
             if (textBoxEntertainment.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Entertainment, Reduction = 0, Value = Convert.ToDouble(textBoxEntertainment.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = 0, Value = Convert.ToDouble(textBoxEntertainment.Text) });
             }
             else if (textBoxTransport.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Entertainment, Reduction = 0, Value = Convert.ToDouble(textBoxEntertainment.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = 0, Value = Convert.ToDouble(textBoxEntertainment.Text) });
             }
 
             //Health
             if (textBoxHealth.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Health, Reduction = 0, Value = Convert.ToDouble(textBoxHealth.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = 0, Value = Convert.ToDouble(textBoxHealth.Text) });
             }
             else if (textBoxHealth.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Health, Reduction = 0, Value = Convert.ToDouble(textBoxHealth.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = 0, Value = Convert.ToDouble(textBoxHealth.Text) });
             }
             //Shopping
             if (textBoxShopping.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Shopping, Reduction = 0, Value = Convert.ToDouble(textBoxShopping.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = 0, Value = Convert.ToDouble(textBoxShopping.Text) });
             }
             else if (textBoxShopping.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Shopping, Reduction = 0, Value = Convert.ToDouble(textBoxShopping.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = 0, Value = Convert.ToDouble(textBoxShopping.Text) });
             }
             //Utilities
             if (textBoxUtilities.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Utilities, Reduction = 0, Value = Convert.ToDouble(textBoxUtilities.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = 0, Value = Convert.ToDouble(textBoxUtilities.Text) });
             }
             else if (textBoxUtilities.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Utilities, Reduction = 0, Value = Convert.ToDouble(textBoxUtilities.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = 0, Value = Convert.ToDouble(textBoxUtilities.Text) });
             }
 
             //Other
             if (textBoxOther.Text == null)
             {
-                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Other, Reduction = 0, Value = Convert.ToDouble(textBoxOther.Text) });
+                Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = 0, Value = Convert.ToDouble(textBoxOther.Text) });
             }
             else if (textBoxOther.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Other, Reduction = 0, Value = Convert.ToDouble(textBoxOther.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = 0, Value = Convert.ToDouble(textBoxOther.Text) });
             }
         }
     }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Policy;
-using System.Text;
 
 namespace Stonks
 {
@@ -14,7 +11,7 @@ namespace Stonks
         Health,
         Shopping,
         Utilities,
-        Other,
+        Other
     }
 
     [Serializable]
@@ -22,6 +19,6 @@ namespace Stonks
     {
         public ExpenseType Type { get; set; }
         public double Value { get; set; }
-        public double Reduction { get; set; }
+        public double PlannedValue { get; set; }
     }
 }
