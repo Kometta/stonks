@@ -64,9 +64,7 @@ namespace Stonks
 
         public double GetSpendings()
         {
-            double spendings = 0;
-            Expenses.Select(x => spendings += x.Value);
-            return spendings;
+            return Expenses.Sum(x => x.Value);
         }
 
         public double GetSavings(bool recalculate = true)
