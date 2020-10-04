@@ -10,7 +10,6 @@ namespace Stonks.Forms
 {
     public partial class FormSmartSaver : Form
     {
-        
         public FormSmartSaver()
         {
             InitializeComponent();
@@ -121,9 +120,19 @@ namespace Stonks.Forms
                 trackBarOther.Value = 0;
             }
 
-            trackBarSavings.Maximum = Convert.ToInt32(max);
-            trackBarSavings.Value = Convert.ToInt32(savings);
-            labelSavings.Text = (savings).ToString("€#.#");
+            try
+            {
+                trackBarSavings.Minimum = Convert.ToInt32(income * (-1));
+                trackBarSavings.Maximum = Convert.ToInt32(income);
+                trackBarSavings.Value = Convert.ToInt32(savings);
+                labelSavings.Text = (savings).ToString("€#.#");
+            }
+            catch
+            {
+                trackBarSavings.Value = -1000;
+                labelSavings.Text = (savings).ToString("€#.#");
+            }
+            
 
         }
 
@@ -132,7 +141,8 @@ namespace Stonks.Forms
 
         }
 
-        //Padaryt su visais
+        double savings = Program.financialPlan.Savings;
+        //Changing label values depending on the sliders
         private void trackBarHousing_Scroll(object sender, EventArgs e)
         {
             var value = trackBarHousing.Value;
@@ -143,6 +153,7 @@ namespace Stonks.Forms
         {
             var value = trackBarGroceries.Value;
             labelGroceriesExpense.Text = (value).ToString("€#.#");
+
         }
 
         private void trackBarTransport_Scroll(object sender, EventArgs e)
@@ -185,6 +196,18 @@ namespace Stonks.Forms
         {
             var value = trackBarSavings.Value;
             labelSavings.Text = (value).ToString("€#.#");
+        }
+
+        private void btnAddGoal_Click(object sender, EventArgs e)
+        {
+            if (btnAddGoal.Top < 500) {
+                btnAddGoal.Top += 60;
+            }
+            else
+            {
+                btnAddGoal.BackColor = System.Drawing.Color.Gray;
+            }
+            
         }
     }
 }

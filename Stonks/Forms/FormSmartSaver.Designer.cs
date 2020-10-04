@@ -84,7 +84,7 @@
             this.labelSpendingsSlider.AutoSize = true;
             this.labelSpendingsSlider.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelSpendingsSlider.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSpendingsSlider.Location = new System.Drawing.Point(95, 24);
+            this.labelSpendingsSlider.Location = new System.Drawing.Point(136, 24);
             this.labelSpendingsSlider.Name = "labelSpendingsSlider";
             this.labelSpendingsSlider.Size = new System.Drawing.Size(114, 28);
             this.labelSpendingsSlider.TabIndex = 0;
@@ -280,7 +280,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(603, 24);
+            this.label1.Location = new System.Drawing.Point(623, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 28);
             this.label1.TabIndex = 1;
@@ -323,14 +323,16 @@
             // btnAddGoal
             // 
             this.btnAddGoal.BackColor = System.Drawing.Color.Orange;
+            this.btnAddGoal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddGoal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAddGoal.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAddGoal.Location = new System.Drawing.Point(587, 199);
+            this.btnAddGoal.Location = new System.Drawing.Point(587, 200);
             this.btnAddGoal.Name = "btnAddGoal";
             this.btnAddGoal.Size = new System.Drawing.Size(145, 43);
             this.btnAddGoal.TabIndex = 5;
             this.btnAddGoal.Text = "Add A Goal";
             this.btnAddGoal.UseVisualStyleBackColor = false;
+            this.btnAddGoal.Click += new System.EventHandler(this.btnAddGoal_Click);
             // 
             // labelHousingExpense
             // 
