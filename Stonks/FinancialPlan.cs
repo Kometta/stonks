@@ -14,14 +14,11 @@ namespace Stonks
         public double Savings { get; set; }
         private List<FinancialGoal> FinancialGoals { get; set; }
         private List<Expense> Expenses { get; set; }
-        
-        private List<Expense> PlannedExpenses { get; set; } //Going to be used for storing the expenses of the users plan
 
         public FinancialPlan ()
         {
             FinancialGoals = new List<FinancialGoal>();
             Expenses = new List<Expense>();
-            PlannedExpenses = new List<Expense>();
         }
 
         public void AddFinancialGoal(FinancialGoal goal)
@@ -81,6 +78,5 @@ namespace Stonks
         public double GetMaxExpense() {
             return Expenses.Max(x => x.Value);
         }
-
     }
 }

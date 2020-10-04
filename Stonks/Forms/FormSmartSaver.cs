@@ -153,7 +153,6 @@ namespace Stonks.Forms
         {
             var value = trackBarGroceries.Value;
             labelGroceriesExpense.Text = (value).ToString("€#.#");
-
         }
 
         private void trackBarTransport_Scroll(object sender, EventArgs e)
@@ -207,7 +206,6 @@ namespace Stonks.Forms
             {
                 btnAddGoal.BackColor = System.Drawing.Color.Gray;
             }
-            
         }
     }
 }
