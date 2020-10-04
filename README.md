@@ -14,3 +14,8 @@ Created Windows Forms Desktop application. The demo consists of:
   3. Reading from file and saving to file
   4. Added Smart Saver, My Finances UI
   5. Expenses entered in My Finances are shown as track bars in Smart Saver
+## Week 3 Adding more functionality and UI
+  1. Slider labels are now based on the highest Expense value
+  2. Slider label represent the data in the slider and automatically change when the slider is moved
+  3. Added 2 gauges in Dashboard to represent Earnings/Savings ratio and Earnings/Spendings ratio
+  4. Added Savings in Financial plan class, the Savings variable is used in Dashboard and SmartSaver
