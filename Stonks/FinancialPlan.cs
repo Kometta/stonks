@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using Stonks.Forms;
 
 namespace Stonks
 {
@@ -68,11 +65,21 @@ namespace Stonks
         public double GetSpendings()
         {
             double spendings = 0;
-
-            foreach (Expense expense in Expenses) {
-                spendings += expense.Value;
-            }
+            Expenses.Select(x => spendings += x.Value);
             return spendings;
+        }
+
+        public double GetSavings(bool recalculate = true)
+        {
+            if (recalculate)
+                RefreshSavings();
+            return Savings;
+        }
+
+        public void RefreshSavings()
+        {
+            Savings = Income;
+            Expenses.Select(x => Savings -= x.Value);
         }
     }
 }
