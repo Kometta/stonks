@@ -6,6 +6,7 @@ namespace Stonks
     class FinancialGoal
     {
         public double Value { get; set; }
+        public String Name { get; set; }
         public DateTime Deadline { get; set; }
 
         public TimeSpan GetTimeToDeadline()

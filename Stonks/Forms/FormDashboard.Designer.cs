@@ -110,6 +110,7 @@ namespace Stonks.Forms
             // 
             // gaugeSavings
             // 
+            this.gaugeSavings.ForeColor = System.Drawing.Color.Gainsboro;
             this.gaugeSavings.Location = new System.Drawing.Point(43, 178);
             this.gaugeSavings.Name = "gaugeSavings";
             this.gaugeSavings.Size = new System.Drawing.Size(306, 338);
