@@ -34,7 +34,6 @@ namespace Stonks.Forms
         private void buttonSaveFinances_Click(object sender, EventArgs e)
         {
             saveExpenseValues();
-            
         }
 
         public void loadExpenses() {

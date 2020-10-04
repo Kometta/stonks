@@ -98,6 +98,7 @@
             this.trackBarHousing.Size = new System.Drawing.Size(155, 56);
             this.trackBarHousing.TabIndex = 2;
             this.trackBarHousing.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarHousing.Scroll += new System.EventHandler(this.trackBarHousing_Scroll);
             this.trackBarHousing.ValueChanged += new System.EventHandler(this.FormSmartSaver_Load);
             // 
             // trackBarGroceries
@@ -108,6 +109,7 @@
             this.trackBarGroceries.Size = new System.Drawing.Size(155, 56);
             this.trackBarGroceries.TabIndex = 2;
             this.trackBarGroceries.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarGroceries.Scroll += new System.EventHandler(this.trackBarGroceries_Scroll);
             // 
             // trackBarTransport
             // 
@@ -117,6 +119,7 @@
             this.trackBarTransport.Size = new System.Drawing.Size(155, 56);
             this.trackBarTransport.TabIndex = 2;
             this.trackBarTransport.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarTransport.Scroll += new System.EventHandler(this.trackBarTransport_Scroll);
             // 
             // trackBarEntertainment
             // 
@@ -126,6 +129,7 @@
             this.trackBarEntertainment.Size = new System.Drawing.Size(155, 56);
             this.trackBarEntertainment.TabIndex = 2;
             this.trackBarEntertainment.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarEntertainment.Scroll += new System.EventHandler(this.trackBarEntertainment_Scroll);
             // 
             // trackBarHealth
             // 
@@ -135,6 +139,7 @@
             this.trackBarHealth.Size = new System.Drawing.Size(155, 56);
             this.trackBarHealth.TabIndex = 2;
             this.trackBarHealth.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarHealth.Scroll += new System.EventHandler(this.trackBarHealth_Scroll);
             // 
             // trackBarShopping
             // 
@@ -144,6 +149,7 @@
             this.trackBarShopping.Size = new System.Drawing.Size(155, 56);
             this.trackBarShopping.TabIndex = 2;
             this.trackBarShopping.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarShopping.Scroll += new System.EventHandler(this.trackBarShopping_Scroll);
             // 
             // trackBarUtilities
             // 
@@ -153,6 +159,7 @@
             this.trackBarUtilities.Size = new System.Drawing.Size(155, 56);
             this.trackBarUtilities.TabIndex = 2;
             this.trackBarUtilities.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarUtilities.Scroll += new System.EventHandler(this.trackBarUtilities_Scroll);
             // 
             // iconHousing
             // 
@@ -266,6 +273,7 @@
             this.trackBarOther.Size = new System.Drawing.Size(155, 56);
             this.trackBarOther.TabIndex = 2;
             this.trackBarOther.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarOther.Scroll += new System.EventHandler(this.trackBarOther_Scroll);
             // 
             // label1
             // 
@@ -299,6 +307,7 @@
             this.trackBarSavings.Size = new System.Drawing.Size(155, 56);
             this.trackBarSavings.TabIndex = 2;
             this.trackBarSavings.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBarSavings.Scroll += new System.EventHandler(this.trackBarSavings_Scroll);
             // 
             // label2
             // 

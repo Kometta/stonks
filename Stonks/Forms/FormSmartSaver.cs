@@ -36,20 +36,13 @@ namespace Stonks.Forms
             var utilitiesExpense = Program.financialPlan.GetExpense(ExpenseType.Utilities);
             var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
             var savings = Program.financialPlan.Savings;
+            var max = Program.financialPlan.GetMaxExpense(); 
 
             //Setting the values to represent the track bars
             if (housingExpense != null) {
-                try
-                {
-                    trackBarHousing.Value = Convert.ToInt32((housingExpense.Value * 100) / income);
-                    labelHousingExpense.Text = (housingExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarHousing.Value = 100;
-                    labelHousingExpense.Text = (housingExpense.Value).ToString("€#.#");
-                }
-
+                trackBarHousing.Maximum = Convert.ToInt32(max);
+                trackBarHousing.Value = Convert.ToInt32(housingExpense.Value);
+                labelHousingExpense.Text = (housingExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -58,17 +51,9 @@ namespace Stonks.Forms
 
             if (groceries != null)
             {
-                try
-                {
-                    trackBarGroceries.Value = Convert.ToInt32((groceries.Value * 100) / income);
-                    labelGroceriesExpense.Text = (groceries.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarGroceries.Value = 100;
-                    labelGroceriesExpense.Text = (groceries.Value).ToString("€#.#");
-                }
-                
+                trackBarGroceries.Maximum = Convert.ToInt32(max);
+                trackBarGroceries.Value = Convert.ToInt32(groceries.Value);
+                labelGroceriesExpense.Text = (groceries.Value).ToString("€#.#");
             }
             else
             {
@@ -76,17 +61,9 @@ namespace Stonks.Forms
             }
             if (entertainmentExpense != null)
             {
-                try
-                {
-                    trackBarEntertainment.Value = Convert.ToInt32((entertainmentExpense.Value * 100) / income);
-                    labelEntertainmentExpense.Text = (entertainmentExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarEntertainment.Value = 100;
-                    labelEntertainmentExpense.Text = (entertainmentExpense.Value).ToString("€#.#");
-                }
-                
+                trackBarEntertainment.Maximum = Convert.ToInt32(max);
+                trackBarEntertainment.Value = Convert.ToInt32(entertainmentExpense.Value);
+                labelEntertainmentExpense.Text = (entertainmentExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -94,17 +71,10 @@ namespace Stonks.Forms
             }
             if (transportExpense != null)
             {
-                try
-                {
-                    trackBarTransport.Value = Convert.ToInt32((transportExpense.Value * 100) / income);
-                    labelTransportExpense.Text = (transportExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarTransport.Value = 100;
-                    labelTransportExpense.Text = (transportExpense.Value).ToString("€#.#");
-                }
-                
+                trackBarTransport.Maximum = Convert.ToInt32(max);
+                trackBarTransport.Value = Convert.ToInt32(transportExpense.Value);
+                labelTransportExpense.Text = (transportExpense.Value).ToString("€#.#");
+
             }
             else
             {
@@ -112,16 +82,9 @@ namespace Stonks.Forms
             }
             if (healthExpense != null)
             {
-                try
-                {
-                    trackBarHealth.Value = Convert.ToInt32((healthExpense.Value * 100) / income);
-                    labelHealthExpense.Text = (healthExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarHealth.Value = 100;
-                    labelHealthExpense.Text = (healthExpense.Value).ToString("€#.#");
-                }
+                trackBarHealth.Maximum = Convert.ToInt32(max);
+                trackBarHealth.Value = Convert.ToInt32(healthExpense.Value);
+                labelHealthExpense.Text = (healthExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -129,16 +92,9 @@ namespace Stonks.Forms
             }
             if (shoppingExpense != null)
             {
-                try
-                {
-                    trackBarShopping.Value = Convert.ToInt32((shoppingExpense.Value * 100) / income);
-                    labelShoppingExpense.Text = (shoppingExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarShopping.Value = 100;
-                    labelShoppingExpense.Text = (shoppingExpense.Value).ToString("€#.#");
-                }
+                trackBarShopping.Maximum = Convert.ToInt32(max);
+                trackBarShopping.Value = Convert.ToInt32(shoppingExpense.Value);
+                labelShoppingExpense.Text = (shoppingExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -146,16 +102,9 @@ namespace Stonks.Forms
             }
             if (utilitiesExpense != null)
             {
-                try
-                {
-                    trackBarUtilities.Value = Convert.ToInt32((utilitiesExpense.Value * 100) / income);
-                    labelUtilitiesExpense.Text = (utilitiesExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarUtilities.Value = 100;
-                    labelUtilitiesExpense.Text = (utilitiesExpense.Value).ToString("€#.#");
-                }
+                trackBarUtilities.Maximum = Convert.ToInt32(max);
+                trackBarUtilities.Value = Convert.ToInt32(utilitiesExpense.Value);
+                labelUtilitiesExpense.Text = (utilitiesExpense.Value).ToString("€#.#");
             }
             else
             {
@@ -163,36 +112,79 @@ namespace Stonks.Forms
             }
             if (otherExpense != null)
             {
-                try
-                {
-                    trackBarOther.Value = Convert.ToInt32((otherExpense.Value * 100) / income);
-                    labelOtherExpense.Text = (otherExpense.Value).ToString("€#.#");
-                }
-                catch
-                {
-                    trackBarOther.Value = 100;
-                    labelOtherExpense.Text = (otherExpense.Value).ToString("€#.#");
-                }
+                trackBarOther.Maximum = Convert.ToInt32(max);
+                trackBarOther.Value = Convert.ToInt32(otherExpense.Value);
+                labelOtherExpense.Text = (otherExpense.Value).ToString("€#.#");
             }
             else
             {
                 trackBarOther.Value = 0;
             }
-            try
-            {
-                trackBarSavings.Value = Convert.ToInt32((Program.financialPlan.Savings * 100) / income);
-                labelSavings.Text = (savings).ToString("€#.#");
-            }
-            catch
-            {
-                trackBarSavings.Value = 100;
-            }
-            
+
+            trackBarSavings.Maximum = Convert.ToInt32(max);
+            trackBarSavings.Value = Convert.ToInt32(savings);
+            labelSavings.Text = (savings).ToString("€#.#");
+
         }
 
         private void trackBarHousing_ValueChange(object sender, EventArgs e)
         {
 
+        }
+
+        //Padaryt su visais
+        private void trackBarHousing_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarHousing.Value;
+            labelHousingExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarGroceries_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarGroceries.Value;
+            labelGroceriesExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarTransport_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarTransport.Value;
+            labelTransportExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarEntertainment_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarEntertainment.Value;
+            labelEntertainmentExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarHealth_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarHealth.Value;
+            labelHealthExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarShopping_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarShopping.Value;
+            labelShoppingExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarUtilities_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarUtilities.Value;
+            labelUtilitiesExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarOther_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarOther.Value;
+            labelOtherExpense.Text = (value).ToString("€#.#");
+        }
+
+        private void trackBarSavings_Scroll(object sender, EventArgs e)
+        {
+            var value = trackBarSavings.Value;
+            labelSavings.Text = (value).ToString("€#.#");
         }
     }
 }

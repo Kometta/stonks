@@ -74,5 +74,17 @@ namespace Stonks
             }
             return spendings;
         }
+
+        public double GetMaxExpense() {
+            double max_expense=0;
+
+            foreach (Expense expense in Expenses) {
+                if (expense.Value > max_expense) {
+                    max_expense = expense.Value;
+                }
+            }
+
+            return max_expense;
+        }
     }
 }
