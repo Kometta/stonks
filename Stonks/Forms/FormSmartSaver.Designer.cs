@@ -59,6 +59,15 @@
             this.labelUtilitiesExpense = new System.Windows.Forms.Label();
             this.labelOtherExpense = new System.Windows.Forms.Label();
             this.labelSavings = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelHousingExpensesActual = new System.Windows.Forms.Label();
+            this.labelGroceriesExpensesActual = new System.Windows.Forms.Label();
+            this.labelTransportExpensesActual = new System.Windows.Forms.Label();
+            this.labelEntertainmentExpensesActual = new System.Windows.Forms.Label();
+            this.labelHealthExpensesActual = new System.Windows.Forms.Label();
+            this.labelShoppingExpensesActual = new System.Windows.Forms.Label();
+            this.labelUtilitiesExpensesActual = new System.Windows.Forms.Label();
+            this.labelOtherExpensesActual = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarHousing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGroceries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTransport)).BeginInit();
@@ -433,12 +442,119 @@
             this.labelSavings.TabIndex = 6;
             this.labelSavings.Text = "0.00";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(262, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Planned/Actual";
+            // 
+            // labelHousingExpensesActual
+            // 
+            this.labelHousingExpensesActual.AutoSize = true;
+            this.labelHousingExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelHousingExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelHousingExpensesActual.Location = new System.Drawing.Point(327, 65);
+            this.labelHousingExpensesActual.Name = "labelHousingExpensesActual";
+            this.labelHousingExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelHousingExpensesActual.TabIndex = 6;
+            this.labelHousingExpensesActual.Text = "0.00";
+            // 
+            // labelGroceriesExpensesActual
+            // 
+            this.labelGroceriesExpensesActual.AutoSize = true;
+            this.labelGroceriesExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelGroceriesExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelGroceriesExpensesActual.Location = new System.Drawing.Point(327, 130);
+            this.labelGroceriesExpensesActual.Name = "labelGroceriesExpensesActual";
+            this.labelGroceriesExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelGroceriesExpensesActual.TabIndex = 6;
+            this.labelGroceriesExpensesActual.Text = "0.00";
+            // 
+            // labelTransportExpensesActual
+            // 
+            this.labelTransportExpensesActual.AutoSize = true;
+            this.labelTransportExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTransportExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelTransportExpensesActual.Location = new System.Drawing.Point(327, 202);
+            this.labelTransportExpensesActual.Name = "labelTransportExpensesActual";
+            this.labelTransportExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelTransportExpensesActual.TabIndex = 6;
+            this.labelTransportExpensesActual.Text = "0.00";
+            // 
+            // labelEntertainmentExpensesActual
+            // 
+            this.labelEntertainmentExpensesActual.AutoSize = true;
+            this.labelEntertainmentExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelEntertainmentExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelEntertainmentExpensesActual.Location = new System.Drawing.Point(327, 264);
+            this.labelEntertainmentExpensesActual.Name = "labelEntertainmentExpensesActual";
+            this.labelEntertainmentExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelEntertainmentExpensesActual.TabIndex = 6;
+            this.labelEntertainmentExpensesActual.Text = "0.00";
+            // 
+            // labelHealthExpensesActual
+            // 
+            this.labelHealthExpensesActual.AutoSize = true;
+            this.labelHealthExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelHealthExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelHealthExpensesActual.Location = new System.Drawing.Point(327, 325);
+            this.labelHealthExpensesActual.Name = "labelHealthExpensesActual";
+            this.labelHealthExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelHealthExpensesActual.TabIndex = 6;
+            this.labelHealthExpensesActual.Text = "0.00";
+            // 
+            // labelShoppingExpensesActual
+            // 
+            this.labelShoppingExpensesActual.AutoSize = true;
+            this.labelShoppingExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelShoppingExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelShoppingExpensesActual.Location = new System.Drawing.Point(327, 387);
+            this.labelShoppingExpensesActual.Name = "labelShoppingExpensesActual";
+            this.labelShoppingExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelShoppingExpensesActual.TabIndex = 6;
+            this.labelShoppingExpensesActual.Text = "0.00";
+            // 
+            // labelUtilitiesExpensesActual
+            // 
+            this.labelUtilitiesExpensesActual.AutoSize = true;
+            this.labelUtilitiesExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelUtilitiesExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelUtilitiesExpensesActual.Location = new System.Drawing.Point(327, 459);
+            this.labelUtilitiesExpensesActual.Name = "labelUtilitiesExpensesActual";
+            this.labelUtilitiesExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelUtilitiesExpensesActual.TabIndex = 6;
+            this.labelUtilitiesExpensesActual.Text = "0.00";
+            // 
+            // labelOtherExpensesActual
+            // 
+            this.labelOtherExpensesActual.AutoSize = true;
+            this.labelOtherExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelOtherExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelOtherExpensesActual.Location = new System.Drawing.Point(327, 521);
+            this.labelOtherExpensesActual.Name = "labelOtherExpensesActual";
+            this.labelOtherExpensesActual.Size = new System.Drawing.Size(45, 23);
+            this.labelOtherExpensesActual.TabIndex = 6;
+            this.labelOtherExpensesActual.Text = "0.00";
+            // 
             // FormSmartSaver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(939, 604);
+            this.Controls.Add(this.labelOtherExpensesActual);
+            this.Controls.Add(this.labelUtilitiesExpensesActual);
+            this.Controls.Add(this.labelShoppingExpensesActual);
+            this.Controls.Add(this.labelHealthExpensesActual);
+            this.Controls.Add(this.labelEntertainmentExpensesActual);
+            this.Controls.Add(this.labelTransportExpensesActual);
+            this.Controls.Add(this.labelGroceriesExpensesActual);
+            this.Controls.Add(this.labelHousingExpensesActual);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelSavings);
             this.Controls.Add(this.labelOtherExpense);
             this.Controls.Add(this.labelUtilitiesExpense);
@@ -529,5 +645,14 @@
         private System.Windows.Forms.Label labelUtilitiesExpense;
         private System.Windows.Forms.Label labelOtherExpense;
         private System.Windows.Forms.Label labelSavings;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelHousingExpensesActual;
+        private System.Windows.Forms.Label labelGroceriesExpensesActual;
+        private System.Windows.Forms.Label labelTransportExpensesActual;
+        private System.Windows.Forms.Label labelEntertainmentExpensesActual;
+        private System.Windows.Forms.Label labelHealthExpensesActual;
+        private System.Windows.Forms.Label labelShoppingExpensesActual;
+        private System.Windows.Forms.Label labelUtilitiesExpensesActual;
+        private System.Windows.Forms.Label labelOtherExpensesActual;
     }
 }
