@@ -1,8 +1,8 @@
 # Stonks
 VU MIF PSI I project "Smart saver"
 
-Vision: To help people save the money for their dreams
-Mission: To create the tool which makes money saving convenient, fast and pleasant
+* Vision: To help people save the money for their dreams
+* Mission: To create the tool which makes money saving convenient, fast and pleasant
 
 ## Week 1 Demo Version
 Created Windows Forms Desktop application. The demo consists of:
