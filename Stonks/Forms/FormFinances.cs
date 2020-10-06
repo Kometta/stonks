@@ -135,12 +135,9 @@ namespace Stonks.Forms
                 textBoxOther.Text = Convert.ToString(otherExpense.Value);
             }
 
-            //Calculate Savings
-            //FIX LATER
-            //Program.financialPlan.Savings = Program.financialPlan.Income - (housingExpense.Value + groceries.Value + transportExpense.Value + entertainmentExpense.Value + healthExpense.Value + utilitiesExpense.Value + otherExpense.Value + shoppingExpense.Value);
         }
 
-        public void saveExpenseValues()
+        public void saveExpenseValues() //Answer the question with team, do we want planned values to be 0 from the start or set to the values of the actual expenses of the user
         {
             //Income
             if (textBoxEarnings.Text != null)
@@ -155,7 +152,7 @@ namespace Stonks.Forms
             }
             else if (textBoxHousing.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = 0, Value = Convert.ToDouble(textBoxHousing.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Housing).PlannedValue, Value = Convert.ToDouble(textBoxHousing.Text) }); //Get Previous PlannedValue
             }
 
             //Groceries
@@ -165,7 +162,7 @@ namespace Stonks.Forms
             }
             else if (textBoxFood.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = 0, Value = Convert.ToDouble(textBoxFood.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Groceries).PlannedValue, Value = Convert.ToDouble(textBoxFood.Text) });
             }
 
             //Transport
@@ -175,7 +172,7 @@ namespace Stonks.Forms
             }
             else if (textBoxTransport.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = 0, Value = Convert.ToDouble(textBoxTransport.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Transport).PlannedValue, Value = Convert.ToDouble(textBoxTransport.Text) });
             }
 
             //Entertainment
@@ -183,9 +180,9 @@ namespace Stonks.Forms
             {
                 Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = 0, Value = Convert.ToDouble(textBoxEntertainment.Text) });
             }
-            else if (textBoxTransport.Text != null)
+            else if (textBoxEntertainment.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = 0, Value = Convert.ToDouble(textBoxEntertainment.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Entertainment).PlannedValue, Value = Convert.ToDouble(textBoxEntertainment.Text) });
             }
 
             //Health
@@ -195,7 +192,7 @@ namespace Stonks.Forms
             }
             else if (textBoxHealth.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = 0, Value = Convert.ToDouble(textBoxHealth.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Health).PlannedValue, Value = Convert.ToDouble(textBoxHealth.Text) });
             }
             //Shopping
             if (textBoxShopping.Text == null)
@@ -204,7 +201,7 @@ namespace Stonks.Forms
             }
             else if (textBoxShopping.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = 0, Value = Convert.ToDouble(textBoxShopping.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Shopping).PlannedValue, Value = Convert.ToDouble(textBoxShopping.Text) });
             }
             //Utilities
             if (textBoxUtilities.Text == null)
@@ -213,7 +210,7 @@ namespace Stonks.Forms
             }
             else if (textBoxUtilities.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = 0, Value = Convert.ToDouble(textBoxUtilities.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Utilities).PlannedValue, Value = Convert.ToDouble(textBoxUtilities.Text) });
             }
 
             //Other
@@ -223,7 +220,7 @@ namespace Stonks.Forms
             }
             else if (textBoxOther.Text != null)
             {
-                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = 0, Value = Convert.ToDouble(textBoxOther.Text) });
+                Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = Program.financialPlan.GetExpense(ExpenseType.Other).PlannedValue, Value = Convert.ToDouble(textBoxOther.Text) });
             }
         }
     }

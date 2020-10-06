@@ -6,7 +6,7 @@ namespace Stonks
     static class Program
     {
         public static FinancialPlan financialPlan;
-        public static string saveFilePath = "D:\\financialPlan.bin";
+        public static string saveFilePath = "C:\\financialPlan.bin";
 
         /// <summary>
         ///  The main entry point for the application.
