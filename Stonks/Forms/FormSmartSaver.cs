@@ -244,5 +244,50 @@ namespace Stonks.Forms
         private void updatePlannedSavings() {
             labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
         }
+
+        private void iconHousing_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Housing", iconHousing);
+        }
+
+        private void iconGroceries_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Groceries", iconGroceries);
+        }
+
+        private void iconTransport_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Transport", iconTransport);
+        }
+
+        private void iconEntertainment_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Entertainment", iconEntertainment);
+        }
+
+        private void iconHealth_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Health", iconHealth);
+        }
+
+        private void iconShopping_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Shopping", iconShopping);
+        }
+
+        private void iconUtilities_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("utilities", iconUtilities);
+        }
+
+        private void iconOther_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Other", iconOther);
+        }
+
+        private void iconPictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            iconName.Show("Piggy bank", iconPictureBox1);
+        }
     }
 }
