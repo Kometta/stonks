@@ -21,6 +21,10 @@ namespace Stonks
         public double Value { get; set; }
         public double PlannedValue { get; set; }
 
+        public Expense ()
+        {
+        }
+
         public Expense (ExpenseType type, double value, double plannedValue)
         {
             Type = type;

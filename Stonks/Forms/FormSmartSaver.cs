@@ -159,7 +159,7 @@ namespace Stonks.Forms
         {
             var value = trackBarHousing.Value;
             labelHousingExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Housing).Value});
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Housing).Value});
             updatePlannedSavings();
         }
 
@@ -167,7 +167,7 @@ namespace Stonks.Forms
         {
             var value = trackBarGroceries.Value;
             labelGroceriesExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Groceries).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Groceries).Value });
             updatePlannedSavings();
         }
 
@@ -175,7 +175,7 @@ namespace Stonks.Forms
         {
             var value = trackBarTransport.Value;
             labelTransportExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Transport).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Transport).Value });
             updatePlannedSavings();
         }
 
@@ -183,7 +183,7 @@ namespace Stonks.Forms
         {
             var value = trackBarEntertainment.Value;
             labelEntertainmentExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Entertainment).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Entertainment).Value });
             updatePlannedSavings();
         }
 
@@ -191,7 +191,7 @@ namespace Stonks.Forms
         {
             var value = trackBarHealth.Value;
             labelHealthExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Health).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Health).Value });
             updatePlannedSavings();
         }
 
@@ -199,7 +199,7 @@ namespace Stonks.Forms
         {
             var value = trackBarShopping.Value;
             labelShoppingExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Shopping).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Shopping).Value });
             updatePlannedSavings();
         }
 
@@ -207,7 +207,7 @@ namespace Stonks.Forms
         {
             var value = trackBarUtilities.Value;
             labelUtilitiesExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Utilities).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Utilities).Value });
             updatePlannedSavings();
         }
 
@@ -215,7 +215,7 @@ namespace Stonks.Forms
         {
             var value = trackBarOther.Value;
             labelOtherExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Other).Value });
+            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Other).Value });
             updatePlannedSavings();
         }
 
