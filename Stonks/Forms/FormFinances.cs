@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Stonks.Forms
 {
 
-    public static class DictionaryExt
+    public static class DictionaryExtensions
     {
         public static Dictionary<ExpenseType, TextBox> AddBoxExpenseType(this Dictionary<ExpenseType, TextBox> source, ExpenseType key, TextBox value) 
         {
@@ -42,18 +42,15 @@ namespace Stonks.Forms
 
         private void MyFinances_Load(object sender, EventArgs e)
         {
-
         }
 
         private void LabelUtilities_Click(object sender, EventArgs e)
         {
-
         }
 
         private void ButtonSaveFinances_Click(object sender, EventArgs e)
         {
             SaveExpenseValues();
-            
         }
 
         public void InitBoxExpenseType() {
@@ -74,7 +71,7 @@ namespace Stonks.Forms
             //Income
             if (textBoxEarnings == null)
             {
-                textBoxEarnings.Text = Convert.ToString(0);
+                textBoxEarnings.Text = "0";
             }
             else
             {
@@ -83,11 +80,7 @@ namespace Stonks.Forms
 
             //Expenses
             BoxExpenseType.ForEach(x => x.Value.Text = (Program.financialPlan.GetExpense(x.Key) != null) ? Convert.ToString(Program.financialPlan.GetExpense(x.Key).Value) : "0");
-
-            //Calculate Savings
-            //FIX LATER
-            //Program.financialPlan.Savings = Program.financialPlan.Income - (housingExpense.Value + groceries.Value + transportExpense.Value + entertainmentExpense.Value + healthExpense.Value + utilitiesExpense.Value + otherExpense.Value + shoppingExpense.Value);
-        }
+            }
 
         public void SaveExpenseValues()
         {
