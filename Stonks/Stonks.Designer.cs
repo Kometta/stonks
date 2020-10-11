@@ -89,8 +89,9 @@
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 653);
+            this.panelMenu.Size = new System.Drawing.Size(220, 603);
             this.panelMenu.TabIndex = 0;
             // 
             // SettingsBtn
@@ -104,7 +105,8 @@
             this.SettingsBtn.IconColor = System.Drawing.Color.Gainsboro;
             this.SettingsBtn.IconSize = 32;
             this.SettingsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SettingsBtn.Location = new System.Drawing.Point(0, 440);
+            this.SettingsBtn.Location = new System.Drawing.Point(0, 412);
+            this.SettingsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SettingsBtn.Name = "SettingsBtn";
             this.SettingsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.SettingsBtn.Rotation = 0D;
@@ -126,7 +128,8 @@
             this.UserDataBtn.IconColor = System.Drawing.Color.Gainsboro;
             this.UserDataBtn.IconSize = 32;
             this.UserDataBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.UserDataBtn.Location = new System.Drawing.Point(0, 380);
+            this.UserDataBtn.Location = new System.Drawing.Point(0, 352);
+            this.UserDataBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserDataBtn.Name = "UserDataBtn";
             this.UserDataBtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.UserDataBtn.Rotation = 0D;
@@ -148,7 +151,8 @@
             this.ProgressBtn.IconColor = System.Drawing.Color.Gainsboro;
             this.ProgressBtn.IconSize = 32;
             this.ProgressBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ProgressBtn.Location = new System.Drawing.Point(0, 320);
+            this.ProgressBtn.Location = new System.Drawing.Point(0, 292);
+            this.ProgressBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProgressBtn.Name = "ProgressBtn";
             this.ProgressBtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.ProgressBtn.Rotation = 0D;
@@ -170,7 +174,8 @@
             this.iconButton3.IconColor = System.Drawing.Color.Gainsboro;
             this.iconButton3.IconSize = 32;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 260);
+            this.iconButton3.Location = new System.Drawing.Point(0, 232);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton3.Rotation = 0D;
@@ -192,7 +197,8 @@
             this.PlanBtn.IconColor = System.Drawing.Color.Gainsboro;
             this.PlanBtn.IconSize = 32;
             this.PlanBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PlanBtn.Location = new System.Drawing.Point(0, 200);
+            this.PlanBtn.Location = new System.Drawing.Point(0, 172);
+            this.PlanBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlanBtn.Name = "PlanBtn";
             this.PlanBtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.PlanBtn.Rotation = 0D;
@@ -214,7 +220,8 @@
             this.DashboardBtn.IconColor = System.Drawing.Color.Gainsboro;
             this.DashboardBtn.IconSize = 32;
             this.DashboardBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DashboardBtn.Location = new System.Drawing.Point(0, 140);
+            this.DashboardBtn.Location = new System.Drawing.Point(0, 112);
+            this.DashboardBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DashboardBtn.Name = "DashboardBtn";
             this.DashboardBtn.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.DashboardBtn.Rotation = 0D;
@@ -230,8 +237,9 @@
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 140);
+            this.panelLogo.Size = new System.Drawing.Size(220, 112);
             this.panelLogo.TabIndex = 0;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
@@ -239,8 +247,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -254,8 +263,9 @@
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(912, 69);
+            this.panelTitleBar.Size = new System.Drawing.Size(962, 55);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
@@ -263,9 +273,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.linkLabel1.LinkColor = System.Drawing.Color.Gainsboro;
-            this.linkLabel1.Location = new System.Drawing.Point(781, 32);
+            this.linkLabel1.Location = new System.Drawing.Point(781, 26);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(119, 23);
             this.linkLabel1.TabIndex = 2;
@@ -276,9 +286,9 @@
             // 
             this.TitleChildForm.AutoSize = true;
             this.TitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.TitleChildForm.Location = new System.Drawing.Point(71, 35);
+            this.TitleChildForm.Location = new System.Drawing.Point(71, 28);
             this.TitleChildForm.Name = "TitleChildForm";
-            this.TitleChildForm.Size = new System.Drawing.Size(71, 20);
+            this.TitleChildForm.Size = new System.Drawing.Size(66, 17);
             this.TitleChildForm.TabIndex = 1;
             this.TitleChildForm.Text = "Welcome";
             this.TitleChildForm.Click += new System.EventHandler(this.TitleChildForm_Click);
@@ -289,10 +299,11 @@
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconCurrentChildForm.IconSize = 48;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 20);
+            this.iconCurrentChildForm.IconSize = 39;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(17, 16);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(48, 49);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(48, 39);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
@@ -300,9 +311,10 @@
             // 
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 69);
+            this.panelShadow.Location = new System.Drawing.Point(220, 55);
+            this.panelShadow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(912, 8);
+            this.panelShadow.Size = new System.Drawing.Size(962, 6);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -321,18 +333,19 @@
             this.panelDesktop.Controls.Add(this.labelWelcome);
             this.panelDesktop.Controls.Add(this.iconPictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 77);
-            this.panelDesktop.MinimumSize = new System.Drawing.Size(800, 500);
+            this.panelDesktop.Location = new System.Drawing.Point(220, 61);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDesktop.MinimumSize = new System.Drawing.Size(800, 400);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(912, 576);
+            this.panelDesktop.Size = new System.Drawing.Size(962, 542);
             this.panelDesktop.TabIndex = 3;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(570, 409);
+            this.label11.Location = new System.Drawing.Point(650, 353);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(131, 20);
             this.label11.TabIndex = 5;
@@ -341,11 +354,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(586, 384);
+            this.label10.Location = new System.Drawing.Point(666, 333);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 25);
+            this.label10.Size = new System.Drawing.Size(90, 25);
             this.label10.TabIndex = 4;
             this.label10.Text = "Progress";
             // 
@@ -355,19 +368,20 @@
             this.iconProgressExplanation.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconProgressExplanation.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
             this.iconProgressExplanation.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconProgressExplanation.IconSize = 56;
-            this.iconProgressExplanation.Location = new System.Drawing.Point(595, 338);
+            this.iconProgressExplanation.IconSize = 45;
+            this.iconProgressExplanation.Location = new System.Drawing.Point(675, 296);
+            this.iconProgressExplanation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconProgressExplanation.Name = "iconProgressExplanation";
-            this.iconProgressExplanation.Size = new System.Drawing.Size(76, 56);
+            this.iconProgressExplanation.Size = new System.Drawing.Size(76, 45);
             this.iconProgressExplanation.TabIndex = 3;
             this.iconProgressExplanation.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(345, 409);
+            this.label4.Location = new System.Drawing.Point(425, 353);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 20);
             this.label4.TabIndex = 5;
@@ -376,11 +390,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(331, 384);
+            this.label3.Location = new System.Drawing.Point(411, 333);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 25);
+            this.label3.Size = new System.Drawing.Size(183, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Your Financial Data";
             // 
@@ -390,19 +404,20 @@
             this.iconFinancialExplanation.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconFinancialExplanation.IconChar = FontAwesome.Sharp.IconChar.Wallet;
             this.iconFinancialExplanation.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconFinancialExplanation.IconSize = 56;
-            this.iconFinancialExplanation.Location = new System.Drawing.Point(377, 338);
+            this.iconFinancialExplanation.IconSize = 45;
+            this.iconFinancialExplanation.Location = new System.Drawing.Point(457, 296);
+            this.iconFinancialExplanation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconFinancialExplanation.Name = "iconFinancialExplanation";
-            this.iconFinancialExplanation.Size = new System.Drawing.Size(70, 56);
+            this.iconFinancialExplanation.Size = new System.Drawing.Size(70, 45);
             this.iconFinancialExplanation.TabIndex = 3;
             this.iconFinancialExplanation.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(88, 409);
+            this.label2.Location = new System.Drawing.Point(168, 353);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 20);
             this.label2.TabIndex = 5;
@@ -411,11 +426,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(120, 384);
+            this.label1.Location = new System.Drawing.Point(200, 333);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.Size = new System.Drawing.Size(124, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Savings Plan";
             // 
@@ -425,19 +440,20 @@
             this.iconSavingsExplanation.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconSavingsExplanation.IconChar = FontAwesome.Sharp.IconChar.MoneyBillAlt;
             this.iconSavingsExplanation.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconSavingsExplanation.IconSize = 56;
-            this.iconSavingsExplanation.Location = new System.Drawing.Point(145, 338);
+            this.iconSavingsExplanation.IconSize = 45;
+            this.iconSavingsExplanation.Location = new System.Drawing.Point(225, 296);
+            this.iconSavingsExplanation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconSavingsExplanation.Name = "iconSavingsExplanation";
-            this.iconSavingsExplanation.Size = new System.Drawing.Size(70, 56);
+            this.iconSavingsExplanation.Size = new System.Drawing.Size(70, 45);
             this.iconSavingsExplanation.TabIndex = 3;
             this.iconSavingsExplanation.TabStop = false;
             // 
             // labelStonksExplanation
             // 
             this.labelStonksExplanation.AutoSize = true;
-            this.labelStonksExplanation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelStonksExplanation.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.labelStonksExplanation.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelStonksExplanation.Location = new System.Drawing.Point(239, 155);
+            this.labelStonksExplanation.Location = new System.Drawing.Point(319, 150);
             this.labelStonksExplanation.Name = "labelStonksExplanation";
             this.labelStonksExplanation.Size = new System.Drawing.Size(362, 28);
             this.labelStonksExplanation.TabIndex = 2;
@@ -446,11 +462,11 @@
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI Light", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI Light", 34F);
             this.labelWelcome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelWelcome.Location = new System.Drawing.Point(317, 74);
+            this.labelWelcome.Location = new System.Drawing.Point(397, 85);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(271, 76);
+            this.labelWelcome.Size = new System.Drawing.Size(272, 76);
             this.labelWelcome.TabIndex = 1;
             this.labelWelcome.Text = "Welcome!";
             // 
@@ -460,17 +476,18 @@
             this.iconPictureBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.iconPictureBox1.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconPictureBox1.IconSize = 74;
-            this.iconPictureBox1.Location = new System.Drawing.Point(239, 74);
+            this.iconPictureBox1.IconSize = 59;
+            this.iconPictureBox1.Location = new System.Drawing.Point(319, 85);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(85, 74);
+            this.iconPictureBox1.Size = new System.Drawing.Size(85, 59);
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
             this.label5.Location = new System.Drawing.Point(88, 409);
             this.label5.Name = "label5";
@@ -481,7 +498,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
             this.label6.Location = new System.Drawing.Point(120, 384);
             this.label6.Name = "label6";
@@ -505,7 +522,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
             this.label7.Location = new System.Drawing.Point(345, 409);
             this.label7.Name = "label7";
@@ -516,7 +533,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
             this.label8.Location = new System.Drawing.Point(331, 384);
             this.label8.Name = "label8";
@@ -546,16 +563,17 @@
             // 
             // Stonks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 653);
+            this.ClientSize = new System.Drawing.Size(1182, 603);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1300, 800);
-            this.MinimumSize = new System.Drawing.Size(1000, 700);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1500, 850);
+            this.MinimumSize = new System.Drawing.Size(1200, 650);
             this.Name = "Stonks";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

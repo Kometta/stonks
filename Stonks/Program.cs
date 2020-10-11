@@ -15,7 +15,7 @@ namespace Stonks
         static void Main()
         {
             financialPlan = BinarySerialization.ReadFromBinaryFile<FinancialPlan>(saveFilePath);
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            //Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Stonks());

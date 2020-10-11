@@ -9,6 +9,7 @@ namespace Stonks
     {
         public double Income { get; set; }
         public double Savings { get; set; }
+        public double PlannedSavings { get; set; }
         private List<FinancialGoal> FinancialGoals { get; set; }
         private List<Expense> Expenses { get; set; }
 
@@ -77,6 +78,16 @@ namespace Stonks
             if (recalculate)
                 RefreshSavings();
             return Savings;
+        }
+
+        public double GetPlannedSavings() {
+            PlannedSavings = Income;
+
+            foreach (Expense expense in Expenses) {
+                PlannedSavings -= expense.PlannedValue;
+            }
+
+            return PlannedSavings;
         }
 
         public void RefreshSavings()

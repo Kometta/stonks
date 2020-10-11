@@ -126,6 +126,7 @@ namespace Stonks
         private void ProgressBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new FormProgress());
         }
 
         private void UserDataBtn_Click(object sender, EventArgs e)
