@@ -24,3 +24,9 @@ Created Windows Forms Desktop application. The demo consists of:
   4. Added Savings in Financial plan class, the Savings variable is used in Dashboard and SmartSaver
   5. Added Planned values to Expenses class
   6. Added actual VS planned values labels in Smart Saver
+## Week 4 Refactoring code, fixing bugs and adding Progress charts
+  1. Added Progress form with chart of Planned expenses and Actual monthly expenses
+  2. Refactored repeating code with the use of dictionaries
+  3. Started working on the addition of goals in Smart Saver
+  4. Switched from .NET Core framework to .NET Framework due to the inability to use Charts in .NET Core
+  5. Savings display Planned VS Actual in Smart Saver 
