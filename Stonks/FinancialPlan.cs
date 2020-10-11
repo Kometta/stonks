@@ -29,25 +29,13 @@ namespace Stonks
             return FinancialGoals.Remove(goal);
         }
 
-        //returns false if expense of same type already exists
-        public bool AddExpense(Expense expense)
+        //adds new or replaces existing expense
+        public void AddExpense(Expense expense)
         {
             if (Expenses.Select(x => x.Type == expense.Type).Count() != 0)
-                return false;
-            
-            Expenses.Add(expense);
-            return true;
-        }
+                Expenses.RemoveAll(x => x.Type == expense.Type);
 
-        //returns false if expense of same type does not exist
-        public bool ModifyExpense(Expense expense)
-        {
-            if (Expenses.Select(x => x.Type == expense.Type).Count() == 0)
-                return false;
-
-            Expenses.RemoveAll(x => x.Type == expense.Type);
             Expenses.Add(expense);
-            return true;
         }
 
         //returns false if item not found

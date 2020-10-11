@@ -209,7 +209,7 @@
             this.labelUtilities.Size = new System.Drawing.Size(78, 28);
             this.labelUtilities.TabIndex = 0;
             this.labelUtilities.Text = "Utilities";
-            this.labelUtilities.Click += new System.EventHandler(this.labelUtilities_Click);
+            this.labelUtilities.Click += new System.EventHandler(this.LabelUtilities_Click);
             // 
             // textBoxUtilities
             // 
@@ -265,7 +265,7 @@
             this.buttonSaveFinances.TabIndex = 5;
             this.buttonSaveFinances.Text = "Save Info";
             this.buttonSaveFinances.UseVisualStyleBackColor = false;
-            this.buttonSaveFinances.Click += new System.EventHandler(this.buttonSaveFinances_Click);
+            this.buttonSaveFinances.Click += new System.EventHandler(this.ButtonSaveFinances_Click);
             // 
             // MyFinances
             // 
