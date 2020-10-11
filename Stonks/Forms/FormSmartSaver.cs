@@ -135,6 +135,7 @@ namespace Stonks.Forms
                 trackBarSavings.Minimum = Convert.ToInt32(income * (-1));
                 trackBarSavings.Maximum = Convert.ToInt32(income);
                 trackBarSavings.Value = Convert.ToInt32(savings);
+                labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
                 labelSavings.Text = (savings).ToString("€#.#");
             }
             catch
@@ -152,12 +153,14 @@ namespace Stonks.Forms
         }
 
         double savings = Program.financialPlan.Savings;
+
         //Changing label values depending on the sliders
         private void trackBarHousing_Scroll(object sender, EventArgs e)
         {
             var value = trackBarHousing.Value;
             labelHousingExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Housing).Value});
+            updatePlannedSavings();
         }
 
         private void trackBarGroceries_Scroll(object sender, EventArgs e)
@@ -165,6 +168,7 @@ namespace Stonks.Forms
             var value = trackBarGroceries.Value;
             labelGroceriesExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Groceries).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarTransport_Scroll(object sender, EventArgs e)
@@ -172,6 +176,7 @@ namespace Stonks.Forms
             var value = trackBarTransport.Value;
             labelTransportExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Transport).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarEntertainment_Scroll(object sender, EventArgs e)
@@ -179,6 +184,7 @@ namespace Stonks.Forms
             var value = trackBarEntertainment.Value;
             labelEntertainmentExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Entertainment).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarHealth_Scroll(object sender, EventArgs e)
@@ -186,6 +192,7 @@ namespace Stonks.Forms
             var value = trackBarHealth.Value;
             labelHealthExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Health).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarShopping_Scroll(object sender, EventArgs e)
@@ -193,6 +200,7 @@ namespace Stonks.Forms
             var value = trackBarShopping.Value;
             labelShoppingExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Shopping).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarUtilities_Scroll(object sender, EventArgs e)
@@ -200,6 +208,7 @@ namespace Stonks.Forms
             var value = trackBarUtilities.Value;
             labelUtilitiesExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Utilities).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarOther_Scroll(object sender, EventArgs e)
@@ -207,23 +216,33 @@ namespace Stonks.Forms
             var value = trackBarOther.Value;
             labelOtherExpense.Text = (value).ToString("€#.#");
             Program.financialPlan.ModifyExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Other).Value });
+            updatePlannedSavings();
         }
 
         private void trackBarSavings_Scroll(object sender, EventArgs e)
         {
             var value = trackBarSavings.Value;
             labelSavings.Text = (value).ToString("€#.#");
+            updatePlannedSavings();
         }
 
         private void btnAddGoal_Click(object sender, EventArgs e)
         {
+            AddGoalForm dialog = new AddGoalForm();
+            dialog.ShowDialog();
+            //TextBox goal = dialog.textBoxGoalName;
             if (btnAddGoal.Top < 500) {
                 btnAddGoal.Top += 60;
+                //label.Text = goal.Text;
             }
             else
             {
                 btnAddGoal.BackColor = System.Drawing.Color.Gray;
             }
+        }
+
+        private void updatePlannedSavings() {
+            labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
         }
     }
 }

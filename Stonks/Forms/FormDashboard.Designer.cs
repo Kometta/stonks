@@ -45,31 +45,31 @@ namespace Stonks.Forms
             // labelEarningsName
             // 
             this.labelEarningsName.AutoSize = true;
-            this.labelEarningsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEarningsName.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.labelEarningsName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelEarningsName.Location = new System.Drawing.Point(79, 70);
+            this.labelEarningsName.Location = new System.Drawing.Point(146, 71);
             this.labelEarningsName.Name = "labelEarningsName";
-            this.labelEarningsName.Size = new System.Drawing.Size(107, 31);
+            this.labelEarningsName.Size = new System.Drawing.Size(110, 32);
             this.labelEarningsName.TabIndex = 0;
             this.labelEarningsName.Text = "Earnings:";
             // 
             // labelSavingsName
             // 
             this.labelSavingsName.AutoSize = true;
-            this.labelSavingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSavingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.labelSavingsName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSavingsName.Location = new System.Drawing.Point(622, 70);
+            this.labelSavingsName.Location = new System.Drawing.Point(685, 71);
             this.labelSavingsName.Name = "labelSavingsName";
-            this.labelSavingsName.Size = new System.Drawing.Size(97, 31);
+            this.labelSavingsName.Size = new System.Drawing.Size(101, 32);
             this.labelSavingsName.TabIndex = 0;
             this.labelSavingsName.Text = "Savings:";
             // 
             // labelEarnings
             // 
             this.labelEarnings.AutoSize = true;
-            this.labelEarnings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEarnings.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.labelEarnings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelEarnings.Location = new System.Drawing.Point(101, 101);
+            this.labelEarnings.Location = new System.Drawing.Point(168, 96);
             this.labelEarnings.Name = "labelEarnings";
             this.labelEarnings.Size = new System.Drawing.Size(49, 28);
             this.labelEarnings.TabIndex = 1;
@@ -78,9 +78,9 @@ namespace Stonks.Forms
             // labelSavings
             // 
             this.labelSavings.AutoSize = true;
-            this.labelSavings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSavings.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.labelSavings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSavings.Location = new System.Drawing.Point(642, 101);
+            this.labelSavings.Location = new System.Drawing.Point(705, 96);
             this.labelSavings.Name = "labelSavings";
             this.labelSavings.Size = new System.Drawing.Size(49, 28);
             this.labelSavings.TabIndex = 1;
@@ -89,20 +89,20 @@ namespace Stonks.Forms
             // labelSpendingsName
             // 
             this.labelSpendingsName.AutoSize = true;
-            this.labelSpendingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSpendingsName.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.labelSpendingsName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSpendingsName.Location = new System.Drawing.Point(338, 70);
+            this.labelSpendingsName.Location = new System.Drawing.Point(401, 71);
             this.labelSpendingsName.Name = "labelSpendingsName";
-            this.labelSpendingsName.Size = new System.Drawing.Size(127, 31);
+            this.labelSpendingsName.Size = new System.Drawing.Size(132, 32);
             this.labelSpendingsName.TabIndex = 0;
             this.labelSpendingsName.Text = "Spendings:";
             // 
             // labelSpendings
             // 
             this.labelSpendings.AutoSize = true;
-            this.labelSpendings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSpendings.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.labelSpendings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSpendings.Location = new System.Drawing.Point(369, 101);
+            this.labelSpendings.Location = new System.Drawing.Point(432, 96);
             this.labelSpendings.Name = "labelSpendings";
             this.labelSpendings.Size = new System.Drawing.Size(49, 28);
             this.labelSpendings.TabIndex = 1;
@@ -111,46 +111,48 @@ namespace Stonks.Forms
             // gaugeSavings
             // 
             this.gaugeSavings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.gaugeSavings.Location = new System.Drawing.Point(43, 178);
+            this.gaugeSavings.Location = new System.Drawing.Point(85, 179);
+            this.gaugeSavings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gaugeSavings.Name = "gaugeSavings";
-            this.gaugeSavings.Size = new System.Drawing.Size(306, 338);
+            this.gaugeSavings.Size = new System.Drawing.Size(306, 270);
             this.gaugeSavings.TabIndex = 2;
             // 
             // gaugeSpendings
             // 
-            this.gaugeSpendings.Location = new System.Drawing.Point(475, 216);
+            this.gaugeSpendings.Location = new System.Drawing.Point(549, 208);
+            this.gaugeSpendings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gaugeSpendings.Name = "gaugeSpendings";
-            this.gaugeSpendings.Size = new System.Drawing.Size(307, 283);
+            this.gaugeSpendings.Size = new System.Drawing.Size(307, 226);
             this.gaugeSpendings.TabIndex = 2;
             // 
             // labelRatioESAVE
             // 
             this.labelRatioESAVE.AutoSize = true;
-            this.labelRatioESAVE.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelRatioESAVE.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.labelRatioESAVE.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelRatioESAVE.Location = new System.Drawing.Point(43, 193);
+            this.labelRatioESAVE.Location = new System.Drawing.Point(103, 174);
             this.labelRatioESAVE.Name = "labelRatioESAVE";
-            this.labelRatioESAVE.Size = new System.Drawing.Size(277, 31);
+            this.labelRatioESAVE.Size = new System.Drawing.Size(288, 32);
             this.labelRatioESAVE.TabIndex = 0;
             this.labelRatioESAVE.Text = "Earnings to Savings Ratio:";
             // 
             // labelRatioESPEND
             // 
             this.labelRatioESPEND.AutoSize = true;
-            this.labelRatioESPEND.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelRatioESPEND.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.labelRatioESPEND.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelRatioESPEND.Location = new System.Drawing.Point(475, 193);
+            this.labelRatioESPEND.Location = new System.Drawing.Point(543, 174);
             this.labelRatioESPEND.Name = "labelRatioESPEND";
-            this.labelRatioESPEND.Size = new System.Drawing.Size(307, 31);
+            this.labelRatioESPEND.Size = new System.Drawing.Size(319, 32);
             this.labelRatioESPEND.TabIndex = 0;
             this.labelRatioESPEND.Text = "Earnings to Spendings Ratio:";
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(900, 548);
+            this.ClientSize = new System.Drawing.Size(944, 495);
             this.Controls.Add(this.labelRatioESPEND);
             this.Controls.Add(this.labelRatioESAVE);
             this.Controls.Add(this.gaugeSpendings);
@@ -161,6 +163,7 @@ namespace Stonks.Forms
             this.Controls.Add(this.labelEarnings);
             this.Controls.Add(this.labelSavingsName);
             this.Controls.Add(this.labelEarningsName);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormDashboard_Load);

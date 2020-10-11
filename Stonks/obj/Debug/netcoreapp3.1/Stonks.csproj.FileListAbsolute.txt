@@ -45,3 +45,4 @@ C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\bin\Debug\netcoreapp3.1\L
 C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\bin\Debug\netcoreapp3.1\LiveCharts.Wpf.dll
 C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.csproj.CoreCompileInputs.cache
 C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.csprojAssemblyReference.cache
+C:\Users\mjaka\OneDrive\Documents\GitHub\stonks\Stonks\obj\Debug\netcoreapp3.1\Stonks.Forms.AddGoalForm.resources
