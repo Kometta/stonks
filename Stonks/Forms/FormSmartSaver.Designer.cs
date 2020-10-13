@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelSpendingsSlider = new System.Windows.Forms.Label();
             this.trackBarHousing = new System.Windows.Forms.TrackBar();
             this.trackBarGroceries = new System.Windows.Forms.TrackBar();
@@ -70,6 +71,7 @@
             this.iconTransport = new FontAwesome.Sharp.IconPictureBox();
             this.iconGroceries = new FontAwesome.Sharp.IconPictureBox();
             this.iconHousing = new FontAwesome.Sharp.IconPictureBox();
+            this.iconName = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarHousing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGroceries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTransport)).BeginInit();
@@ -469,6 +471,7 @@
             this.iconPictureBox1.Size = new System.Drawing.Size(60, 45);
             this.iconPictureBox1.TabIndex = 4;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.MouseHover += new System.EventHandler(this.iconPictureBox1_MouseHover);
             // 
             // iconOther
             // 
@@ -482,6 +485,7 @@
             this.iconOther.Size = new System.Drawing.Size(40, 32);
             this.iconOther.TabIndex = 3;
             this.iconOther.TabStop = false;
+            this.iconOther.MouseHover += new System.EventHandler(this.iconOther_MouseHover);
             // 
             // iconUtilities
             // 
@@ -495,6 +499,7 @@
             this.iconUtilities.Size = new System.Drawing.Size(40, 32);
             this.iconUtilities.TabIndex = 3;
             this.iconUtilities.TabStop = false;
+            this.iconUtilities.MouseHover += new System.EventHandler(this.iconUtilities_MouseHover);
             // 
             // iconShopping
             // 
@@ -508,6 +513,7 @@
             this.iconShopping.Size = new System.Drawing.Size(40, 32);
             this.iconShopping.TabIndex = 3;
             this.iconShopping.TabStop = false;
+            this.iconShopping.MouseHover += new System.EventHandler(this.iconShopping_MouseHover);
             // 
             // iconHealth
             // 
@@ -521,6 +527,7 @@
             this.iconHealth.Size = new System.Drawing.Size(40, 32);
             this.iconHealth.TabIndex = 3;
             this.iconHealth.TabStop = false;
+            this.iconHealth.MouseHover += new System.EventHandler(this.iconHealth_MouseHover);
             // 
             // iconEntertainment
             // 
@@ -534,6 +541,7 @@
             this.iconEntertainment.Size = new System.Drawing.Size(40, 32);
             this.iconEntertainment.TabIndex = 3;
             this.iconEntertainment.TabStop = false;
+            this.iconEntertainment.MouseHover += new System.EventHandler(this.iconEntertainment_MouseHover);
             // 
             // iconTransport
             // 
@@ -547,6 +555,7 @@
             this.iconTransport.Size = new System.Drawing.Size(40, 32);
             this.iconTransport.TabIndex = 3;
             this.iconTransport.TabStop = false;
+            this.iconTransport.MouseHover += new System.EventHandler(this.iconTransport_MouseHover);
             // 
             // iconGroceries
             // 
@@ -560,6 +569,7 @@
             this.iconGroceries.Size = new System.Drawing.Size(40, 32);
             this.iconGroceries.TabIndex = 3;
             this.iconGroceries.TabStop = false;
+            this.iconGroceries.MouseHover += new System.EventHandler(this.iconGroceries_MouseHover);
             // 
             // iconHousing
             // 
@@ -573,6 +583,11 @@
             this.iconHousing.Size = new System.Drawing.Size(40, 32);
             this.iconHousing.TabIndex = 3;
             this.iconHousing.TabStop = false;
+            this.iconHousing.MouseHover += new System.EventHandler(this.iconHousing_MouseHover);
+            // 
+            // iconName
+            // 
+            this.iconName.AutomaticDelay = 200;
             // 
             // FormSmartSaver
             // 
@@ -693,5 +708,6 @@
         private System.Windows.Forms.Label labelOtherExpensesActual;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelPlannedSavings;
+        private System.Windows.Forms.ToolTip iconName;
     }
 }
