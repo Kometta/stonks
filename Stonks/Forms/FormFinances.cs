@@ -11,23 +11,6 @@ using System.Windows.Forms;
 namespace Stonks.Forms
 {
 
-    public static class DictionaryExtensions
-    {
-        public static Dictionary<ExpenseType, TextBox> AddBoxExpenseType(this Dictionary<ExpenseType, TextBox> source, ExpenseType key, TextBox value) 
-        {
-            source.Add(key, value);
-            return source;
-        }
-
-        public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
-        {
-            foreach (T item in enumeration)
-            {
-                action(item);
-            }
-        }
-    }
-
     public partial class MyFinances : Form
     {
         Dictionary<ExpenseType, TextBox> BoxExpenseType;
@@ -91,7 +74,24 @@ namespace Stonks.Forms
             }
 
             //Expenses
-            BoxExpenseType.ForEach(x => Program.financialPlan.AddExpense(new Expense(x.Key, Convert.ToDouble(x.Value.Text), 0)));
+            BoxExpenseType.ForEach(x => Program.financialPlan.AddExpense(new Expense(x.Key, Convert.ToDouble(x.Value.Text), Convert.ToDouble(x.Value.Text))));
+        }
+    }
+
+    public static class DictionaryExtensions
+    {
+        public static Dictionary<ExpenseType, TextBox> AddBoxExpenseType(this Dictionary<ExpenseType, TextBox> source, ExpenseType key, TextBox value)
+        {
+            source.Add(key, value);
+            return source;
+        }
+
+        public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
+        {
+            foreach (T item in enumeration)
+            {
+                action(item);
+            }
         }
     }
 }
