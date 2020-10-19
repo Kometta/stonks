@@ -7,16 +7,28 @@ namespace Stonks
     {
         public double Value { get; set; }
         public String Name { get; set; }
-        public DateTime Deadline { get; set; }
+        public double AllocatedFunds { get; set; }
+        public double MonthsToDeadline { get; set; }
 
-        public TimeSpan GetTimeToDeadline()
+        public void SetDeadline(DateTime dealineIn)
         {
-            return Deadline.Subtract(DateTime.Now);
+            MonthsToDeadline = (DateTime.Now - dealineIn).TotalDays / 30;
         }
 
-        public void SetDeadlineInTimeSpan(TimeSpan dealineIn)
+        public double GetDeadline()
         {
-            Deadline = DateTime.Now.Add(dealineIn);
+            return Value / AllocatedFunds;
+        }
+
+        public void SetAllocatedFunds()
+        {
+            AllocatedFunds = Value / MonthsToDeadline;
+        }
+
+        public double GetAllocatedFunds()
+        {
+            SetAllocatedFunds();
+            return AllocatedFunds;
         }
     }
 }
