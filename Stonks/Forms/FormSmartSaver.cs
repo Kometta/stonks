@@ -140,7 +140,7 @@ namespace Stonks.Forms
             }
             catch
             {
-                trackBarSavings.Value = -1000;
+                trackBarSavings.Value = 0;
                 labelSavings.Text = (savings).ToString("€#.#");
             }
             
