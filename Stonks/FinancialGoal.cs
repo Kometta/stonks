@@ -10,25 +10,16 @@ namespace Stonks
         public double AllocatedFunds { get; set; }
         public double MonthsToDeadline { get; set; }
 
-        public void SetDeadline(DateTime dealineIn)
+        public void SetFundsByDeadline(DateTime dealineIn)
         {
             MonthsToDeadline = (DateTime.Now - dealineIn).TotalDays / 30;
-        }
-
-        public double GetDeadline()
-        {
-            return Value / AllocatedFunds;
-        }
-
-        public void SetAllocatedFunds()
-        {
             AllocatedFunds = Value / MonthsToDeadline;
         }
 
-        public double GetAllocatedFunds()
+        public void SetDeadlineByFunds(double value)
         {
-            SetAllocatedFunds();
-            return AllocatedFunds;
+            AllocatedFunds = value;
+            MonthsToDeadline = Value / AllocatedFunds;
         }
     }
 }
