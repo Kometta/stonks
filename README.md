@@ -30,3 +30,8 @@ Created Windows Forms Desktop application. The demo consists of:
   3. Started working on the addition of goals in Smart Saver
   4. Switched from .NET Core framework to .NET Framework due to the inability to use Charts in .NET Core
   5. Savings display Planned VS Actual in Smart Saver 
+## Week 5 Adding goals, fixing bugs, improving calculations
+  1. Added functions for Goal deadline and fund allocation relationship
+  2. Fixed code structure bug in FormFinances (My finances)
+  3. Resctuctured code in FormSmartSaver
+  4. Added functionality of goals
