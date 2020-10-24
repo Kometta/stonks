@@ -19,6 +19,15 @@ namespace Stonks
             Expenses = new List<Expense>();
         }
 
+        public FinancialPlan (FinancialPlan copyFrom)
+        {
+            Income = copyFrom.Income;
+            Savings = copyFrom.Savings;
+            PlannedSavings = copyFrom.PlannedSavings;
+            FinancialGoals = copyFrom.FinancialGoals;
+            Expenses = copyFrom.Expenses;
+        }
+
         public void AddFinancialGoal(FinancialGoal goal)
         {
             FinancialGoals.Add(goal);
