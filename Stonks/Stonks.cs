@@ -145,7 +145,7 @@ namespace Stonks
         {
             DisableButton();
             leftBorderBtn.Visible = false;
-            iconCurrentChildForm.IconChar = IconChar.Home;
+            iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             TitleChildForm.Text = "Welcome";
         }
