@@ -13,6 +13,7 @@ namespace Stonks.Forms
             setTrackBarValues();
             labelStop.Visible = false;
             InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this);
+            InitializeUI.LoadCurrentDate(labelDate);
         }
 
         private void FormSmartSaver_Load(object sender, EventArgs e)

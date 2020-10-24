@@ -39,6 +39,10 @@ namespace Stonks
             }
         }
 
+        public static void LoadCurrentDate(Label labelDate) {
+            labelDate.Text = DateTime.Now.ToString("yyyy-M-dd");
+        }
+
         public static void SavePlannedValues(Label labelExpense, TrackBar trackBar, ExpenseType type)
         {
             var value = trackBar.Value;
@@ -112,17 +116,16 @@ namespace Stonks
             };
             currentForm.Controls.Add(goalPrice);
 
-
-            //Adding a label for the ammount that it will take to reach the goal
-            /* Label goalTime = new System.Windows.Forms.Label
-             {
-                 Location = new Point(locX + 10, locY + 50),
-                 Text =  "At this rate you will reach your goal in:",
-                 AutoSize = true,
-                 Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold),
-                 ForeColor = System.Drawing.Color.Gainsboro
-             };
-             currentForm.Controls.Add(goalTime);*/
+            //LABEL ESTIMATED TIME
+            Label estimatedTime = new System.Windows.Forms.Label
+            {
+                Location = new Point(locX + 340, locY), //Change Y depending on the goal ammount
+                Text = (Convert.ToInt32(goalConverted / Program.financialPlan.Savings)).ToString("# months"),
+                AutoSize = true,
+                Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold),
+                ForeColor = System.Drawing.Color.Gainsboro
+            };
+            currentForm.Controls.Add(estimatedTime);
         }
 
         public static int GetGoalLength()

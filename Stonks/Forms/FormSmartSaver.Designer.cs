@@ -75,8 +75,10 @@
             this.labelStop = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.iconName = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.labelDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarHousing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGroceries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTransport)).BeginInit();
@@ -102,7 +104,7 @@
             this.labelSpendingsSlider.AutoSize = true;
             this.labelSpendingsSlider.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.labelSpendingsSlider.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelSpendingsSlider.Location = new System.Drawing.Point(102, 15);
+            this.labelSpendingsSlider.Location = new System.Drawing.Point(103, 50);
             this.labelSpendingsSlider.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSpendingsSlider.Name = "labelSpendingsSlider";
             this.labelSpendingsSlider.Size = new System.Drawing.Size(94, 21);
@@ -111,7 +113,7 @@
             // 
             // trackBarHousing
             // 
-            this.trackBarHousing.Location = new System.Drawing.Point(82, 42);
+            this.trackBarHousing.Location = new System.Drawing.Point(83, 77);
             this.trackBarHousing.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarHousing.Maximum = 100;
             this.trackBarHousing.Name = "trackBarHousing";
@@ -123,7 +125,7 @@
             // 
             // trackBarGroceries
             // 
-            this.trackBarGroceries.Location = new System.Drawing.Point(82, 84);
+            this.trackBarGroceries.Location = new System.Drawing.Point(83, 119);
             this.trackBarGroceries.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarGroceries.Maximum = 100;
             this.trackBarGroceries.Name = "trackBarGroceries";
@@ -134,7 +136,7 @@
             // 
             // trackBarTransport
             // 
-            this.trackBarTransport.Location = new System.Drawing.Point(82, 132);
+            this.trackBarTransport.Location = new System.Drawing.Point(83, 167);
             this.trackBarTransport.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarTransport.Maximum = 100;
             this.trackBarTransport.Name = "trackBarTransport";
@@ -145,7 +147,7 @@
             // 
             // trackBarEntertainment
             // 
-            this.trackBarEntertainment.Location = new System.Drawing.Point(82, 171);
+            this.trackBarEntertainment.Location = new System.Drawing.Point(83, 206);
             this.trackBarEntertainment.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarEntertainment.Maximum = 100;
             this.trackBarEntertainment.Name = "trackBarEntertainment";
@@ -156,7 +158,7 @@
             // 
             // trackBarHealth
             // 
-            this.trackBarHealth.Location = new System.Drawing.Point(82, 211);
+            this.trackBarHealth.Location = new System.Drawing.Point(83, 246);
             this.trackBarHealth.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarHealth.Maximum = 100;
             this.trackBarHealth.Name = "trackBarHealth";
@@ -167,7 +169,7 @@
             // 
             // trackBarShopping
             // 
-            this.trackBarShopping.Location = new System.Drawing.Point(82, 252);
+            this.trackBarShopping.Location = new System.Drawing.Point(83, 287);
             this.trackBarShopping.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarShopping.Maximum = 100;
             this.trackBarShopping.Name = "trackBarShopping";
@@ -178,7 +180,7 @@
             // 
             // trackBarUtilities
             // 
-            this.trackBarUtilities.Location = new System.Drawing.Point(82, 298);
+            this.trackBarUtilities.Location = new System.Drawing.Point(83, 333);
             this.trackBarUtilities.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarUtilities.Maximum = 100;
             this.trackBarUtilities.Name = "trackBarUtilities";
@@ -189,7 +191,7 @@
             // 
             // trackBarOther
             // 
-            this.trackBarOther.Location = new System.Drawing.Point(82, 339);
+            this.trackBarOther.Location = new System.Drawing.Point(83, 374);
             this.trackBarOther.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarOther.Maximum = 100;
             this.trackBarOther.Name = "trackBarOther";
@@ -253,7 +255,7 @@
             this.labelHousingExpense.AutoSize = true;
             this.labelHousingExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelHousingExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelHousingExpense.Location = new System.Drawing.Point(196, 42);
+            this.labelHousingExpense.Location = new System.Drawing.Point(197, 77);
             this.labelHousingExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHousingExpense.Name = "labelHousingExpense";
             this.labelHousingExpense.Size = new System.Drawing.Size(37, 19);
@@ -265,7 +267,7 @@
             this.labelGroceriesExpense.AutoSize = true;
             this.labelGroceriesExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelGroceriesExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelGroceriesExpense.Location = new System.Drawing.Point(196, 84);
+            this.labelGroceriesExpense.Location = new System.Drawing.Point(197, 119);
             this.labelGroceriesExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelGroceriesExpense.Name = "labelGroceriesExpense";
             this.labelGroceriesExpense.Size = new System.Drawing.Size(37, 19);
@@ -277,7 +279,7 @@
             this.labelTransportExpense.AutoSize = true;
             this.labelTransportExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelTransportExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelTransportExpense.Location = new System.Drawing.Point(196, 132);
+            this.labelTransportExpense.Location = new System.Drawing.Point(197, 167);
             this.labelTransportExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTransportExpense.Name = "labelTransportExpense";
             this.labelTransportExpense.Size = new System.Drawing.Size(37, 19);
@@ -289,7 +291,7 @@
             this.labelEntertainmentExpense.AutoSize = true;
             this.labelEntertainmentExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelEntertainmentExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelEntertainmentExpense.Location = new System.Drawing.Point(196, 171);
+            this.labelEntertainmentExpense.Location = new System.Drawing.Point(197, 206);
             this.labelEntertainmentExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEntertainmentExpense.Name = "labelEntertainmentExpense";
             this.labelEntertainmentExpense.Size = new System.Drawing.Size(37, 19);
@@ -301,7 +303,7 @@
             this.labelHealthExpense.AutoSize = true;
             this.labelHealthExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelHealthExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelHealthExpense.Location = new System.Drawing.Point(196, 211);
+            this.labelHealthExpense.Location = new System.Drawing.Point(197, 246);
             this.labelHealthExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHealthExpense.Name = "labelHealthExpense";
             this.labelHealthExpense.Size = new System.Drawing.Size(37, 19);
@@ -313,7 +315,7 @@
             this.labelShoppingExpense.AutoSize = true;
             this.labelShoppingExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelShoppingExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelShoppingExpense.Location = new System.Drawing.Point(196, 252);
+            this.labelShoppingExpense.Location = new System.Drawing.Point(197, 287);
             this.labelShoppingExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelShoppingExpense.Name = "labelShoppingExpense";
             this.labelShoppingExpense.Size = new System.Drawing.Size(37, 19);
@@ -325,7 +327,7 @@
             this.labelUtilitiesExpense.AutoSize = true;
             this.labelUtilitiesExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelUtilitiesExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelUtilitiesExpense.Location = new System.Drawing.Point(196, 298);
+            this.labelUtilitiesExpense.Location = new System.Drawing.Point(197, 333);
             this.labelUtilitiesExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUtilitiesExpense.Name = "labelUtilitiesExpense";
             this.labelUtilitiesExpense.Size = new System.Drawing.Size(37, 19);
@@ -337,7 +339,7 @@
             this.labelOtherExpense.AutoSize = true;
             this.labelOtherExpense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelOtherExpense.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelOtherExpense.Location = new System.Drawing.Point(196, 339);
+            this.labelOtherExpense.Location = new System.Drawing.Point(197, 374);
             this.labelOtherExpense.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelOtherExpense.Name = "labelOtherExpense";
             this.labelOtherExpense.Size = new System.Drawing.Size(37, 19);
@@ -360,7 +362,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(196, 28);
+            this.label3.Location = new System.Drawing.Point(197, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
@@ -372,7 +374,7 @@
             this.labelHousingExpensesActual.AutoSize = true;
             this.labelHousingExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelHousingExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelHousingExpensesActual.Location = new System.Drawing.Point(245, 42);
+            this.labelHousingExpensesActual.Location = new System.Drawing.Point(246, 77);
             this.labelHousingExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHousingExpensesActual.Name = "labelHousingExpensesActual";
             this.labelHousingExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -384,7 +386,7 @@
             this.labelGroceriesExpensesActual.AutoSize = true;
             this.labelGroceriesExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelGroceriesExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelGroceriesExpensesActual.Location = new System.Drawing.Point(245, 84);
+            this.labelGroceriesExpensesActual.Location = new System.Drawing.Point(246, 119);
             this.labelGroceriesExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelGroceriesExpensesActual.Name = "labelGroceriesExpensesActual";
             this.labelGroceriesExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -396,7 +398,7 @@
             this.labelTransportExpensesActual.AutoSize = true;
             this.labelTransportExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelTransportExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelTransportExpensesActual.Location = new System.Drawing.Point(245, 132);
+            this.labelTransportExpensesActual.Location = new System.Drawing.Point(246, 167);
             this.labelTransportExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTransportExpensesActual.Name = "labelTransportExpensesActual";
             this.labelTransportExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -408,7 +410,7 @@
             this.labelEntertainmentExpensesActual.AutoSize = true;
             this.labelEntertainmentExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelEntertainmentExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelEntertainmentExpensesActual.Location = new System.Drawing.Point(245, 171);
+            this.labelEntertainmentExpensesActual.Location = new System.Drawing.Point(246, 206);
             this.labelEntertainmentExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEntertainmentExpensesActual.Name = "labelEntertainmentExpensesActual";
             this.labelEntertainmentExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -420,7 +422,7 @@
             this.labelHealthExpensesActual.AutoSize = true;
             this.labelHealthExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelHealthExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelHealthExpensesActual.Location = new System.Drawing.Point(245, 211);
+            this.labelHealthExpensesActual.Location = new System.Drawing.Point(246, 246);
             this.labelHealthExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHealthExpensesActual.Name = "labelHealthExpensesActual";
             this.labelHealthExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -432,7 +434,7 @@
             this.labelShoppingExpensesActual.AutoSize = true;
             this.labelShoppingExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelShoppingExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelShoppingExpensesActual.Location = new System.Drawing.Point(245, 252);
+            this.labelShoppingExpensesActual.Location = new System.Drawing.Point(246, 287);
             this.labelShoppingExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelShoppingExpensesActual.Name = "labelShoppingExpensesActual";
             this.labelShoppingExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -444,7 +446,7 @@
             this.labelUtilitiesExpensesActual.AutoSize = true;
             this.labelUtilitiesExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelUtilitiesExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelUtilitiesExpensesActual.Location = new System.Drawing.Point(245, 298);
+            this.labelUtilitiesExpensesActual.Location = new System.Drawing.Point(246, 333);
             this.labelUtilitiesExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUtilitiesExpensesActual.Name = "labelUtilitiesExpensesActual";
             this.labelUtilitiesExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -456,7 +458,7 @@
             this.labelOtherExpensesActual.AutoSize = true;
             this.labelOtherExpensesActual.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelOtherExpensesActual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelOtherExpensesActual.Location = new System.Drawing.Point(245, 339);
+            this.labelOtherExpensesActual.Location = new System.Drawing.Point(246, 374);
             this.labelOtherExpensesActual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelOtherExpensesActual.Name = "labelOtherExpensesActual";
             this.labelOtherExpensesActual.Size = new System.Drawing.Size(37, 19);
@@ -508,7 +510,7 @@
             this.iconOther.IconChar = FontAwesome.Sharp.IconChar.FolderMinus;
             this.iconOther.IconColor = System.Drawing.Color.Gainsboro;
             this.iconOther.IconSize = 26;
-            this.iconOther.Location = new System.Drawing.Point(48, 339);
+            this.iconOther.Location = new System.Drawing.Point(49, 374);
             this.iconOther.Margin = new System.Windows.Forms.Padding(2);
             this.iconOther.Name = "iconOther";
             this.iconOther.Size = new System.Drawing.Size(30, 26);
@@ -523,7 +525,7 @@
             this.iconUtilities.IconChar = FontAwesome.Sharp.IconChar.Wrench;
             this.iconUtilities.IconColor = System.Drawing.Color.Gainsboro;
             this.iconUtilities.IconSize = 26;
-            this.iconUtilities.Location = new System.Drawing.Point(48, 298);
+            this.iconUtilities.Location = new System.Drawing.Point(49, 333);
             this.iconUtilities.Margin = new System.Windows.Forms.Padding(2);
             this.iconUtilities.Name = "iconUtilities";
             this.iconUtilities.Size = new System.Drawing.Size(30, 26);
@@ -538,7 +540,7 @@
             this.iconShopping.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
             this.iconShopping.IconColor = System.Drawing.Color.Gainsboro;
             this.iconShopping.IconSize = 26;
-            this.iconShopping.Location = new System.Drawing.Point(48, 252);
+            this.iconShopping.Location = new System.Drawing.Point(49, 287);
             this.iconShopping.Margin = new System.Windows.Forms.Padding(2);
             this.iconShopping.Name = "iconShopping";
             this.iconShopping.Size = new System.Drawing.Size(30, 26);
@@ -553,7 +555,7 @@
             this.iconHealth.IconChar = FontAwesome.Sharp.IconChar.Heartbeat;
             this.iconHealth.IconColor = System.Drawing.Color.Gainsboro;
             this.iconHealth.IconSize = 26;
-            this.iconHealth.Location = new System.Drawing.Point(48, 211);
+            this.iconHealth.Location = new System.Drawing.Point(49, 246);
             this.iconHealth.Margin = new System.Windows.Forms.Padding(2);
             this.iconHealth.Name = "iconHealth";
             this.iconHealth.Size = new System.Drawing.Size(30, 26);
@@ -568,7 +570,7 @@
             this.iconEntertainment.IconChar = FontAwesome.Sharp.IconChar.TicketAlt;
             this.iconEntertainment.IconColor = System.Drawing.Color.Gainsboro;
             this.iconEntertainment.IconSize = 26;
-            this.iconEntertainment.Location = new System.Drawing.Point(48, 169);
+            this.iconEntertainment.Location = new System.Drawing.Point(49, 204);
             this.iconEntertainment.Margin = new System.Windows.Forms.Padding(2);
             this.iconEntertainment.Name = "iconEntertainment";
             this.iconEntertainment.Size = new System.Drawing.Size(30, 26);
@@ -583,7 +585,7 @@
             this.iconTransport.IconChar = FontAwesome.Sharp.IconChar.Car;
             this.iconTransport.IconColor = System.Drawing.Color.Gainsboro;
             this.iconTransport.IconSize = 26;
-            this.iconTransport.Location = new System.Drawing.Point(48, 132);
+            this.iconTransport.Location = new System.Drawing.Point(49, 167);
             this.iconTransport.Margin = new System.Windows.Forms.Padding(2);
             this.iconTransport.Name = "iconTransport";
             this.iconTransport.Size = new System.Drawing.Size(30, 26);
@@ -598,7 +600,7 @@
             this.iconGroceries.IconChar = FontAwesome.Sharp.IconChar.Utensils;
             this.iconGroceries.IconColor = System.Drawing.Color.Gainsboro;
             this.iconGroceries.IconSize = 26;
-            this.iconGroceries.Location = new System.Drawing.Point(48, 84);
+            this.iconGroceries.Location = new System.Drawing.Point(49, 119);
             this.iconGroceries.Margin = new System.Windows.Forms.Padding(2);
             this.iconGroceries.Name = "iconGroceries";
             this.iconGroceries.Size = new System.Drawing.Size(30, 26);
@@ -613,17 +615,13 @@
             this.iconHousing.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconHousing.IconColor = System.Drawing.Color.Gainsboro;
             this.iconHousing.IconSize = 26;
-            this.iconHousing.Location = new System.Drawing.Point(48, 42);
+            this.iconHousing.Location = new System.Drawing.Point(49, 77);
             this.iconHousing.Margin = new System.Windows.Forms.Padding(2);
             this.iconHousing.Name = "iconHousing";
             this.iconHousing.Size = new System.Drawing.Size(30, 26);
             this.iconHousing.TabIndex = 3;
             this.iconHousing.TabStop = false;
             this.iconHousing.MouseHover += new System.EventHandler(this.iconHousing_MouseHover);
-            // 
-            // iconName
-            // 
-            this.iconName.AutomaticDelay = 200;
             // 
             // buttondelete
             // 
@@ -656,36 +654,65 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(743, 66);
+            this.label5.Location = new System.Drawing.Point(724, 66);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 21);
+            this.label5.Size = new System.Drawing.Size(90, 21);
             this.label5.TabIndex = 10;
-            this.label5.Text = "You will";
+            this.label5.Text = "Estimated ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(723, 84);
+            this.label6.Location = new System.Drawing.Point(738, 87);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 21);
+            this.label6.Size = new System.Drawing.Size(49, 21);
             this.label6.TabIndex = 11;
-            this.label6.Text = "reach your";
+            this.label6.Text = "time:";
             // 
-            // label7
+            // iconName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(734, 105);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 21);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "goal in:";
+            this.iconName.AutomaticDelay = 200;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Orange;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button1.Location = new System.Drawing.Point(90, 423);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 28);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Update Plan";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(11, 9);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 21);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Current Date:";
+            // 
+            // labelDate
+            // 
+            this.labelDate.AutoSize = true;
+            this.labelDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.labelDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelDate.Location = new System.Drawing.Point(126, 12);
+            this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(0, 17);
+            this.labelDate.TabIndex = 15;
             // 
             // FormSmartSaver
             // 
@@ -693,7 +720,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(828, 538);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelDate);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelStop);
@@ -817,7 +846,9 @@
         private System.Windows.Forms.Label labelStop;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolTip iconName;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelDate;
     }
 }
