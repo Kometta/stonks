@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Stonks.Forms
@@ -16,11 +11,12 @@ namespace Stonks.Forms
             Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
             this.Text = "Smart Saver";
             setTrackBarValues();
+            labelStop.Visible = false;
+            InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this);
         }
 
         private void FormSmartSaver_Load(object sender, EventArgs e)
         {
-
         }
 
         public void setTrackBarValues()
@@ -35,100 +31,17 @@ namespace Stonks.Forms
             var utilitiesExpense = Program.financialPlan.GetExpense(ExpenseType.Utilities);
             var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
             var savings = Program.financialPlan.Savings;
-            var max = Program.financialPlan.GetMaxExpense(); 
+            var max = Program.financialPlan.GetMaxExpense();
 
-            //Setting the values to represent the track bars
-            if (housingExpense != null) {
-                trackBarHousing.Maximum = Convert.ToInt32(max);
-                trackBarHousing.Value = Convert.ToInt32(housingExpense.PlannedValue); //Fix if value becomes higher than expense(just like savings?)
-                labelHousingExpense.Text = (housingExpense.PlannedValue).ToString("€#.#");
-                labelHousingExpensesActual.Text = (housingExpense.Value).ToString("€#.#");
-            }
-            else
-            {
-                trackBarHousing.Value = 0;
-            }
 
-            if (groceries != null)
-            {
-                trackBarGroceries.Maximum = Convert.ToInt32(max);
-                trackBarGroceries.Value = Convert.ToInt32(groceries.PlannedValue);
-                labelGroceriesExpense.Text = (groceries.PlannedValue).ToString("€#.#");
-                labelGroceriesExpensesActual.Text = (groceries.Value).ToString("€#.#");
-
-            }
-            else
-            {
-                trackBarGroceries.Value = 0;
-            }
-            if (entertainmentExpense != null)
-            {
-                trackBarEntertainment.Maximum = Convert.ToInt32(max);
-                trackBarEntertainment.Value = Convert.ToInt32(entertainmentExpense.PlannedValue);
-                labelEntertainmentExpense.Text = (entertainmentExpense.PlannedValue).ToString("€#.#");
-                labelEntertainmentExpensesActual.Text = (entertainmentExpense.Value).ToString("€#.#");
-            }
-            else
-            {
-                trackBarEntertainment.Value = 0;
-            }
-            if (transportExpense != null)
-            {
-                trackBarTransport.Maximum = Convert.ToInt32(max);
-                trackBarTransport.Value = Convert.ToInt32(transportExpense.PlannedValue);
-                labelTransportExpense.Text = (transportExpense.PlannedValue).ToString("€#.#");
-                labelTransportExpensesActual.Text = (transportExpense.Value).ToString("€#.#");
-
-            }
-            else
-            {
-                trackBarTransport.Value = 0;
-            }
-            if (healthExpense != null)
-            {
-                trackBarHealth.Maximum = Convert.ToInt32(max);
-                trackBarHealth.Value = Convert.ToInt32(healthExpense.PlannedValue);
-                labelHealthExpense.Text = (healthExpense.PlannedValue).ToString("€#.#");
-                labelHealthExpensesActual.Text = (healthExpense.Value).ToString("€#.#");
-            }
-            else
-            {
-                trackBarHealth.Value = 0;
-            }
-            if (shoppingExpense != null)
-            {
-                trackBarShopping.Maximum = Convert.ToInt32(max);
-                trackBarShopping.Value = Convert.ToInt32(shoppingExpense.PlannedValue);
-                labelShoppingExpense.Text = (shoppingExpense.PlannedValue).ToString("€#.#");
-                labelShoppingExpensesActual.Text = (shoppingExpense.Value).ToString("€#.#");
-
-            }
-            else
-            {
-                trackBarShopping.Value = 0;
-            }
-            if (utilitiesExpense != null)
-            {
-                trackBarUtilities.Maximum = Convert.ToInt32(max);
-                trackBarUtilities.Value = Convert.ToInt32(utilitiesExpense.PlannedValue);
-                labelUtilitiesExpense.Text = (utilitiesExpense.PlannedValue).ToString("€#.#");
-                labelUtilitiesExpensesActual.Text = (utilitiesExpense.Value).ToString("€#.#");
-            }
-            else
-            {
-                trackBarUtilities.Value = 0;
-            }
-            if (otherExpense != null)
-            {
-                trackBarOther.Maximum = Convert.ToInt32(max);
-                trackBarOther.Value = Convert.ToInt32(otherExpense.PlannedValue);
-                labelOtherExpense.Text = (otherExpense.PlannedValue).ToString("€#.#");
-                labelOtherExpensesActual.Text = (otherExpense.Value).ToString("€#.#");
-            }
-            else
-            {
-                trackBarOther.Value = 0;
-            }
+            InitializeUI.LoadTrackBars(housingExpense, trackBarHousing, labelHousingExpense, labelHousingExpensesActual, max);
+            InitializeUI.LoadTrackBars(groceries, trackBarGroceries, labelGroceriesExpense, labelGroceriesExpensesActual, max);
+            InitializeUI.LoadTrackBars(entertainmentExpense, trackBarEntertainment, labelEntertainmentExpense, labelEntertainmentExpensesActual, max);
+            InitializeUI.LoadTrackBars(transportExpense, trackBarTransport, labelTransportExpense, labelTransportExpensesActual, max);
+            InitializeUI.LoadTrackBars(healthExpense, trackBarHealth, labelHealthExpense, labelHealthExpensesActual, max);
+            InitializeUI.LoadTrackBars(shoppingExpense, trackBarShopping, labelShoppingExpense, labelShoppingExpensesActual, max);
+            InitializeUI.LoadTrackBars(utilitiesExpense, trackBarUtilities, labelUtilitiesExpense, labelUtilitiesExpensesActual, max);
+            InitializeUI.LoadTrackBars(otherExpense, trackBarOther, labelOtherExpense, labelOtherExpensesActual, max);
 
             try
             {
@@ -143,7 +56,7 @@ namespace Stonks.Forms
                 trackBarSavings.Value = 0;
                 labelSavings.Text = (savings).ToString("€#.#");
             }
-            
+
 
         }
 
@@ -152,97 +65,96 @@ namespace Stonks.Forms
 
         }
 
-        double savings = Program.financialPlan.Savings;
-
-        //Changing label values depending on the sliders
         private void trackBarHousing_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarHousing.Value;
-            labelHousingExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Housing, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Housing).Value});
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelHousingExpense, trackBarHousing, ExpenseType.Housing);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarGroceries_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarGroceries.Value;
-            labelGroceriesExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Groceries, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Groceries).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelGroceriesExpense, trackBarGroceries, ExpenseType.Groceries);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarTransport_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarTransport.Value;
-            labelTransportExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Transport, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Transport).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelTransportExpense, trackBarTransport, ExpenseType.Transport);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarEntertainment_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarEntertainment.Value;
-            labelEntertainmentExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Entertainment, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Entertainment).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelEntertainmentExpense, trackBarEntertainment, ExpenseType.Entertainment);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarHealth_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarHealth.Value;
-            labelHealthExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Health, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Health).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelHealthExpense, trackBarHealth, ExpenseType.Health);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarShopping_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarShopping.Value;
-            labelShoppingExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Shopping, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Shopping).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelShoppingExpense, trackBarShopping, ExpenseType.Shopping);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarUtilities_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarUtilities.Value;
-            labelUtilitiesExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Utilities, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Utilities).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelUtilitiesExpense, trackBarUtilities, ExpenseType.Utilities);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarOther_Scroll(object sender, EventArgs e)
         {
-            var value = trackBarOther.Value;
-            labelOtherExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = ExpenseType.Other, PlannedValue = value, Value = Program.financialPlan.GetExpense(ExpenseType.Other).Value });
-            updatePlannedSavings();
+            InitializeUI.SavePlannedValues(labelOtherExpense, trackBarOther, ExpenseType.Other);
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void trackBarSavings_Scroll(object sender, EventArgs e)
         {
             var value = trackBarSavings.Value;
             labelSavings.Text = (value).ToString("€#.#");
-            updatePlannedSavings();
+            InitializeUI.UpdatePlannedSavings(labelPlannedSavings);
         }
 
         private void btnAddGoal_Click(object sender, EventArgs e)
         {
+            int lengthGoals = InitializeUI.GetGoalLength();
             AddGoalForm dialog = new AddGoalForm();
             dialog.ShowDialog();
-            //TextBox goal = dialog.textBoxGoalName;
-            if (btnAddGoal.Top < 500) {
-                btnAddGoal.Top += 60;
-                //label.Text = goal.Text;
-            }
-            else
-            {
-                btnAddGoal.BackColor = System.Drawing.Color.Gray;
-            }
+            String goalName = dialog.TextBoxGoal;
+            String goal = dialog.textBoxGoalPrice;
+            Int32 type = dialog.comboBoxGoalType;
+
+            InitializeUI.AddNewGoal(btnAddGoal, buttondelete, labelStop, lengthGoals, goalName, goal, type, this);
         }
 
-        private void updatePlannedSavings() {
-            labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
+        private void buttondelete_Click(object sender, EventArgs e)
+        {
+            FormDeleteGoal dialog = new FormDeleteGoal();
+            dialog.ShowDialog();
+            int goalToDelete = dialog.comboBox1.SelectedIndex;
+            int i = 0;
+
+            foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
+            {
+                if (i == goalToDelete)
+                {
+                    Program.financialPlan.RemoveFinancialGoal(goal);
+                    break;
+                }
+                i++;
+            }
+
+            this.Controls.Clear();
+            this.InitializeComponent();
+            Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
+            setTrackBarValues();
+            labelStop.Visible = false;
+            InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this);
         }
 
         private void iconHousing_MouseHover(object sender, EventArgs e)
@@ -277,7 +189,7 @@ namespace Stonks.Forms
 
         private void iconUtilities_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("utilities", iconUtilities);
+            iconName.Show("Utilities", iconUtilities);
         }
 
         private void iconOther_MouseHover(object sender, EventArgs e)

@@ -15,7 +15,7 @@ namespace Stonks
     }
 
     [Serializable]
-    class Expense
+    public class Expense
     {
         public ExpenseType Type { get; set; }
         public double Value { get; set; }
