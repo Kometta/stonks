@@ -22,7 +22,6 @@ namespace Stonks.Forms
 
         public void setTrackBarValues()
         {
-            var income = Program.financialPlan.Income;
             var housingExpense = Program.financialPlan.GetExpense(ExpenseType.Housing);
             var groceries = Program.financialPlan.GetExpense(ExpenseType.Groceries);
             var transportExpense = Program.financialPlan.GetExpense(ExpenseType.Transport);
@@ -31,7 +30,6 @@ namespace Stonks.Forms
             var shoppingExpense = Program.financialPlan.GetExpense(ExpenseType.Shopping);
             var utilitiesExpense = Program.financialPlan.GetExpense(ExpenseType.Utilities);
             var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
-            var savings = Program.financialPlan.Savings;
             var max = Program.financialPlan.GetMaxExpense();
 
 
@@ -44,21 +42,7 @@ namespace Stonks.Forms
             InitializeUI.LoadTrackBars(utilitiesExpense, trackBarUtilities, labelUtilitiesExpense, labelUtilitiesExpensesActual, max);
             InitializeUI.LoadTrackBars(otherExpense, trackBarOther, labelOtherExpense, labelOtherExpensesActual, max);
 
-            try
-            {
-                trackBarSavings.Minimum = Convert.ToInt32(income * (-1));
-                trackBarSavings.Maximum = Convert.ToInt32(income);
-                trackBarSavings.Value = Convert.ToInt32(savings);
-                labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
-                labelSavings.Text = (savings).ToString("€#.#");
-            }
-            catch
-            {
-                trackBarSavings.Value = 0;
-                labelSavings.Text = (savings).ToString("€#.#");
-            }
-
-
+            InitializeUI.LoadSavingsTrackBar(trackBarSavings, labelPlannedSavings, labelSavings);
         }
 
         private void trackBarHousing_ValueChange(object sender, EventArgs e)
@@ -138,17 +122,8 @@ namespace Stonks.Forms
             FormDeleteGoal dialog = new FormDeleteGoal();
             dialog.ShowDialog();
             int goalToDelete = dialog.comboBox1.SelectedIndex;
-            int i = 0;
 
-            foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
-            {
-                if (i == goalToDelete)
-                {
-                    Program.financialPlan.RemoveFinancialGoal(goal);
-                    break;
-                }
-                i++;
-            }
+            InitializeUI.RemoveGoalVisuals(goalToDelete);
 
             this.Controls.Clear();
             this.InitializeComponent();
