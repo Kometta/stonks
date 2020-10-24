@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Stonks
@@ -15,11 +16,13 @@ namespace Stonks
         static void Main()
         {
             financialPlan = BinarySerialization.ReadFromBinaryFile<FinancialPlan>(saveFilePath);
+            FinancialPlanController.FinancialPlans = BinarySerialization.ReadFromBinaryFile<List<FinancialPlan>>(saveFilePath);
             //Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Stonks());
             BinarySerialization.WriteToBinaryFile(saveFilePath, financialPlan);
+            BinarySerialization.WriteToBinaryFile(saveFilePath, FinancialPlanController.FinancialPlans);
         }
     }
 }
