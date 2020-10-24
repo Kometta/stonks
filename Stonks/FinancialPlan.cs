@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using Stonks.Forms;
 
 namespace Stonks
 {
@@ -12,6 +9,7 @@ namespace Stonks
     {
         public double Income { get; set; }
         public double Savings { get; set; }
+        public double PlannedSavings { get; set; }
         private List<FinancialGoal> FinancialGoals { get; set; }
         private List<Expense> Expenses { get; set; }
 
@@ -32,25 +30,13 @@ namespace Stonks
             return FinancialGoals.Remove(goal);
         }
 
-        //returns false if expense of same type already exists
-        public bool AddExpense(Expense expense)
+        //adds new or replaces existing expense
+        public void AddExpense(Expense expense)
         {
             if (Expenses.Select(x => x.Type == expense.Type).Count() != 0)
-                return false;
-            
-            Expenses.Add(expense);
-            return true;
-        }
+                Expenses.RemoveAll(x => x.Type == expense.Type);
 
-        //returns false if expense of same type does not exist
-        public bool ModifyExpense(Expense expense)
-        {
-            if (Expenses.Select(x => x.Type == expense.Type).Count() == 0)
-                return false;
-
-            Expenses.RemoveAll(x => x.Type == expense.Type);
             Expenses.Add(expense);
-            return true;
         }
 
         //returns false if item not found
@@ -63,6 +49,39 @@ namespace Stonks
         public Expense GetExpense(ExpenseType type)
         {
             return Expenses.Where(x => x.Type == type).FirstOrDefault();
+        }
+
+        public double GetSpendings()
+        {
+            return Expenses.Sum(x => x.Value);
+        }
+
+        public double GetMaxExpense()
+        {
+            return Expenses.Max(x => x.Value);
+        }
+
+        public double GetSavings(bool recalculate = true)
+        {
+            if (recalculate)
+                RefreshSavings();
+            return Savings;
+        }
+
+        public double GetPlannedSavings() {
+            PlannedSavings = Income;
+
+            foreach (Expense expense in Expenses) {
+                PlannedSavings -= expense.PlannedValue;
+            }
+
+            return PlannedSavings;
+        }
+
+        public void RefreshSavings()
+        {
+            Savings = Income;
+            Expenses.Select(x => Savings -= x.Value);
         }
     }
 }

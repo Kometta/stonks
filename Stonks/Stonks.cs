@@ -30,8 +30,7 @@ namespace Stonks
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
             this.Text = "Stonks";
-            
-         }
+        }
 
         //Structs
 
@@ -127,6 +126,7 @@ namespace Stonks
         private void ProgressBtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new FormProgress());
         }
 
         private void UserDataBtn_Click(object sender, EventArgs e)
@@ -177,6 +177,11 @@ namespace Stonks
         }
 
         private void TitleChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
         {
 
         }
