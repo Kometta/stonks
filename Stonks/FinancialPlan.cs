@@ -7,6 +7,7 @@ namespace Stonks
     [Serializable]
     class FinancialPlan
     {
+        public DateTime DateCreated { get; set; }
         public double Income { get; set; }
         public double Savings { get; set; }
         public double PlannedSavings { get; set; }
@@ -15,12 +16,14 @@ namespace Stonks
 
         public FinancialPlan ()
         {
+            DateCreated = DateTime.Now;
             FinancialGoals = new List<FinancialGoal>();
             Expenses = new List<Expense>();
         }
 
         public FinancialPlan (FinancialPlan copyFrom)
         {
+            DateCreated = DateTime.Now;
             Income = copyFrom.Income;
             Savings = copyFrom.Savings;
             PlannedSavings = copyFrom.PlannedSavings;
