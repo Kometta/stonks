@@ -12,7 +12,8 @@ namespace Stonks
         public double AllocatedFunds { get; set; }
         public double TimeToDeadline { get; set; } // if deadline not determined, then equals -1
 
-        public FinancialGoal() { 
+        public FinancialGoal()
+        {
         }
 
         public FinancialGoal(double value, String name)
