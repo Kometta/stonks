@@ -15,7 +15,7 @@ namespace Stonks
     }
 
     [Serializable]
-    class Expense : ICloneable
+    public class Expense : ICloneable
     {
         public ExpenseType Type { get; set; }
         public double Value { get; set; }
