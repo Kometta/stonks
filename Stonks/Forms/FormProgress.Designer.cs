@@ -53,7 +53,8 @@
             legend1.TitleForeColor = System.Drawing.Color.White;
             legend1.TitleSeparatorColor = System.Drawing.Color.White;
             this.chartPlanned.Legends.Add(legend1);
-            this.chartPlanned.Location = new System.Drawing.Point(26, 22);
+            this.chartPlanned.Location = new System.Drawing.Point(20, 18);
+            this.chartPlanned.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartPlanned.Name = "chartPlanned";
             this.chartPlanned.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series1.ChartArea = "ChartArea1";
@@ -68,17 +69,19 @@
             series2.Name = "Monthly Expenses";
             this.chartPlanned.Series.Add(series1);
             this.chartPlanned.Series.Add(series2);
-            this.chartPlanned.Size = new System.Drawing.Size(895, 471);
+            this.chartPlanned.Size = new System.Drawing.Size(671, 383);
             this.chartPlanned.TabIndex = 2;
             this.chartPlanned.Text = "Expenses";
+            this.chartPlanned.Click += new System.EventHandler(this.chartPlanned_Click);
             // 
             // FormProgress
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(944, 495);
+            this.ClientSize = new System.Drawing.Size(708, 402);
             this.Controls.Add(this.chartPlanned);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormProgress";
             this.Text = "Progress";
             this.Load += new System.EventHandler(this.FormProgress_Load);

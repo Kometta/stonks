@@ -7,6 +7,7 @@ using System.Drawing.Text;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using Stonks.Forms;
 
 namespace Stonks.Forms
@@ -55,6 +56,16 @@ namespace Stonks.Forms
         private void FormSettings_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveInfoBtn_Click(object sender, EventArgs e)
+        {
+            Program.financialPlan.DisplayData = dataMeasure.SelectedIndex;
         }
     }
 }

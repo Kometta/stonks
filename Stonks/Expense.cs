@@ -31,7 +31,7 @@ namespace Stonks
             Value = value;
             PlannedValue = plannedValue;
         }
-
+        
         public object Clone()
         {
             return new Expense(Type, Value, PlannedValue);

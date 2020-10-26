@@ -33,11 +33,14 @@ namespace Stonks.Forms
         {
             chartPlanned.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Transparent;
             chartPlanned.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.Transparent;
+            chartPlanned.ChartAreas[0].AxisX.LineColor = Color.White;
+            chartPlanned.ChartAreas[0].AxisY.LineColor = Color.White;
 
             chartPlanned.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
             chartPlanned.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
+            chartPlanned.ChartAreas[0].BackColor = Color.Transparent;
             Title title;
-
+            
             try
             {
                 //ExpensesChart 
@@ -69,6 +72,11 @@ namespace Stonks.Forms
 
             title.Font = new System.Drawing.Font("Arial", 12, FontStyle.Bold);
             title.ForeColor = System.Drawing.Color.White;
+
+        }
+
+        private void chartPlanned_Click(object sender, EventArgs e)
+        {
 
         }
     }
