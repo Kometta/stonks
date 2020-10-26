@@ -15,7 +15,7 @@ namespace Stonks
     }
 
     [Serializable]
-    public class Expense
+    public class Expense : ICloneable
     {
         public ExpenseType Type { get; set; }
         public double Value { get; set; }
@@ -31,6 +31,10 @@ namespace Stonks
             Value = value;
             PlannedValue = plannedValue;
         }
-
+        
+        public object Clone()
+        {
+            return new Expense(Type, Value, PlannedValue);
+        }
     }
 }

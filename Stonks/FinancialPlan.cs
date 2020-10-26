@@ -5,8 +5,9 @@ using System.Linq;
 namespace Stonks
 {
     [Serializable]
-    class FinancialPlan
+    class FinancialPlan : ICloneable
     {
+        public DateTime DateCreated { get; set; }
         public double Income { get; set; }
         public double Savings { get; set; }
         public double PlannedSavings { get; set; }
@@ -16,17 +17,30 @@ namespace Stonks
 
         public FinancialPlan ()
         {
+            DateCreated = DateTime.Now;
             FinancialGoals = new List<FinancialGoal>();
             Expenses = new List<Expense>();
         }
 
         public FinancialPlan (FinancialPlan copyFrom)
         {
+            DateCreated = DateTime.Now;
             Income = copyFrom.Income;
             Savings = copyFrom.Savings;
             PlannedSavings = copyFrom.PlannedSavings;
             FinancialGoals = copyFrom.FinancialGoals;
             Expenses = copyFrom.Expenses;
+        }
+
+        public object Clone()
+        {
+            FinancialPlan clone = new FinancialPlan();
+            clone.Income = Income;
+            clone.Savings = Savings;
+            clone.PlannedSavings = PlannedSavings;
+            clone.FinancialGoals = (List<FinancialGoal>)FinancialGoals.Clone();
+            clone.Expenses = (List<Expense>)Expenses.Clone();
+            return clone;
         }
 
         public void AddFinancialGoal(FinancialGoal goal)
@@ -63,12 +77,26 @@ namespace Stonks
 
         public double GetSpendings()
         {
-            return Expenses.Sum(x => x.Value);
+            try
+            {
+                return Expenses.Sum(x => x.Value);
+            }
+            catch 
+            {
+                return 0;
+            }
         }
 
         public double GetMaxExpense()
         {
-            return Expenses.Max(x => x.Value);
+            try
+            {
+                return Expenses.Max(x => x.Value);
+            }
+            catch 
+            {
+                return 0;
+            }
         }
 
         public double GetSavings(bool recalculate = true)
