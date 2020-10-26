@@ -31,7 +31,7 @@ namespace Stonks
         public static void AddNewPlan (bool copyPrevious = false)
         {
             if (copyPrevious)
-                FinancialPlans.Add(FinancialPlans.Count > 1 ? new FinancialPlan(FinancialPlans.ElementAt(FinancialPlans.Count - 2)) : new FinancialPlan());
+                FinancialPlans.Add((FinancialPlan)(FinancialPlans.Count > 1 ? FinancialPlans.ElementAt(FinancialPlans.Count - 2).Clone() : new FinancialPlan()));
             else
                 FinancialPlans.Add(new FinancialPlan());
         }
