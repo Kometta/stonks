@@ -122,8 +122,5 @@ namespace Stonks
             Savings = Income;
             Expenses.Select(x => Savings -= x.Value);
         }
-
-
-
     }
 }
