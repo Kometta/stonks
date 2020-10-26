@@ -76,12 +76,26 @@ namespace Stonks
 
         public double GetSpendings()
         {
-            return Expenses.Sum(x => x.Value);
+            try
+            {
+                return Expenses.Sum(x => x.Value);
+            }
+            catch 
+            {
+                return 0;
+            }
         }
 
         public double GetMaxExpense()
         {
-            return Expenses.Max(x => x.Value);
+            try
+            {
+                return Expenses.Max(x => x.Value);
+            }
+            catch 
+            {
+                return 0;
+            }
         }
 
         public double GetSavings(bool recalculate = true)
