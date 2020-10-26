@@ -3,7 +3,7 @@
 namespace Stonks
 {
     [Serializable]
-    class FinancialGoal
+    class FinancialGoal : ICloneable
     {
         public static bool UseYears { get; set; }
 
@@ -44,6 +44,14 @@ namespace Stonks
 
             TimeToDeadline = Value / AllocatedFunds;
             return true;
+        }
+
+        public object Clone()
+        {
+            var clone = new FinancialGoal(Value, Name);
+            clone.AllocatedFunds = AllocatedFunds;
+            clone.TimeToDeadline = TimeToDeadline;
+            return clone;
         }
     }
 }
