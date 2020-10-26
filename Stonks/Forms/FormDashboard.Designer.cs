@@ -118,7 +118,7 @@ namespace Stonks.Forms
             // 
             this.gaugeSavings.ForeColor = System.Drawing.Color.Gainsboro;
             this.gaugeSavings.Location = new System.Drawing.Point(121, 180);
-            this.gaugeSavings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gaugeSavings.Margin = new System.Windows.Forms.Padding(2);
             this.gaugeSavings.Name = "gaugeSavings";
             this.gaugeSavings.Size = new System.Drawing.Size(230, 219);
             this.gaugeSavings.TabIndex = 2;
@@ -126,7 +126,7 @@ namespace Stonks.Forms
             // gaugeSpendings
             // 
             this.gaugeSpendings.Location = new System.Drawing.Point(469, 204);
-            this.gaugeSpendings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gaugeSpendings.Margin = new System.Windows.Forms.Padding(2);
             this.gaugeSpendings.Name = "gaugeSpendings";
             this.gaugeSpendings.Size = new System.Drawing.Size(230, 184);
             this.gaugeSpendings.TabIndex = 2;
@@ -141,7 +141,7 @@ namespace Stonks.Forms
             this.labelRatioESAVE.Name = "labelRatioESAVE";
             this.labelRatioESAVE.Size = new System.Drawing.Size(228, 25);
             this.labelRatioESAVE.TabIndex = 0;
-            this.labelRatioESAVE.Text = "Earnings to Savings Ratio:";
+            this.labelRatioESAVE.Text = "Savings to Earnings Ratio:";
             // 
             // labelRatioESPEND
             // 
@@ -151,9 +151,9 @@ namespace Stonks.Forms
             this.labelRatioESPEND.Location = new System.Drawing.Point(464, 176);
             this.labelRatioESPEND.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRatioESPEND.Name = "labelRatioESPEND";
-            this.labelRatioESPEND.Size = new System.Drawing.Size(252, 25);
+            this.labelRatioESPEND.Size = new System.Drawing.Size(248, 25);
             this.labelRatioESPEND.TabIndex = 0;
-            this.labelRatioESPEND.Text = "Earnings to Spendings Ratio:";
+            this.labelRatioESPEND.Text = "Spendings to Earnings Ratio";
             // 
             // Home
             // 
@@ -171,7 +171,7 @@ namespace Stonks.Forms
             this.Controls.Add(this.labelEarnings);
             this.Controls.Add(this.labelSavingsName);
             this.Controls.Add(this.labelEarningsName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormDashboard_Load);

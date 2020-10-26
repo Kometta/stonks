@@ -30,6 +30,19 @@ namespace Stonks
             return true;
         }
 
+        public static string GetEstimatedTime(double Savings, double Value, int Measurements)
+        {
+            if (Measurements == 0) {
+                return (Convert.ToInt32(Value / Savings)).ToString("# months");
+            }
+            else
+            {
+                return (Convert.ToInt32(Value / Savings / 12)).ToString("# years");
+            }
+            
+        }
+
+
         public bool SetDeadlineByFunds(double value)
         {
             if (value < 0)

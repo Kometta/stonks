@@ -36,7 +36,7 @@ namespace Stonks.Forms
             }
         }
 
-        public Int32 comboBoxGoalType
+        public int comboBoxGoalType
         {
             get
             {

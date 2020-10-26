@@ -31,5 +31,6 @@ namespace Stonks
             Value = value;
             PlannedValue = plannedValue;
         }
+
     }
 }

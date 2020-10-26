@@ -33,9 +33,12 @@ namespace Stonks.Forms
         {
             chartPlanned.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Transparent;
             chartPlanned.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.Transparent;
+            chartPlanned.ChartAreas[0].AxisX.LineColor = Color.White;
+            chartPlanned.ChartAreas[0].AxisY.LineColor = Color.White;
 
             chartPlanned.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
             chartPlanned.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
+            chartPlanned.ChartAreas[0].BackColor = Color.Transparent;
 
             //ExpensesChart 
             chartPlanned.Series["Monthly Expenses"].Points.AddXY("Housing", Program.financialPlan.GetExpense(ExpenseType.Housing).Value);
@@ -60,6 +63,11 @@ namespace Stonks.Forms
             Title title = chartPlanned.Titles.Add("Your Planned Expenses VS Your Monthly Expenses");
             title.Font = new System.Drawing.Font("Arial", 12, FontStyle.Bold);
             title.ForeColor = System.Drawing.Color.White;
+
+        }
+
+        private void chartPlanned_Click(object sender, EventArgs e)
+        {
 
         }
     }

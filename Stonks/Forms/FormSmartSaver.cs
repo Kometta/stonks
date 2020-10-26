@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+using Stonks.Forms;
 
 namespace Stonks.Forms
 {
     public partial class FormSmartSaver : Form
     {
+        int selection = Program.financialPlan.DisplayData;
         public FormSmartSaver()
         {
             InitializeComponent();
@@ -12,12 +14,13 @@ namespace Stonks.Forms
             this.Text = "Smart Saver";
             setTrackBarValues();
             labelStop.Visible = false;
-            InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this);
+            InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this, selection);
             InitializeUI.LoadCurrentDate(labelDate);
         }
 
         private void FormSmartSaver_Load(object sender, EventArgs e)
         {
+            selection = Program.financialPlan.DisplayData;
         }
 
         public void setTrackBarValues()
@@ -114,7 +117,7 @@ namespace Stonks.Forms
             String goal = dialog.textBoxGoalPrice;
             Int32 type = dialog.comboBoxGoalType;
 
-            InitializeUI.AddNewGoal(btnAddGoal, buttondelete, labelStop, lengthGoals, goalName, goal, type, this);
+            InitializeUI.AddNewGoal(btnAddGoal, buttondelete, labelStop, lengthGoals, goalName, goal, type, this, selection);
         }
 
         private void buttondelete_Click(object sender, EventArgs e)
@@ -130,7 +133,7 @@ namespace Stonks.Forms
             Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
             setTrackBarValues();
             labelStop.Visible = false;
-            InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this);
+            InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this, selection);
         }
 
         private void iconHousing_MouseHover(object sender, EventArgs e)

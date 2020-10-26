@@ -12,6 +12,7 @@ namespace Stonks
         public double PlannedSavings { get; set; }
         public List<FinancialGoal> FinancialGoals { get; set; }
         public List<Expense> Expenses { get; set; }
+        public int DisplayData { get; set; }
 
         public FinancialPlan ()
         {
@@ -92,5 +93,6 @@ namespace Stonks
             Savings = Income;
             Expenses.Select(x => Savings -= x.Value);
         }
+
     }
 }

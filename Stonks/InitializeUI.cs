@@ -64,7 +64,7 @@ namespace Stonks
             labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
         }
 
-        public static void AddGoalVisuals(Int32 type, String name, String goal, Int32 locationX, Int32 locationY, Form currentForm, Button btnAddGoal)
+        public static void AddGoalVisuals(Int32 type, String name, String goal, Int32 locationX, Int32 locationY, Form currentForm, Button btnAddGoal, int measurements)
         {
             int btnLocationX = btnAddGoal.Location.X;
             Int32 startX = btnLocationX;
@@ -123,7 +123,7 @@ namespace Stonks
             Label estimatedTime = new Label
             {
                 Location = new Point(locX + 340, locY),
-                Text = (Convert.ToInt32(goalConverted / Program.financialPlan.Savings)).ToString("# months"),
+                Text = FinancialGoal.GetEstimatedTime(Program.financialPlan.Savings, goalConverted, measurements),
                 AutoSize = true,
                 Font = new Font("Segoe UI", 10.2F, FontStyle.Bold),
                 ForeColor = Color.Gainsboro
@@ -161,7 +161,7 @@ namespace Stonks
             return x;
         }
 
-        public static void loadGoals(Button btnAddGoal, Button buttondelete, Label labelStop, Form form)
+        public static void loadGoals(Button btnAddGoal, Button buttondelete, Label labelStop, Form form, int measurements)
         {
             var x = 0;
             var y = 0;
@@ -169,7 +169,7 @@ namespace Stonks
 
             foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
             {
-                InitializeUI.AddGoalVisuals(0, goal.Name, Convert.ToString(goal.Value), y, x, form, btnAddGoal);
+                InitializeUI.AddGoalVisuals(0, goal.Name, Convert.ToString(goal.Value), y, x, form, btnAddGoal, measurements);
                 btnAddGoal.Top += 90;
                 buttondelete.Top += 90;
                 x += 75;
@@ -184,7 +184,7 @@ namespace Stonks
             }
         }
 
-        public static void AddNewGoal(Button btnAddGoal, Button buttondelete, Label labelStop, int lengthGoals, String goalName, String goal, Int32 type, Form form)
+        public static void AddNewGoal(Button btnAddGoal, Button buttondelete, Label labelStop, int lengthGoals, String goalName, String goal, Int32 type, Form form, int measurements)
         {
             if (lengthGoals <= 3 || btnAddGoal.Top >= 400)
             {
@@ -192,7 +192,7 @@ namespace Stonks
                 {
                     btnAddGoal.Top += 90;
                     buttondelete.Top += 90;
-                    InitializeUI.AddGoalVisuals(type, goalName, goal, 0, 75 * lengthGoals, form, btnAddGoal);
+                    InitializeUI.AddGoalVisuals(type, goalName, goal, 0, 75 * lengthGoals, form, btnAddGoal, measurements);
                     Program.financialPlan.AddFinancialGoal(new FinancialGoal() { Value = Convert.ToDouble(goal), Name = goalName });
                 }
 
