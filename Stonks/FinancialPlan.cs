@@ -34,12 +34,14 @@ namespace Stonks
 
         public object Clone()
         {
-            FinancialPlan clone = new FinancialPlan();
-            clone.Income = Income;
-            clone.Savings = Savings;
-            clone.PlannedSavings = PlannedSavings;
-            clone.FinancialGoals = (List<FinancialGoal>)FinancialGoals.Clone();
-            clone.Expenses = (List<Expense>)Expenses.Clone();
+            FinancialPlan clone = new FinancialPlan
+            {
+                Income = Income,
+                Savings = Savings,
+                PlannedSavings = PlannedSavings,
+                FinancialGoals = (List<FinancialGoal>)FinancialGoals.Clone(),
+                Expenses = (List<Expense>)Expenses.Clone()
+            };
             return clone;
         }
 

@@ -14,6 +14,8 @@ namespace Stonks
 
         public FinancialGoal()
         {
+            AllocatedFunds = 0;
+            TimeToDeadline = -1;
         }
 
         public FinancialGoal(double value, String name)

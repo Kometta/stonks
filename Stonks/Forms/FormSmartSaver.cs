@@ -33,7 +33,7 @@ namespace Stonks.Forms
             var shoppingExpense = Program.financialPlan.GetExpense(ExpenseType.Shopping);
             var utilitiesExpense = Program.financialPlan.GetExpense(ExpenseType.Utilities);
             var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
-            var max = Program.financialPlan.GetMaxExpense();
+            var max = Program.financialPlan.GetMaxExpense() * 2;
 
 
             InitializeUI.LoadTrackBars(housingExpense, trackBarHousing, labelHousingExpense, labelHousingExpensesActual, max);
@@ -138,42 +138,42 @@ namespace Stonks.Forms
 
         private void iconHousing_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Housing", iconHousing);
+            iconName.Show(ExpenseType.Housing.ToString(), iconHousing);
         }
 
         private void iconGroceries_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Groceries", iconGroceries);
+            iconName.Show(ExpenseType.Groceries.ToString(), iconGroceries);
         }
 
         private void iconTransport_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Transport", iconTransport);
+            iconName.Show(ExpenseType.Transport.ToString(), iconTransport);
         }
 
         private void iconEntertainment_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Entertainment", iconEntertainment);
+            iconName.Show(ExpenseType.Entertainment.ToString(), iconEntertainment);
         }
 
         private void iconHealth_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Health", iconHealth);
+            iconName.Show(ExpenseType.Health.ToString(), iconHealth);
         }
 
         private void iconShopping_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Shopping", iconShopping);
+            iconName.Show(ExpenseType.Shopping.ToString(), iconShopping);
         }
 
         private void iconUtilities_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Utilities", iconUtilities);
+            iconName.Show(ExpenseType.Utilities.ToString(), iconUtilities);
         }
 
         private void iconOther_MouseHover(object sender, EventArgs e)
         {
-            iconName.Show("Other", iconOther);
+            iconName.Show(ExpenseType.Other.ToString(), iconOther);
         }
 
         private void iconPictureBox1_MouseHover(object sender, EventArgs e)
