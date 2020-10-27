@@ -6,11 +6,11 @@ namespace Stonks.Forms
 {
     public partial class FormSmartSaver : Form
     {
-        int selection = Program.financialPlan.DisplayData;
+        int selection = FinancialPlanController.ActivePlan.DisplayData;
         public FormSmartSaver()
         {
             InitializeComponent();
-            Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
+            FinancialPlanController.ActivePlan.Savings = FinancialPlanController.ActivePlan.Income - FinancialPlanController.ActivePlan.GetSpendings();
             this.Text = "Smart Saver";
             setTrackBarValues();
             labelStop.Visible = false;
@@ -20,20 +20,20 @@ namespace Stonks.Forms
 
         private void FormSmartSaver_Load(object sender, EventArgs e)
         {
-            selection = Program.financialPlan.DisplayData;
+            selection = FinancialPlanController.ActivePlan.DisplayData;
         }
 
         public void setTrackBarValues()
         {
-            var housingExpense = Program.financialPlan.GetExpense(ExpenseType.Housing);
-            var groceries = Program.financialPlan.GetExpense(ExpenseType.Groceries);
-            var transportExpense = Program.financialPlan.GetExpense(ExpenseType.Transport);
-            var entertainmentExpense = Program.financialPlan.GetExpense(ExpenseType.Entertainment);
-            var healthExpense = Program.financialPlan.GetExpense(ExpenseType.Health);
-            var shoppingExpense = Program.financialPlan.GetExpense(ExpenseType.Shopping);
-            var utilitiesExpense = Program.financialPlan.GetExpense(ExpenseType.Utilities);
-            var otherExpense = Program.financialPlan.GetExpense(ExpenseType.Other);
-            var max = Program.financialPlan.GetMaxExpense() * 2;
+            var housingExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Housing);
+            var groceries = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Groceries);
+            var transportExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Transport);
+            var entertainmentExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Entertainment);
+            var healthExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Health);
+            var shoppingExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Shopping);
+            var utilitiesExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Utilities);
+            var otherExpense = FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Other);
+            var max = FinancialPlanController.ActivePlan.GetMaxExpense() * 2;
 
 
             InitializeUI.LoadTrackBars(housingExpense, trackBarHousing, labelHousingExpense, labelHousingExpensesActual, max);
@@ -130,7 +130,7 @@ namespace Stonks.Forms
 
             this.Controls.Clear();
             this.InitializeComponent();
-            Program.financialPlan.Savings = Program.financialPlan.Income - Program.financialPlan.GetSpendings();
+            FinancialPlanController.ActivePlan.Savings = FinancialPlanController.ActivePlan.Income - FinancialPlanController.ActivePlan.GetSpendings();
             setTrackBarValues();
             labelStop.Visible = false;
             InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this, selection);

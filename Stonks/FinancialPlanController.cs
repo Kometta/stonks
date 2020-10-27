@@ -9,31 +9,25 @@ namespace Stonks
     static class FinancialPlanController
     {
         public static List<FinancialPlan> FinancialPlans { get; set; } = new List<FinancialPlan>();
-        static FinancialPlan ActivePlan 
+        public static FinancialPlan ActivePlan { get; set; }
+
+        public static void UpdateActive()
         {
-            get
-            {
-                if (ActivePlan == null)
-                {
-                    if (FinancialPlans.Count == 0)
-                        AddNewPlan();
-                    ActivePlan = FinancialPlans.Last();
-                }
-
-                return ActivePlan;
-            }
-
-            set
-            {
-            }
+            ActivePlan = FinancialPlans.Last();
         }
 
         public static void AddNewPlan (bool copyPrevious = false)
         {
             if (copyPrevious)
-                FinancialPlans.Add((FinancialPlan)(FinancialPlans.Count > 1 ? FinancialPlans.ElementAt(FinancialPlans.Count - 2).Clone() : new FinancialPlan()));
+            {
+                FinancialPlans.Add((FinancialPlan)(FinancialPlans.Count > 1 ? FinancialPlans.ElementAt(FinancialPlans.Count - 2).Clone() : new FinancialPlan())); UpdateActive();
+                UpdateActive();
+            }
             else
+            {
                 FinancialPlans.Add(new FinancialPlan());
+                UpdateActive();
+            }
         }
     }
 }

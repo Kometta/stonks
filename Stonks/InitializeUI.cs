@@ -39,16 +39,16 @@ namespace Stonks
         public static void LoadSavingsTrackBar(TrackBar trackBarSavings, Label labelPlannedSavings, Label labelSavings) {
             try
             {
-                trackBarSavings.Minimum = Convert.ToInt32(Program.financialPlan.Income * (-1));
-                trackBarSavings.Maximum = Convert.ToInt32(Program.financialPlan.Income);
-                trackBarSavings.Value = Convert.ToInt32(Program.financialPlan.Savings);
-                labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
-                labelSavings.Text = (Program.financialPlan.Savings).ToString("€#.#");
+                trackBarSavings.Minimum = Convert.ToInt32(FinancialPlanController.ActivePlan.Income * (-1));
+                trackBarSavings.Maximum = Convert.ToInt32(FinancialPlanController.ActivePlan.Income);
+                trackBarSavings.Value = Convert.ToInt32(FinancialPlanController.ActivePlan.Savings);
+                labelPlannedSavings.Text = (FinancialPlanController.ActivePlan.GetPlannedSavings()).ToString("€#.#");
+                labelSavings.Text = (FinancialPlanController.ActivePlan.Savings).ToString("€#.#");
             }
             catch
             {
                 trackBarSavings.Value = 0;
-                labelSavings.Text = (Program.financialPlan.Savings).ToString("€#.#");
+                labelSavings.Text = (FinancialPlanController.ActivePlan.Savings).ToString("€#.#");
             }
         }
 
@@ -56,12 +56,12 @@ namespace Stonks
         {
             var value = trackBar.Value;
             labelExpense.Text = (value).ToString("€#.#");
-            Program.financialPlan.AddExpense(new Expense() { Type = type, PlannedValue = value, Value = Program.financialPlan.GetExpense(type).Value });
+            FinancialPlanController.ActivePlan.AddExpense(new Expense() { Type = type, PlannedValue = value, Value = FinancialPlanController.ActivePlan.GetExpense(type).Value });
         }
 
         public static void UpdatePlannedSavings(Label labelPlannedSavings)
         {
-            labelPlannedSavings.Text = (Program.financialPlan.GetPlannedSavings()).ToString("€#.#");
+            labelPlannedSavings.Text = (FinancialPlanController.ActivePlan.GetPlannedSavings()).ToString("€#.#");
         }
 
         public static void AddGoalVisuals(Int32 type, String name, String goal, Int32 locationX, Int32 locationY, Form currentForm, Button btnAddGoal, int measurements)
@@ -123,7 +123,7 @@ namespace Stonks
             Label estimatedTime = new Label
             {
                 Location = new Point(locX + 340, locY),
-                Text = FinancialGoal.GetEstimatedTime(Program.financialPlan.Savings, goalConverted, measurements),
+                Text = FinancialGoal.GetEstimatedTime(FinancialPlanController.ActivePlan.Savings, goalConverted, measurements),
                 AutoSize = true,
                 Font = new Font("Segoe UI", 10.2F, FontStyle.Bold),
                 ForeColor = Color.Gainsboro
@@ -139,11 +139,11 @@ namespace Stonks
         public static void RemoveGoalVisuals(int goalToDelete) {
             int i = 0;
 
-            foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
+            foreach (FinancialGoal goal in FinancialPlanController.ActivePlan.FinancialGoals)
             {
                 if (i == goalToDelete)
                 {
-                    Program.financialPlan.RemoveFinancialGoal(goal);
+                    FinancialPlanController.ActivePlan.RemoveFinancialGoal(goal);
                     break;
                 }
                 i++;
@@ -153,7 +153,7 @@ namespace Stonks
         public static int GetGoalLength()
         {
             var x = 0;
-            foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
+            foreach (FinancialGoal goal in FinancialPlanController.ActivePlan.FinancialGoals)
             {
                 x++;
             }
@@ -167,7 +167,7 @@ namespace Stonks
             var y = 0;
             var z = 0;
 
-            foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
+            foreach (FinancialGoal goal in FinancialPlanController.ActivePlan.FinancialGoals)
             {
                 InitializeUI.AddGoalVisuals(0, goal.Name, Convert.ToString(goal.Value), y, x, form, btnAddGoal, measurements);
                 btnAddGoal.Top += 90;
@@ -193,7 +193,7 @@ namespace Stonks
                     btnAddGoal.Top += 90;
                     buttondelete.Top += 90;
                     InitializeUI.AddGoalVisuals(type, goalName, goal, 0, 75 * lengthGoals, form, btnAddGoal, measurements);
-                    Program.financialPlan.AddFinancialGoal(new FinancialGoal() { Value = Convert.ToDouble(goal), Name = goalName });
+                    FinancialPlanController.ActivePlan.AddFinancialGoal(new FinancialGoal() { Value = Convert.ToDouble(goal), Name = goalName });
                 }
 
                 if (btnAddGoal.Top >= 400)
