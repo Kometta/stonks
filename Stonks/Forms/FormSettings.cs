@@ -65,7 +65,7 @@ namespace Stonks.Forms
 
         private void saveInfoBtn_Click(object sender, EventArgs e)
         {
-            Program.financialPlan.DisplayData = dataMeasure.SelectedIndex;
+            FinancialPlanController.ActivePlan.DisplayData = dataMeasure.SelectedIndex;
         }
     }
 }

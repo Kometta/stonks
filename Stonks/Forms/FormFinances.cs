@@ -52,11 +52,11 @@ namespace Stonks.Forms
             }
             else
             {
-                textBoxEarnings.Text = Convert.ToString(Program.financialPlan.Income);
+                textBoxEarnings.Text = Convert.ToString(FinancialPlanController.ActivePlan.Income);
             }
 
             //Expenses
-            BoxExpenseType.ForEach(x => x.Value.Text = (Program.financialPlan.GetExpense(x.Key) != null) ? Convert.ToString(Program.financialPlan.GetExpense(x.Key).Value) : "0");
+            BoxExpenseType.ForEach(x => x.Value.Text = (FinancialPlanController.ActivePlan.GetExpense(x.Key) != null) ? Convert.ToString(FinancialPlanController.ActivePlan.GetExpense(x.Key).Value) : "0");
             }
 
         public void SaveExpenseValues()
@@ -64,11 +64,11 @@ namespace Stonks.Forms
             //Income
             if (textBoxEarnings.Text != null)
             {
-                Program.financialPlan.Income = Convert.ToDouble(textBoxEarnings.Text);
+                FinancialPlanController.ActivePlan.Income = Convert.ToDouble(textBoxEarnings.Text);
             }
 
             //Expenses
-            BoxExpenseType.ForEach(x => Program.financialPlan.AddExpense(new Expense(x.Key, Convert.ToDouble(x.Value.Text), Convert.ToDouble(x.Value.Text))));
+            BoxExpenseType.ForEach(x => FinancialPlanController.ActivePlan.AddExpense(new Expense(x.Key, Convert.ToDouble(x.Value.Text), Convert.ToDouble(x.Value.Text))));
         }
     }
 }

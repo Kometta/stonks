@@ -44,24 +44,24 @@ namespace Stonks.Forms
             try
             {
                 //ExpensesChart 
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Housing", Program.financialPlan.GetExpense(ExpenseType.Housing).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Groceries", Program.financialPlan.GetExpense(ExpenseType.Groceries).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Transport", Program.financialPlan.GetExpense(ExpenseType.Transport).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Entertainment", Program.financialPlan.GetExpense(ExpenseType.Entertainment).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Health", Program.financialPlan.GetExpense(ExpenseType.Health).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Shopping", Program.financialPlan.GetExpense(ExpenseType.Shopping).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Utilities", Program.financialPlan.GetExpense(ExpenseType.Utilities).Value);
-                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Other", Program.financialPlan.GetExpense(ExpenseType.Other).Value);  
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Housing", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Housing).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Groceries", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Groceries).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Transport", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Transport).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Entertainment", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Entertainment).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Health", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Health).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Shopping", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Shopping).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Utilities", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Utilities).Value);
+                chartPlanned.Series["Monthly Expenses"].Points.AddXY("Other", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Other).Value);  
 
                 //Planned Expenses Chart
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Housing", Program.financialPlan.GetExpense(ExpenseType.Housing).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Groceries", Program.financialPlan.GetExpense(ExpenseType.Groceries).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Transport", Program.financialPlan.GetExpense(ExpenseType.Transport).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Entertainment", Program.financialPlan.GetExpense(ExpenseType.Entertainment).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Health", Program.financialPlan.GetExpense(ExpenseType.Health).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Shopping", Program.financialPlan.GetExpense(ExpenseType.Shopping).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Utilities", Program.financialPlan.GetExpense(ExpenseType.Utilities).PlannedValue);
-                chartPlanned.Series["Planned Expenses"].Points.AddXY("Other", Program.financialPlan.GetExpense(ExpenseType.Other).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Housing", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Housing).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Groceries", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Groceries).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Transport", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Transport).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Entertainment", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Entertainment).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Health", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Health).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Shopping", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Shopping).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Utilities", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Utilities).PlannedValue);
+                chartPlanned.Series["Planned Expenses"].Points.AddXY("Other", FinancialPlanController.ActivePlan.GetExpense(ExpenseType.Other).PlannedValue);
 
                 title = chartPlanned.Titles.Add("Your Planned Expenses VS Your Monthly Expenses");
             }

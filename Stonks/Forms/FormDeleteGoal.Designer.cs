@@ -91,7 +91,7 @@ namespace Stonks.Forms
             this.ResumeLayout(false);
             this.PerformLayout();
 
-            foreach (FinancialGoal goal in Program.financialPlan.FinancialGoals)
+            foreach (FinancialGoal goal in FinancialPlanController.ActivePlan.FinancialGoals)
             {
                 this.comboBox1.Items.Add(goal.Name);
             }
