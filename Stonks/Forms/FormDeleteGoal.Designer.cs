@@ -47,7 +47,7 @@ namespace Stonks.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(273, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Which Goal do You want to delete?";
+            this.label1.Text = Resources.LStrings.WhichGoalMsg;
             // 
             // button1
             // 
@@ -64,7 +64,7 @@ namespace Stonks.Forms
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 34);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Save Info";
+            this.button1.Text = Resources.LStrings.SaveInfoLabel;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -87,7 +87,7 @@ namespace Stonks.Forms
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FormDeleteGoal";
-            this.Text = "Delete a Goal";
+            this.Text = Resources.LStrings.DeleteAGoalLabel;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -121,7 +121,7 @@ namespace Stonks
         public void RefreshSavings()
         {
             Savings = Income;
-            Expenses.Select(x => Savings -= x.Value);
+            Expenses.ForEach(x => Savings -= x.Value);
         }
 
     }

@@ -13,7 +13,7 @@ namespace Stonks.Forms
         public Home()
         {
             InitializeComponent();
-            this.Text = "Home";
+            this.Text = Resources.LStrings.HomeLabel;
             var Spendings = FinancialPlanController.ActivePlan.GetSpendings();
             FinancialPlanController.ActivePlan.Savings = FinancialPlanController.ActivePlan.Income - FinancialPlanController.ActivePlan.GetSpendings();
             labelEarnings.Text = (FinancialPlanController.ActivePlan.Income).ToString("€#.#");
