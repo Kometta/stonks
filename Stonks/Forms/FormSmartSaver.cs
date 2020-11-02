@@ -11,7 +11,7 @@ namespace Stonks.Forms
         {
             InitializeComponent();
             FinancialPlanController.ActivePlan.Savings = FinancialPlanController.ActivePlan.Income - FinancialPlanController.ActivePlan.GetSpendings();
-            this.Text = "Smart Saver";
+            this.Text = Resources.LStrings.SmartSaverLabel;
             setTrackBarValues();
             labelStop.Visible = false;
             InitializeUI.loadGoals(btnAddGoal, buttondelete, labelStop, this, selection);
