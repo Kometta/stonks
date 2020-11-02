@@ -47,7 +47,7 @@ namespace Stonks.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(273, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = Resources.LStrings.WhichGoalLabel;
+            this.label1.Text = Resources.LStrings.WhichGoalMsg;
             // 
             // button1
             // 

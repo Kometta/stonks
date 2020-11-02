@@ -159,7 +159,7 @@
   <data name="UtilitiesLabel" xml:space="preserve">
     <value>Utilities</value>
   </data>
-  <data name="WhichGoalLabel" xml:space="preserve">
+  <data name="WhichGoalMsg" xml:space="preserve">
     <value>Which Goal do You want to delete?</value>
   </data>
 </root>

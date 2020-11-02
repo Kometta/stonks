@@ -189,9 +189,9 @@ namespace Stonks.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Which Goal do You want to delete?.
         /// </summary>
-        public static string WhichGoalLabel {
+        public static string WhichGoalMsg {
             get {
-                return ResourceManager.GetString("WhichGoalLabel", resourceCulture);
+                return ResourceManager.GetString("WhichGoalMsg", resourceCulture);
             }
         }
     }
