@@ -35,3 +35,12 @@ Created Windows Forms Desktop application. The demo consists of:
   2. Fixed code structure bug in FormFinances (My finances)
   3. Resctuctured code in FormSmartSaver
   4. Added functionality of goals
+## Week 6 Final touches
+  1. Fixing bugs in all Windows Forms
+  2. Refactoring code in all classes 
+  3. Completed the first assesment with Windows Forms
+## Week 7 Moving to ASP.NET
+  1. Started working on the front-end of our application
+  2. Visualised what the end product should look like
+  3. Started moving the classes from our Windows Forms project to ASP.NET project
+  4. Made some changes in Windows Forms classes to benefit us in the future
